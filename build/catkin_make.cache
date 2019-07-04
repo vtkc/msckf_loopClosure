@@ -1,0 +1,2 @@
+msckf_vio
+-DCMAKE_BUILD_TYPE=Release -DCATKIN_DEVEL_PREFIX=/home/tlab/Desktop/Victor/msckf_loop_v02/devel -DCMAKE_INSTALL_PREFIX=/home/tlab/Desktop/Victor/msckf_loop_v02/install -G Unix Makefiles
