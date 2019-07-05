@@ -86,6 +86,32 @@ message_filters/subscriber.h
 message_filters/time_synchronizer.h
 -
 
+/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/keyframe_processor.h
+vector
+-
+map
+-
+boost/shared_ptr.hpp
+-
+opencv2/opencv.hpp
+-
+opencv2/video.hpp
+-
+ros/ros.h
+-
+cv_bridge/cv_bridge.h
+-
+image_transport/image_transport.h
+-
+sensor_msgs/Imu.h
+-
+sensor_msgs/Image.h
+-
+message_filters/subscriber.h
+-
+message_filters/time_synchronizer.h
+-
+
 /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/loop_closure.h
 vector
 -
@@ -214,6 +240,8 @@ opencv2/video.hpp
 msckf_vio/map_points.h
 -
 msckf_vio/image_processor.h
+-
+msckf_vio/keyframe_processor.h
 -
 
 /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/loop_closure.cpp
