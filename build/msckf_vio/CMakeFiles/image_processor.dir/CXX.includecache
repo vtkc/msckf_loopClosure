@@ -145,6 +145,8 @@ msckf_vio/utils.h
 -
 msckf_vio/loop_closure.h
 -
+thread
+-
 
 /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/utils.cpp
 msckf_vio/utils.h
