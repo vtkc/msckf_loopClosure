@@ -85,6 +85,10 @@ message_filters/subscriber.h
 -
 message_filters/time_synchronizer.h
 -
+msckf_vio/loop_closure.h
+-
+thread
+-
 
 /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/loop_closure.h
 vector
@@ -168,8 +172,6 @@ msckf_vio/TrackingInfo.h
 msckf_vio/image_processor.h
 -
 msckf_vio/utils.h
--
-msckf_vio/loop_closure.h
 -
 thread
 -

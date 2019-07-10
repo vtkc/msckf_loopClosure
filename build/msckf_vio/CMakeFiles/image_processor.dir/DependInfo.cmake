@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/image_processor.cpp" "/home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o"
+  "/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/loop_closure.cpp" "/home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o"
   "/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/utils.cpp" "/home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/image_processor.dir/src/utils.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

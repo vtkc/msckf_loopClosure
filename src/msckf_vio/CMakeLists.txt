@@ -106,6 +106,7 @@ target_link_libraries(msckf_vio_nodelet
 add_library(image_processor
   src/image_processor.cpp
   src/utils.cpp
+  src/loop_closure.cpp
 )
 add_dependencies(image_processor
   ${${PROJECT_NAME}_EXPORTED_TARGETS}
@@ -145,45 +146,45 @@ target_link_libraries(loop_closure
   ${OpenCV_LIBRARIES}
 )
 
-# map_points
-add_library(map_points
-  src/map_points.cpp
-  src/loop_closure
-  src/image_processor.cpp
-)
-add_dependencies(map_points
-  ${${PROJECT_NAME}_EXPORTED_TARGETS}
-  ${catkin_EXPORTED_TARGETS}
-)
-target_link_libraries(map_points
-  ${catkin_LIBRARIES}
-  ${SUITESPARSE_LIBRARIES}
-  ${OpenCV_LIBRARIES}
-)
+# # map_points
+# add_library(map_points
+#   src/map_points.cpp
+#   src/loop_closure
+#   src/image_processor.cpp
+# )
+# add_dependencies(map_points
+#   ${${PROJECT_NAME}_EXPORTED_TARGETS}
+#   ${catkin_EXPORTED_TARGETS}
+# )
+# target_link_libraries(map_points
+#   ${catkin_LIBRARIES}
+#   ${SUITESPARSE_LIBRARIES}
+#   ${OpenCV_LIBRARIES}
+# )
 
-# keyframe_processor
-add_library(keyframe_processor
-  src/keyframe_processor.cpp
-  src/loop_closure
-  src/image_processor.cpp
-  src/map_points
-)
-add_dependencies(keyframe_processor
-  ${${PROJECT_NAME}_EXPORTED_TARGETS}
-  ${catkin_EXPORTED_TARGETS}
-)
-target_link_libraries(keyframe_processor
-  ${catkin_LIBRARIES}
-  ${SUITESPARSE_LIBRARIES}
-  ${OpenCV_LIBRARIES}
-)
+# # keyframe_processor
+# add_library(keyframe_processor
+#   src/keyframe_processor.cpp
+#   src/loop_closure
+#   src/image_processor.cpp
+#   src/map_points
+# )
+# add_dependencies(keyframe_processor
+#   ${${PROJECT_NAME}_EXPORTED_TARGETS}
+#   ${catkin_EXPORTED_TARGETS}
+# )
+# target_link_libraries(keyframe_processor
+#   ${catkin_LIBRARIES}
+#   ${SUITESPARSE_LIBRARIES}
+#   ${OpenCV_LIBRARIES}
+# )
 
 #############
 ## Install ##
 #############
 
 install(TARGETS
-  msckf_vio msckf_vio_nodelet image_processor image_processor_nodelet loop_closure map_points keyframe_processor
+  msckf_vio msckf_vio_nodelet image_processor image_processor_nodelet loop_closure 
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}

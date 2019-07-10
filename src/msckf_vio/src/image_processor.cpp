@@ -18,7 +18,7 @@
 #include <msckf_vio/image_processor.h>
 #include <msckf_vio/utils.h>
 
-#include <msckf_vio/loop_closure.h>
+// #include <msckf_vio/loop_closure.h>
 #include <thread>
 
 
@@ -200,6 +200,13 @@ bool ImageProcessor::initialize() {
   if (!loadParameters()) return false;
   ROS_INFO("Finish loading ROS parameters...");
 
+  // loop_closure* lc;
+  // std::thread* loop_closure_thread;
+
+  cam0_img_refresh = false;
+  lc = new loop_closure(cam0_img_input, cam0_img_refresh);
+  loop_closure_thread = new thread(&msckf_vio::loop_closure::run, lc);
+
   // Create feature detector.
   detector_ptr = FastFeatureDetector::create(
       processor_config.fast_threshold);
@@ -221,6 +228,9 @@ void ImageProcessor::stereoCallback(
       sensor_msgs::image_encodings::MONO8);
   cam1_curr_img_ptr = cv_bridge::toCvShare(cam1_img,
       sensor_msgs::image_encodings::MONO8);
+
+  cam0_img_input = cam0_curr_img_ptr->image;
+  cam0_img_refresh = true;
 
   // Build the image pyramids once since they're used at multiple places
   createImagePyramids();
@@ -323,8 +333,8 @@ void ImageProcessor::initializeFirstFrame() {
   static int grid_height = img.rows / processor_config.grid_row;
   static int grid_width = img.cols / processor_config.grid_col;
 
-  loop_closure lc(img, orbKeyPoints);
-  thread loop_closure_thread(&loop_closure::task1, lc, "Init First KF");
+  // loop_closure lc(img, orbKeyPoints);
+  // thread loop_closure_thread(&loop_closure::task1, lc, "Init First KF");
 
   // Detect new features on the frist image.
   vector<KeyPoint> new_features(0);

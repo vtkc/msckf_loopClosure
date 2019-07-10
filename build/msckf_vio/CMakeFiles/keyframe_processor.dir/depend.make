@@ -1298,6 +1298,7 @@ msckf_vio/CMakeFiles/keyframe_processor.dir/src/loop_closure.cpp.o: /usr/include
 msckf_vio/CMakeFiles/keyframe_processor.dir/src/loop_closure.cpp.o: /usr/include/x86_64-linux-gnu/sys/timeb.h
 
 msckf_vio/CMakeFiles/keyframe_processor.dir/src/map_points.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/image_processor.h
+msckf_vio/CMakeFiles/keyframe_processor.dir/src/map_points.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/loop_closure.h
 msckf_vio/CMakeFiles/keyframe_processor.dir/src/map_points.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/map_points.h
 msckf_vio/CMakeFiles/keyframe_processor.dir/src/map_points.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/utils.h
 msckf_vio/CMakeFiles/keyframe_processor.dir/src/map_points.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/map_points.cpp

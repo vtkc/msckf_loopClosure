@@ -18,10 +18,13 @@ using namespace cv;
 namespace msckf_vio{
     class loop_closure{
         public:
-            loop_closure(const Mat& img, vector<KeyPoint>& orbKeyPoints);
+            loop_closure(Mat img, bool& refresh);
             void run();
             void task1(string msg);
-        // private:
+            void update(Mat img, bool& refresh);
+        private:
+            bool* refreshPtr;
+            Mat cam0_img;
             // void getORBfeatures(const Mat& img, vector<KeyPoint>& orbKeyPoints);
             // Mat getImg();
             // vector<KeyPoint> getOrbKeyPoints();

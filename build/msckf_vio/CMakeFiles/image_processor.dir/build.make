@@ -105,16 +105,42 @@ msckf_vio/CMakeFiles/image_processor.dir/src/utils.cpp.o.provides: msckf_vio/CMa
 msckf_vio/CMakeFiles/image_processor.dir/src/utils.cpp.o.provides.build: msckf_vio/CMakeFiles/image_processor.dir/src/utils.cpp.o
 
 
+msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: msckf_vio/CMakeFiles/image_processor.dir/flags.make
+msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/loop_closure.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o"
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/src/loop_closure.cpp.o -c /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/loop_closure.cpp
+
+msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/src/loop_closure.cpp.i"
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/loop_closure.cpp > CMakeFiles/image_processor.dir/src/loop_closure.cpp.i
+
+msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/src/loop_closure.cpp.s"
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/loop_closure.cpp -o CMakeFiles/image_processor.dir/src/loop_closure.cpp.s
+
+msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o.requires:
+
+.PHONY : msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o.requires
+
+msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o.provides: msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o.requires
+	$(MAKE) -f msckf_vio/CMakeFiles/image_processor.dir/build.make msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o.provides.build
+.PHONY : msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o.provides
+
+msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o.provides.build: msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o
+
+
 # Object files for target image_processor
 image_processor_OBJECTS = \
 "CMakeFiles/image_processor.dir/src/image_processor.cpp.o" \
-"CMakeFiles/image_processor.dir/src/utils.cpp.o"
+"CMakeFiles/image_processor.dir/src/utils.cpp.o" \
+"CMakeFiles/image_processor.dir/src/loop_closure.cpp.o"
 
 # External object files for target image_processor
 image_processor_EXTERNAL_OBJECTS =
 
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor.so: msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor.so: msckf_vio/CMakeFiles/image_processor.dir/src/utils.cpp.o
+/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor.so: msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor.so: msckf_vio/CMakeFiles/image_processor.dir/build.make
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor.so: /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libloop_closure.so
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/libeigen_conversions.so
@@ -400,7 +426,7 @@ image_processor_EXTERNAL_OBJECTS =
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor.so: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor.so: /usr/lib/x86_64-linux-gnu/librt.so
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor.so: msckf_vio/CMakeFiles/image_processor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor.so"
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/image_processor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -410,6 +436,7 @@ msckf_vio/CMakeFiles/image_processor.dir/build: /home/tlab/Desktop/Victor/msckf_
 
 msckf_vio/CMakeFiles/image_processor.dir/requires: msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o.requires
 msckf_vio/CMakeFiles/image_processor.dir/requires: msckf_vio/CMakeFiles/image_processor.dir/src/utils.cpp.o.requires
+msckf_vio/CMakeFiles/image_processor.dir/requires: msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o.requires
 
 .PHONY : msckf_vio/CMakeFiles/image_processor.dir/requires
 

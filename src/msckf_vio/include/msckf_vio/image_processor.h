@@ -22,6 +22,12 @@
 #include <message_filters/subscriber.h>
 #include <message_filters/time_synchronizer.h>
 
+#include <msckf_vio/loop_closure.h>
+#include <thread>
+
+using namespace std;
+using namespace cv;
+
 namespace msckf_vio {
 
 /*
@@ -65,6 +71,11 @@ private:
     double ransac_threshold;
     double stereo_threshold;
   };
+
+  loop_closure::loop_closure* lc;
+  std::thread* loop_closure_thread;
+  bool cam0_img_refresh;
+  Mat cam0_img_input;
 
   /*
    * @brief FeatureIDType An alias for unsigned long long int.

@@ -28,14 +28,27 @@ using namespace cv;
 
 namespace msckf_vio{
 
-    loop_closure::loop_closure(const Mat& img, vector<KeyPoint>& orbKeyPoints)
+    loop_closure::loop_closure(Mat img, bool& refresh)
     {
+        cam0_img = img;
+        // cout << "refresh == " << refresh << endl;
+        // bool& tempPtr = refresh;
+        // refreshPtr = &refresh;
+        refreshPtr = &refresh;
+        // cout << "refreshPtr == " << *refreshPtr << endl;
         // imgORB = img;
         // orbKeyPointsORB = orbKeyPoints;
-        // ROS_INFO("Ran loop_closure()");
+        ROS_INFO("Object loop_closure created");
         // thread t1(task1, "Thread t1");
         // t1.join();
         // terminate();
+        return;
+    }
+
+    void loop_closure::update(Mat img, bool& refresh){
+        cam0_img = img;
+        refreshPtr = &refresh;
+        ROS_INFO("img and refreshPtr Updated!");
         return;
     }
 
@@ -48,10 +61,17 @@ namespace msckf_vio{
     }
 
     void loop_closure::run(){
-        ROS_INFO("Ran run()");
-        // thread t2(&loop_closure::task1, task1, "Thread t2");
-        // t2.join();
-        // terminate();
+        while(1){
+            // cout << "refreshPtr == " << refreshPtr << endl;
+            if(*refreshPtr){
+                ROS_INFO("Refresh == true");
+                *refreshPtr = false;
+            }
+            // ROS_INFO("Ran run()");
+            // thread t2(&loop_closure::task1, task1, "Thread t2");
+            // t2.join();
+            // terminate();
+        }
         return;
     }
 }

@@ -361,19 +361,6 @@ test_feature_init/fast:
 .PHONY : test_feature_init/fast
 
 #=============================================================================
-# Target rules for targets named keyframe_processor
-
-# Build rule for target.
-keyframe_processor: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 keyframe_processor
-.PHONY : keyframe_processor
-
-# fast build rule for target.
-keyframe_processor/fast:
-	$(MAKE) -f msckf_vio/CMakeFiles/keyframe_processor.dir/build.make msckf_vio/CMakeFiles/keyframe_processor.dir/build
-.PHONY : keyframe_processor/fast
-
-#=============================================================================
 # Target rules for targets named image_processor
 
 # Build rule for target.
@@ -1635,19 +1622,6 @@ topic_tools_generate_messages_lisp/fast:
 .PHONY : topic_tools_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named map_points
-
-# Build rule for target.
-map_points: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 map_points
-.PHONY : map_points
-
-# fast build rule for target.
-map_points/fast:
-	$(MAKE) -f msckf_vio/CMakeFiles/map_points.dir/build.make msckf_vio/CMakeFiles/map_points.dir/build
-.PHONY : map_points/fast
-
-#=============================================================================
 # Target rules for targets named msckf_vio
 
 # Build rule for target.
@@ -1805,7 +1779,6 @@ help:
 	@echo "... run_tests_msckf_vio_gtest_test_feature_init"
 	@echo "... run_tests_msckf_vio"
 	@echo "... test_feature_init"
-	@echo "... keyframe_processor"
 	@echo "... image_processor"
 	@echo "... msckf_vio_genpy"
 	@echo "... tf2_msgs_generate_messages_py"
@@ -1903,7 +1876,6 @@ help:
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... image_processor_nodelet"
 	@echo "... topic_tools_generate_messages_lisp"
-	@echo "... map_points"
 	@echo "... msckf_vio"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... topic_tools_generate_messages_nodejs"

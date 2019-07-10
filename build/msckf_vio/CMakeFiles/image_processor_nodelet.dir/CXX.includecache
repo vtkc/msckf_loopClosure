@@ -31,6 +31,8 @@ message_filters/subscriber.h
 -
 message_filters/time_synchronizer.h
 -
+thread
+-
 
 /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/image_processor_nodelet.h
 nodelet/nodelet.h
