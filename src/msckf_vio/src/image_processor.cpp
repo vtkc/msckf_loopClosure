@@ -231,6 +231,7 @@ void ImageProcessor::stereoCallback(
 
   cam0_img_input = cam0_curr_img_ptr->image;
   cam0_img_refresh = true;
+  lc->update(cam0_img_input, cam0_img_refresh);
 
   // Build the image pyramids once since they're used at multiple places
   createImagePyramids();

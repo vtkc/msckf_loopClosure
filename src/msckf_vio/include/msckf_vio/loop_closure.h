@@ -1,3 +1,6 @@
+#ifndef LOOP_CLOSURE_H
+#define LOOP_CLOSURE_H
+
 #include <vector>
 #include <map>
 #include <boost/shared_ptr.hpp>
@@ -33,3 +36,5 @@ namespace msckf_vio{
             // vector<KeyPoint> orbKeyPointsORB;
     };
 }
+
+#endif

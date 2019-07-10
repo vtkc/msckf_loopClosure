@@ -3,6 +3,7 @@
 
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/src/image_processor_nodelet.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/image_processor.h
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/src/image_processor_nodelet.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/image_processor_nodelet.h
+msckf_vio/CMakeFiles/image_processor_nodelet.dir/src/image_processor_nodelet.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/loop_closure.h
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/src/image_processor_nodelet.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/image_processor_nodelet.cpp
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/src/image_processor_nodelet.cpp.o: /opt/ros/kinetic/include/class_loader/./class_loader.hpp
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/src/image_processor_nodelet.cpp.o: /opt/ros/kinetic/include/class_loader/class_loader.h
