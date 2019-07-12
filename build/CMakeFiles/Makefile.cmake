@@ -306,6 +306,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init.dir/DependInfo.cmake"
   "msckf_vio/CMakeFiles/run_tests_msckf_vio.dir/DependInfo.cmake"
   "msckf_vio/CMakeFiles/test_feature_init.dir/DependInfo.cmake"
+  "msckf_vio/CMakeFiles/ORBExtractor.dir/DependInfo.cmake"
   "msckf_vio/CMakeFiles/image_processor.dir/DependInfo.cmake"
   "msckf_vio/CMakeFiles/msckf_vio_genpy.dir/DependInfo.cmake"
   "msckf_vio/CMakeFiles/tf2_msgs_generate_messages_py.dir/DependInfo.cmake"

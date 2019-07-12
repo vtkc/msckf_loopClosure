@@ -31,17 +31,8 @@ namespace msckf_vio{
     loop_closure::loop_closure(Mat img, bool& refresh)
     {
         cam0_img = img;
-        // cout << "refresh == " << refresh << endl;
-        // bool& tempPtr = refresh;
-        // refreshPtr = &refresh;
         refreshPtr = &refresh;
-        // cout << "refreshPtr == " << *refreshPtr << endl;
-        // imgORB = img;
-        // orbKeyPointsORB = orbKeyPoints;
         ROS_INFO("Object loop_closure created");
-        // thread t1(task1, "Thread t1");
-        // t1.join();
-        // terminate();
         return;
     }
 
@@ -62,15 +53,10 @@ namespace msckf_vio{
 
     void loop_closure::run(){
         while(1){
-            // cout << "refreshPtr == " << refreshPtr << endl;
             if(*refreshPtr){
                 ROS_INFO("Refresh == true");
                 *refreshPtr = false;
             }
-            // ROS_INFO("Ran run()");
-            // thread t2(&loop_closure::task1, task1, "Thread t2");
-            // t2.join();
-            // terminate();
         }
         return;
     }

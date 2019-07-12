@@ -256,6 +256,21 @@ test_feature_init/fast:
 .PHONY : test_feature_init/fast
 
 # Convenience name for target.
+msckf_vio/CMakeFiles/ORBExtractor.dir/rule:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/ORBExtractor.dir/rule
+.PHONY : msckf_vio/CMakeFiles/ORBExtractor.dir/rule
+
+# Convenience name for target.
+ORBExtractor: msckf_vio/CMakeFiles/ORBExtractor.dir/rule
+
+.PHONY : ORBExtractor
+
+# fast build rule for target.
+ORBExtractor/fast:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/build
+.PHONY : ORBExtractor/fast
+
+# Convenience name for target.
 msckf_vio/CMakeFiles/image_processor.dir/rule:
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/image_processor.dir/rule
 .PHONY : msckf_vio/CMakeFiles/image_processor.dir/rule
@@ -1860,6 +1875,33 @@ msckf_vio_geneus/fast:
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_geneus.dir/build.make msckf_vio/CMakeFiles/msckf_vio_geneus.dir/build
 .PHONY : msckf_vio_geneus/fast
 
+src/ORBExtractor.o: src/ORBExtractor.cpp.o
+
+.PHONY : src/ORBExtractor.o
+
+# target to build an object file
+src/ORBExtractor.cpp.o:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/src/ORBExtractor.cpp.o
+.PHONY : src/ORBExtractor.cpp.o
+
+src/ORBExtractor.i: src/ORBExtractor.cpp.i
+
+.PHONY : src/ORBExtractor.i
+
+# target to preprocess a source file
+src/ORBExtractor.cpp.i:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/src/ORBExtractor.cpp.i
+.PHONY : src/ORBExtractor.cpp.i
+
+src/ORBExtractor.s: src/ORBExtractor.cpp.s
+
+.PHONY : src/ORBExtractor.s
+
+# target to generate assembly for a file
+src/ORBExtractor.cpp.s:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/src/ORBExtractor.cpp.s
+.PHONY : src/ORBExtractor.cpp.s
+
 src/image_processor.o: src/image_processor.cpp.o
 
 .PHONY : src/image_processor.o
@@ -1946,6 +1988,33 @@ src/loop_closure.cpp.s:
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/image_processor.dir/build.make msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.s
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.s
 .PHONY : src/loop_closure.cpp.s
+
+src/map_points.o: src/map_points.cpp.o
+
+.PHONY : src/map_points.o
+
+# target to build an object file
+src/map_points.cpp.o:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.o
+.PHONY : src/map_points.cpp.o
+
+src/map_points.i: src/map_points.cpp.i
+
+.PHONY : src/map_points.i
+
+# target to preprocess a source file
+src/map_points.cpp.i:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.i
+.PHONY : src/map_points.cpp.i
+
+src/map_points.s: src/map_points.cpp.s
+
+.PHONY : src/map_points.s
+
+# target to generate assembly for a file
+src/map_points.cpp.s:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.s
+.PHONY : src/map_points.cpp.s
 
 src/msckf_vio.o: src/msckf_vio.cpp.o
 
@@ -2100,6 +2169,7 @@ help:
 	@echo "... run_tests_msckf_vio_gtest_test_feature_init"
 	@echo "... run_tests_msckf_vio"
 	@echo "... test_feature_init"
+	@echo "... ORBExtractor"
 	@echo "... image_processor"
 	@echo "... msckf_vio_genpy"
 	@echo "... tf2_msgs_generate_messages_py"
@@ -2211,6 +2281,9 @@ help:
 	@echo "... msckf_vio_generate_messages_cpp"
 	@echo "... msckf_vio_gencpp"
 	@echo "... msckf_vio_geneus"
+	@echo "... src/ORBExtractor.o"
+	@echo "... src/ORBExtractor.i"
+	@echo "... src/ORBExtractor.s"
 	@echo "... src/image_processor.o"
 	@echo "... src/image_processor.i"
 	@echo "... src/image_processor.s"
@@ -2220,6 +2293,9 @@ help:
 	@echo "... src/loop_closure.o"
 	@echo "... src/loop_closure.i"
 	@echo "... src/loop_closure.s"
+	@echo "... src/map_points.o"
+	@echo "... src/map_points.i"
+	@echo "... src/map_points.s"
 	@echo "... src/msckf_vio.o"
 	@echo "... src/msckf_vio.i"
 	@echo "... src/msckf_vio.s"

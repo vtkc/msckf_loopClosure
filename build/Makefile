@@ -361,6 +361,19 @@ test_feature_init/fast:
 .PHONY : test_feature_init/fast
 
 #=============================================================================
+# Target rules for targets named ORBExtractor
+
+# Build rule for target.
+ORBExtractor: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ORBExtractor
+.PHONY : ORBExtractor
+
+# fast build rule for target.
+ORBExtractor/fast:
+	$(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/build
+.PHONY : ORBExtractor/fast
+
+#=============================================================================
 # Target rules for targets named image_processor
 
 # Build rule for target.
@@ -1779,6 +1792,7 @@ help:
 	@echo "... run_tests_msckf_vio_gtest_test_feature_init"
 	@echo "... run_tests_msckf_vio"
 	@echo "... test_feature_init"
+	@echo "... ORBExtractor"
 	@echo "... image_processor"
 	@echo "... msckf_vio_genpy"
 	@echo "... tf2_msgs_generate_messages_py"

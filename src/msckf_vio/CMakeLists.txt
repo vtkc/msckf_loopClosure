@@ -146,6 +146,21 @@ target_link_libraries(loop_closure
   ${OpenCV_LIBRARIES}
 )
 
+# ORBExtractor
+add_library(ORBExtractor
+  src/ORBExtractor.cpp
+  src/map_points.cpp
+)
+add_dependencies(ORBExtractor
+  ${${PROJECT_NAME}_EXPORTED_TARGETS}
+  ${catkin_EXPORTED_TARGETS}
+)
+target_link_libraries(ORBExtractor
+  ${catkin_LIBRARIES}
+  ${SUITESPARSE_LIBRARIES}
+  ${OpenCV_LIBRARIES}
+)
+
 # # map_points
 # add_library(map_points
 #   src/map_points.cpp
@@ -184,7 +199,7 @@ target_link_libraries(loop_closure
 #############
 
 install(TARGETS
-  msckf_vio msckf_vio_nodelet image_processor image_processor_nodelet loop_closure 
+  msckf_vio msckf_vio_nodelet image_processor image_processor_nodelet loop_closure ORBExtractor
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
