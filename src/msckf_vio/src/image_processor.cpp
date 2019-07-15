@@ -208,8 +208,8 @@ bool ImageProcessor::initialize() {
   loop_closure_thread = new thread(&msckf_vio::loop_closure::run, lc);
 
   // Create feature detector.
-  detector_ptr = FastFeatureDetector::create(
-      processor_config.fast_threshold);
+  // detector_ptr = FastFeatureDetector::create(
+  //     processor_config.fast_threshold);
 
     if (!createRosIO()) return false;
   ROS_INFO("Finish creating ROS IO...");
@@ -339,7 +339,9 @@ void ImageProcessor::initializeFirstFrame() {
 
   // Detect new features on the frist image.
   vector<KeyPoint> new_features(0);
-  detector_ptr->detect(img, new_features);
+  // detector_ptr->detect(img, new_features);
+  Mat mask;
+  lc->getFAST(mask, new_features);
 
   // Find the stereo matched points for the newly
   // detected features.
@@ -743,7 +745,8 @@ void ImageProcessor::addNewFeatures() {
 
   // Detect new features.
   vector<KeyPoint> new_features(0);
-  detector_ptr->detect(curr_img, new_features, mask);
+  // detector_ptr->detect(curr_img, new_features, mask);
+  lc->getFAST(mask, new_features);
 
   // Collect the new detected features based on the grid.
   // Select the ones with top response within each grid afterwards.

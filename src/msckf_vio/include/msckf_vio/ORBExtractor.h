@@ -2,18 +2,8 @@
 #define ORBEXTRACTOR_H
 
 #include <vector>
-#include <map>
-#include <boost/shared_ptr.hpp>
-#include <opencv2/opencv.hpp>
-#include <opencv2/video.hpp>
-
-#include <ros/ros.h>
-#include <cv_bridge/cv_bridge.h>
-#include <image_transport/image_transport.h>
-#include <sensor_msgs/Imu.h>
-#include <sensor_msgs/Image.h>
-#include <message_filters/subscriber.h>
-#include <message_filters/time_synchronizer.h>
+#include <list>
+#include <opencv/cv.h>
 
 using namespace std;
 using namespace cv;
@@ -34,12 +24,35 @@ namespace msckf_vio{
 
     class ORBExtractor{
         public:
-            ORBExtractor();
+            ORBExtractor(int nfeatures, float scaleFactor, int nlevels,
+                 int iniThFAST, int minThFAST);
             ~ORBExtractor(){}
             void operator()(InputArray image, InputArray mask,
-                            vector<cv::KeyPoint>& keypoints,
+                            vector<KeyPoint>& keypoints,
                             OutputArray descriptors);
             vector<cv::Mat> mvImagePyramid;
+            int inline GetLevels(){
+                return nlevels;}
+
+            float inline GetScaleFactor(){
+                return scaleFactor;}
+
+            vector<float> inline GetScaleFactors(){
+                return mvScaleFactor;
+            }
+
+            vector<float> inline GetInverseScaleFactors(){
+                return mvInvScaleFactor;
+            }
+
+            vector<float> inline GetScaleSigmaSquares(){
+                return mvLevelSigma2;
+            }
+
+            vector<float> inline GetInverseScaleSigmaSquares(){
+                return mvInvLevelSigma2;
+            }
+            // void getFASTonly(InputArray _image, InputArray _mask, vector<KeyPoint>& _keypoints);
         protected:
             void ComputePyramid(Mat image);
             void ComputeKeyPointsOctTree(vector<vector<KeyPoint>>& allKeypoints);
@@ -50,6 +63,8 @@ namespace msckf_vio{
             int nlevels;
             int iniThFAST;
             int minThFAST;
+
+            vector<Point> pattern;
             
             vector<int> mnFeaturesPerLevel;
 

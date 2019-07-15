@@ -14,6 +14,7 @@
 #include <sensor_msgs/Image.h>
 #include <message_filters/subscriber.h>
 #include <message_filters/time_synchronizer.h>
+#include <msckf_vio/ORBExtractor.h>
 
 using namespace std;
 using namespace cv;
@@ -25,9 +26,11 @@ namespace msckf_vio{
             void run();
             void task1(string msg);
             void update(Mat img, bool& refresh);
+            void getFAST(Mat& mask, vector<KeyPoint>& allPoints);
         private:
             bool* refreshPtr;
             Mat cam0_img;
+            ORBExtractor* oe;
             // void getORBfeatures(const Mat& img, vector<KeyPoint>& orbKeyPoints);
             // Mat getImg();
             // vector<KeyPoint> getOrbKeyPoints();

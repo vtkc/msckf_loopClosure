@@ -23,6 +23,7 @@
 #include <msckf_vio/image_processor.h>
 
 
+
 using namespace std;
 using namespace cv;
 
@@ -32,6 +33,7 @@ namespace msckf_vio{
     {
         cam0_img = img;
         refreshPtr = &refresh;
+        oe = new ORBExtractor(2000, 1.2, 8, 20, 7);
         ROS_INFO("Object loop_closure created");
         return;
     }
@@ -39,7 +41,7 @@ namespace msckf_vio{
     void loop_closure::update(Mat img, bool& refresh){
         cam0_img = img;
         refreshPtr = &refresh;
-        ROS_INFO("img and refreshPtr Updated!");
+        // ROS_INFO("img and refreshPtr Updated!");
         return;
     }
 
@@ -51,10 +53,16 @@ namespace msckf_vio{
         return;
     }
 
+    void loop_closure::getFAST(Mat& mask, vector<KeyPoint>& allPoints)
+    {
+        Mat descriptors;
+        (*oe)(cam0_img, mask, allPoints, descriptors);
+    }
+
     void loop_closure::run(){
         while(1){
             if(*refreshPtr){
-                ROS_INFO("Refresh == true");
+                // ROS_INFO("Refresh == true");
                 *refreshPtr = false;
             }
         }

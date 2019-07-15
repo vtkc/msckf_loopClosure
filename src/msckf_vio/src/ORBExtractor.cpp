@@ -1,27 +1,8 @@
-#include <thread>
-#include <string>
-#include <iostream>
-#include <algorithm>
-#include <set>
-#include <Eigen/Dense>
-#include <msckf_vio/map_points.h>
-#include <msckf_vio/utils.h>
-#include <vector>
-#include <map>
-#include <boost/shared_ptr.hpp>
-
-// OpenCV Lib
-#include <opencv2/highgui/highgui.hpp>
-#include <opencv2/features2d.hpp>
-#include <opencv2/xfeatures2d.hpp>
-#include <opencv2/opencv.hpp>
-#include <cv_bridge/cv_bridge.h>
-#include <image_transport/image_transport.h>
-#include <opencv2/video.hpp>
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/features2d/features2d.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
+#include <vector>
 
 #include <msckf_vio/ORBExtractor.h>
 #include <msckf_vio/image_processor.h>
@@ -377,8 +358,123 @@ namespace msckf_vio{
         }
     }
 
-    ORBExtractor::ORBExtractor()
+    ORBExtractor::ORBExtractor(int _nfeatures, float _scaleFactor, int _nlevels,
+         int _iniThFAST, int _minThFAST):
+        nfeatures(_nfeatures), scaleFactor(_scaleFactor), nlevels(_nlevels),
+        iniThFAST(_iniThFAST), minThFAST(_minThFAST)
     {
+         mvScaleFactor.resize(nlevels);
+        mvLevelSigma2.resize(nlevels);
+        mvScaleFactor[0]=1.0f;
+        mvLevelSigma2[0]=1.0f;
+        for(int i=1; i<nlevels; i++)
+        {
+            mvScaleFactor[i]=mvScaleFactor[i-1]*scaleFactor;
+            mvLevelSigma2[i]=mvScaleFactor[i]*mvScaleFactor[i];
+        }
+
+        mvInvScaleFactor.resize(nlevels);
+        mvInvLevelSigma2.resize(nlevels);
+        for(int i=0; i<nlevels; i++)
+        {
+            mvInvScaleFactor[i]=1.0f/mvScaleFactor[i];
+            mvInvLevelSigma2[i]=1.0f/mvLevelSigma2[i];
+        }
+
+        mvImagePyramid.resize(nlevels);
+
+        mnFeaturesPerLevel.resize(nlevels);
+        float factor = 1.0f / scaleFactor;
+        float nDesiredFeaturesPerScale = nfeatures*(1 - factor)/(1 - (float)pow((double)factor, (double)nlevels));
+
+        int sumFeatures = 0;
+        for( int level = 0; level < nlevels-1; level++ )
+        {
+            mnFeaturesPerLevel[level] = cvRound(nDesiredFeaturesPerScale);
+            sumFeatures += mnFeaturesPerLevel[level];
+            nDesiredFeaturesPerScale *= factor;
+        }
+        mnFeaturesPerLevel[nlevels-1] = std::max(nfeatures - sumFeatures, 0);
+
+        const int npoints = 512;
+        const Point* pattern0 = (const Point*)bit_pattern_31_;
+        std::copy(pattern0, pattern0 + npoints, std::back_inserter(pattern));
+
+        //This is for orientation
+        // pre-compute the end of a row in a circular patch
+        umax.resize(HALF_PATCH_SIZE + 1);
+
+        int v, v0, vmax = cvFloor(HALF_PATCH_SIZE * sqrt(2.f) / 2 + 1);
+        int vmin = cvCeil(HALF_PATCH_SIZE * sqrt(2.f) / 2);
+        const double hp2 = HALF_PATCH_SIZE*HALF_PATCH_SIZE;
+        for (v = 0; v <= vmax; ++v)
+            umax[v] = cvRound(sqrt(hp2 - v * v));
+
+        // Make sure we are symmetric
+        for (v = HALF_PATCH_SIZE, v0 = 0; v >= vmin; --v)
+        {
+            while (umax[v0] == umax[v0 + 1])
+                ++v0;
+            umax[v] = v0;
+            ++v0;
+        }
+    }
+
+    void ExtractorNode::DivideNode(ExtractorNode &n1, ExtractorNode &n2, ExtractorNode &n3, ExtractorNode &n4)
+    {
+        const int halfX = ceil(static_cast<float>(UR.x-UL.x)/2);
+        const int halfY = ceil(static_cast<float>(BR.y-UL.y)/2);
+
+        //Define boundaries of childs
+        n1.UL = UL;
+        n1.UR = cv::Point2i(UL.x+halfX,UL.y);
+        n1.BL = cv::Point2i(UL.x,UL.y+halfY);
+        n1.BR = cv::Point2i(UL.x+halfX,UL.y+halfY);
+        n1.vKeys.reserve(vKeys.size());
+
+        n2.UL = n1.UR;
+        n2.UR = UR;
+        n2.BL = n1.BR;
+        n2.BR = cv::Point2i(UR.x,UL.y+halfY);
+        n2.vKeys.reserve(vKeys.size());
+
+        n3.UL = n1.BL;
+        n3.UR = n1.BR;
+        n3.BL = BL;
+        n3.BR = cv::Point2i(n1.BR.x,BL.y);
+        n3.vKeys.reserve(vKeys.size());
+
+        n4.UL = n3.UR;
+        n4.UR = n2.BR;
+        n4.BL = n3.BR;
+        n4.BR = BR;
+        n4.vKeys.reserve(vKeys.size());
+
+        //Associate points to childs
+        for(size_t i=0;i<vKeys.size();i++)
+        {
+            const cv::KeyPoint &kp = vKeys[i];
+            if(kp.pt.x<n1.UR.x)
+            {
+                if(kp.pt.y<n1.BR.y)
+                    n1.vKeys.push_back(kp);
+                else
+                    n3.vKeys.push_back(kp);
+            }
+            else if(kp.pt.y<n1.BR.y)
+                n2.vKeys.push_back(kp);
+            else
+                n4.vKeys.push_back(kp);
+        }
+
+        if(n1.vKeys.size()==1)
+            n1.bNoMore = true;
+        if(n2.vKeys.size()==1)
+            n2.bNoMore = true;
+        if(n3.vKeys.size()==1)
+            n3.bNoMore = true;
+        if(n4.vKeys.size()==1)
+            n4.bNoMore = true;
 
     }
 
@@ -724,12 +820,77 @@ namespace msckf_vio{
             computeOrientation(mvImagePyramid[level], allKeypoints[level], umax);
     }
 
-    void ORBExtractor::operator()(InputArray image, InputArray mask,
-                vector<cv::KeyPoint>& keypoints,
-                OutputArray descriptors)
+    static void computeDescriptors(const Mat& image, vector<KeyPoint>& keypoints, Mat& descriptors,
+                               const vector<Point>& pattern)
     {
+        descriptors = Mat::zeros((int)keypoints.size(), 32, CV_8UC1);
 
+        for (size_t i = 0; i < keypoints.size(); i++)
+            computeOrbDescriptor(keypoints[i], image, &pattern[0], descriptors.ptr((int)i));
     }
 
+    void ORBExtractor::operator()( InputArray _image, InputArray _mask, vector<KeyPoint>& _keypoints,
+                      OutputArray _descriptors)
+    {
+        if(_image.empty())
+            return;
+
+        Mat image = _image.getMat();
+        assert(image.type() == CV_8UC1 );
+
+        // Pre-compute the scale pyramid
+        ComputePyramid(image);
+
+        vector < vector<KeyPoint> > allKeypoints;
+        ComputeKeyPointsOctTree(allKeypoints);
+        //ComputeKeyPointsOld(allKeypoints);
+
+        Mat descriptors;
+
+        int nkeypoints = 0;
+        for (int level = 0; level < nlevels; ++level)
+            nkeypoints += (int)allKeypoints[level].size();
+        if( nkeypoints == 0 )
+            _descriptors.release();
+        else
+        {
+            _descriptors.create(nkeypoints, 32, CV_8U);
+            descriptors = _descriptors.getMat();
+        }
+
+        _keypoints.clear();
+        _keypoints.reserve(nkeypoints);
+
+        int offset = 0;
+        for (int level = 0; level < nlevels; ++level)
+        {
+            vector<KeyPoint>& keypoints = allKeypoints[level];
+            int nkeypointsLevel = (int)keypoints.size();
+
+            if(nkeypointsLevel==0)
+                continue;
+
+            // preprocess the resized image
+            Mat workingMat = mvImagePyramid[level].clone();
+            GaussianBlur(workingMat, workingMat, Size(7, 7), 2, 2, BORDER_REFLECT_101);
+
+            // Compute the descriptors
+            Mat desc = descriptors.rowRange(offset, offset + nkeypointsLevel);
+            computeDescriptors(workingMat, keypoints, desc, pattern);
+
+            offset += nkeypointsLevel;
+
+            // Scale keypoint coordinates
+            if (level != 0)
+            {
+                float scale = mvScaleFactor[level]; //getScale(level, firstLevel, scaleFactor);
+                for (vector<KeyPoint>::iterator keypoint = keypoints.begin(),
+                    keypointEnd = keypoints.end(); keypoint != keypointEnd; ++keypoint)
+                    keypoint->pt *= scale;
+            }
+            // And add the keypoints to the output
+            _keypoints.insert(_keypoints.end(), keypoints.begin(), keypoints.end());
+        }
+    }
 
 }

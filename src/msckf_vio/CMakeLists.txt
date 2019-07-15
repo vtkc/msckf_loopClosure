@@ -135,6 +135,7 @@ target_link_libraries(image_processor_nodelet
 add_library(loop_closure
   src/loop_closure.cpp
   src/image_processor.cpp
+  src/ORBExtractor.cpp
 )
 add_dependencies(loop_closure
   ${${PROJECT_NAME}_EXPORTED_TARGETS}
@@ -156,6 +157,7 @@ add_dependencies(ORBExtractor
   ${catkin_EXPORTED_TARGETS}
 )
 target_link_libraries(ORBExtractor
+  loop_closure
   ${catkin_LIBRARIES}
   ${SUITESPARSE_LIBRARIES}
   ${OpenCV_LIBRARIES}

@@ -4,6 +4,7 @@
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/devel/include/msckf_vio/CameraMeasurement.h
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/devel/include/msckf_vio/FeatureMeasurement.h
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/devel/include/msckf_vio/TrackingInfo.h
+msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/ORBExtractor.h
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/image_processor.h
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/loop_closure.h
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/utils.h
@@ -30,6 +31,7 @@ msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /opt/ros/kin
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /opt/ros/kinetic/include/message_filters/sync_policies/exact_time.h
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /opt/ros/kinetic/include/message_filters/synchronizer.h
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /opt/ros/kinetic/include/message_filters/time_synchronizer.h
+msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv/cv.h
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv/cxcore.h
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/calib3d.hpp
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/calib3d/calib3d_c.h
@@ -434,6 +436,7 @@ msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /usr/include
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /usr/include/x86_64-linux-gnu/sys/time.h
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /usr/include/x86_64-linux-gnu/sys/timeb.h
 
+msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/ORBExtractor.h
 msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/image_processor.h
 msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/loop_closure.h
 msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/map_points.h
@@ -461,6 +464,7 @@ msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /opt/ros/kineti
 msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /opt/ros/kinetic/include/message_filters/sync_policies/exact_time.h
 msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /opt/ros/kinetic/include/message_filters/synchronizer.h
 msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /opt/ros/kinetic/include/message_filters/time_synchronizer.h
+msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv/cv.h
 msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv/cxcore.h
 msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/calib3d.hpp
 msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/calib3d/calib3d_c.h

@@ -531,7 +531,7 @@ msckf_vio/preinstall:
 msckf_vio/CMakeFiles/test_math_utils.dir/all: gtest/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f msckf_vio/CMakeFiles/test_math_utils.dir/build.make msckf_vio/CMakeFiles/test_math_utils.dir/depend
 	$(MAKE) -f msckf_vio/CMakeFiles/test_math_utils.dir/build.make msckf_vio/CMakeFiles/test_math_utils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=48,49 "Built target test_math_utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=49,50 "Built target test_math_utils"
 .PHONY : msckf_vio/CMakeFiles/test_math_utils.dir/all
 
 # Build rule for subdir invocation for target.
@@ -781,7 +781,7 @@ msckf_vio/CMakeFiles/test_feature_init.dir/all: msckf_vio/CMakeFiles/geometry_ms
 msckf_vio/CMakeFiles/test_feature_init.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/all
 	$(MAKE) -f msckf_vio/CMakeFiles/test_feature_init.dir/build.make msckf_vio/CMakeFiles/test_feature_init.dir/depend
 	$(MAKE) -f msckf_vio/CMakeFiles/test_feature_init.dir/build.make msckf_vio/CMakeFiles/test_feature_init.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=46,47 "Built target test_feature_init"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=47,48 "Built target test_feature_init"
 .PHONY : msckf_vio/CMakeFiles/test_feature_init.dir/all
 
 # Build rule for subdir invocation for target.
@@ -888,6 +888,7 @@ msckf_vio/CMakeFiles/ORBExtractor.dir/all: msckf_vio/CMakeFiles/msckf_vio_genera
 msckf_vio/CMakeFiles/ORBExtractor.dir/all: msckf_vio/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/ORBExtractor.dir/all: msckf_vio/CMakeFiles/actionlib_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/ORBExtractor.dir/all: msckf_vio/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
+msckf_vio/CMakeFiles/ORBExtractor.dir/all: msckf_vio/CMakeFiles/loop_closure.dir/all
 msckf_vio/CMakeFiles/ORBExtractor.dir/all: msckf_vio/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
 msckf_vio/CMakeFiles/ORBExtractor.dir/all: msckf_vio/CMakeFiles/nodelet_topic_tools_gencfg.dir/all
 msckf_vio/CMakeFiles/ORBExtractor.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/all
@@ -910,7 +911,7 @@ all: msckf_vio/CMakeFiles/ORBExtractor.dir/all
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/ORBExtractor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles 24
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/ORBExtractor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/ORBExtractor.dir/rule
@@ -1035,7 +1036,7 @@ all: msckf_vio/CMakeFiles/image_processor.dir/all
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/image_processor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles 25
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/image_processor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/image_processor.dir/rule
@@ -2859,7 +2860,7 @@ msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/all: msckf_vio/CMake
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_CameraMeasurement.dir/all
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/depend
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=37,38,39 "Built target msckf_vio_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=38,39,40 "Built target msckf_vio_generate_messages_nodejs"
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3214,7 +3215,7 @@ msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/all: msckf_vio/CMakeFi
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_CameraMeasurement.dir/all
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/depend
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=34,35,36 "Built target msckf_vio_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=35,36,37 "Built target msckf_vio_generate_messages_lisp"
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3571,7 +3572,7 @@ msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all: msckf_vio/CMakeFile
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_CameraMeasurement.dir/all
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/depend
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=40,41,42,43 "Built target msckf_vio_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=41,42,43,44 "Built target msckf_vio_generate_messages_py"
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3766,7 +3767,7 @@ msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/all: msckf_vio/CMakeFil
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_CameraMeasurement.dir/all
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/depend
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=30,31,32,33 "Built target msckf_vio_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=31,32,33,34 "Built target msckf_vio_generate_messages_eus"
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3981,7 +3982,7 @@ msckf_vio/CMakeFiles/loop_closure.dir/all: msckf_vio/CMakeFiles/geometry_msgs_ge
 msckf_vio/CMakeFiles/loop_closure.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/all
 	$(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/depend
 	$(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=21,22,23 "Built target loop_closure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=21,22,23,24 "Built target loop_closure"
 .PHONY : msckf_vio/CMakeFiles/loop_closure.dir/all
 
 # Include target in all.
@@ -3991,7 +3992,7 @@ all: msckf_vio/CMakeFiles/loop_closure.dir/all
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/loop_closure.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles 21
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/loop_closure.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/loop_closure.dir/rule
@@ -4106,7 +4107,7 @@ msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all: msckf_vio/CMakeFiles/geometry_ms
 msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/all
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/build.make msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/depend
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/build.make msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=44,45 "Built target msckf_vio_nodelet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=45,46 "Built target msckf_vio_nodelet"
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all
 
 # Include target in all.
@@ -4370,7 +4371,7 @@ all: msckf_vio/CMakeFiles/image_processor_nodelet.dir/all
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/image_processor_nodelet.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/image_processor_nodelet.dir/rule
@@ -4516,7 +4517,7 @@ msckf_vio/CMakeFiles/msckf_vio.dir/all: msckf_vio/CMakeFiles/geometry_msgs_gener
 msckf_vio/CMakeFiles/msckf_vio.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/all
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio.dir/build.make msckf_vio/CMakeFiles/msckf_vio.dir/depend
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio.dir/build.make msckf_vio/CMakeFiles/msckf_vio.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=24,25,26 "Built target msckf_vio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=25,26,27 "Built target msckf_vio"
 .PHONY : msckf_vio/CMakeFiles/msckf_vio.dir/all
 
 # Include target in all.
@@ -4757,7 +4758,7 @@ msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/all: msckf_vio/CMakeFil
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_CameraMeasurement.dir/all
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/depend
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=27,28,29 "Built target msckf_vio_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=28,29,30 "Built target msckf_vio_generate_messages_cpp"
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.

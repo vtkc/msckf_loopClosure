@@ -1882,6 +1882,7 @@ src/ORBExtractor.o: src/ORBExtractor.cpp.o
 # target to build an object file
 src/ORBExtractor.cpp.o:
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/src/ORBExtractor.cpp.o
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.o
 .PHONY : src/ORBExtractor.cpp.o
 
 src/ORBExtractor.i: src/ORBExtractor.cpp.i
@@ -1891,6 +1892,7 @@ src/ORBExtractor.i: src/ORBExtractor.cpp.i
 # target to preprocess a source file
 src/ORBExtractor.cpp.i:
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/src/ORBExtractor.cpp.i
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.i
 .PHONY : src/ORBExtractor.cpp.i
 
 src/ORBExtractor.s: src/ORBExtractor.cpp.s
@@ -1900,6 +1902,7 @@ src/ORBExtractor.s: src/ORBExtractor.cpp.s
 # target to generate assembly for a file
 src/ORBExtractor.cpp.s:
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/src/ORBExtractor.cpp.s
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.s
 .PHONY : src/ORBExtractor.cpp.s
 
 src/image_processor.o: src/image_processor.cpp.o

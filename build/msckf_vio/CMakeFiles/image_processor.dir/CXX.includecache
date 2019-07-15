@@ -60,6 +60,14 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
+/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/ORBExtractor.h
+vector
+-
+list
+-
+opencv/cv.h
+-
+
 /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/image_processor.h
 vector
 -
@@ -114,6 +122,8 @@ sensor_msgs/Image.h
 message_filters/subscriber.h
 -
 message_filters/time_synchronizer.h
+-
+msckf_vio/ORBExtractor.h
 -
 
 /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/map_points.h
@@ -517,6 +527,18 @@ boost/shared_ptr.hpp
 -
 ros/message_event.h
 -
+
+/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv/cv.h
+opencv2/core/core_c.h
+/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv/opencv2/core/core_c.h
+opencv2/imgproc/imgproc_c.h
+/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv/opencv2/imgproc/imgproc_c.h
+opencv2/photo/photo_c.h
+/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv/opencv2/photo/photo_c.h
+opencv2/video/tracking_c.h
+/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv/opencv2/video/tracking_c.h
+opencv2/objdetect/objdetect_c.h
+/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv/opencv2/objdetect/objdetect_c.h
 
 /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv/cxcore.h
 opencv2/core/core_c.h
