@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/ORBExtractor.cpp" "/home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/ORBExtractor.dir/src/ORBExtractor.cpp.o"
-  "/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/map_points.cpp" "/home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

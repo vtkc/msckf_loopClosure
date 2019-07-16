@@ -81,40 +81,14 @@ msckf_vio/CMakeFiles/ORBExtractor.dir/src/ORBExtractor.cpp.o.provides: msckf_vio
 msckf_vio/CMakeFiles/ORBExtractor.dir/src/ORBExtractor.cpp.o.provides.build: msckf_vio/CMakeFiles/ORBExtractor.dir/src/ORBExtractor.cpp.o
 
 
-msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.o: msckf_vio/CMakeFiles/ORBExtractor.dir/flags.make
-msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/map_points.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.o"
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ORBExtractor.dir/src/map_points.cpp.o -c /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/map_points.cpp
-
-msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ORBExtractor.dir/src/map_points.cpp.i"
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/map_points.cpp > CMakeFiles/ORBExtractor.dir/src/map_points.cpp.i
-
-msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ORBExtractor.dir/src/map_points.cpp.s"
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/map_points.cpp -o CMakeFiles/ORBExtractor.dir/src/map_points.cpp.s
-
-msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.o.requires:
-
-.PHONY : msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.o.requires
-
-msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.o.provides: msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.o.requires
-	$(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.o.provides.build
-.PHONY : msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.o.provides
-
-msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.o.provides.build: msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.o
-
-
 # Object files for target ORBExtractor
 ORBExtractor_OBJECTS = \
-"CMakeFiles/ORBExtractor.dir/src/ORBExtractor.cpp.o" \
-"CMakeFiles/ORBExtractor.dir/src/map_points.cpp.o"
+"CMakeFiles/ORBExtractor.dir/src/ORBExtractor.cpp.o"
 
 # External object files for target ORBExtractor
 ORBExtractor_EXTERNAL_OBJECTS =
 
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.so: msckf_vio/CMakeFiles/ORBExtractor.dir/src/ORBExtractor.cpp.o
-/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.so: msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.o
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.so: msckf_vio/CMakeFiles/ORBExtractor.dir/build.make
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.so: /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libloop_closure.so
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.so: /opt/ros/kinetic/lib/libeigen_conversions.so
@@ -381,6 +355,8 @@ ORBExtractor_EXTERNAL_OBJECTS =
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ximgproc3.so.3.3.1
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xobjdetect3.so.3.3.1
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xphoto3.so.3.3.1
+/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.so: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/lib/libDBoW2.so
+/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.so: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/lib/libg2o.so
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_photo3.so.3.3.1
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_viz3.so.3.3.1
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_phase_unwrapping3.so.3.3.1
@@ -401,7 +377,7 @@ ORBExtractor_EXTERNAL_OBJECTS =
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.so: msckf_vio/CMakeFiles/ORBExtractor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.so"
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ORBExtractor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -410,7 +386,6 @@ msckf_vio/CMakeFiles/ORBExtractor.dir/build: /home/tlab/Desktop/Victor/msckf_loo
 .PHONY : msckf_vio/CMakeFiles/ORBExtractor.dir/build
 
 msckf_vio/CMakeFiles/ORBExtractor.dir/requires: msckf_vio/CMakeFiles/ORBExtractor.dir/src/ORBExtractor.cpp.o.requires
-msckf_vio/CMakeFiles/ORBExtractor.dir/requires: msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.o.requires
 
 .PHONY : msckf_vio/CMakeFiles/ORBExtractor.dir/requires
 

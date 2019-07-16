@@ -361,6 +361,19 @@ test_feature_init/fast:
 .PHONY : test_feature_init/fast
 
 #=============================================================================
+# Target rules for targets named Converter
+
+# Build rule for target.
+Converter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Converter
+.PHONY : Converter
+
+# fast build rule for target.
+Converter/fast:
+	$(MAKE) -f msckf_vio/CMakeFiles/Converter.dir/build.make msckf_vio/CMakeFiles/Converter.dir/build
+.PHONY : Converter/fast
+
+#=============================================================================
 # Target rules for targets named ORBExtractor
 
 # Build rule for target.
@@ -1792,6 +1805,7 @@ help:
 	@echo "... run_tests_msckf_vio_gtest_test_feature_init"
 	@echo "... run_tests_msckf_vio"
 	@echo "... test_feature_init"
+	@echo "... Converter"
 	@echo "... ORBExtractor"
 	@echo "... image_processor"
 	@echo "... msckf_vio_genpy"

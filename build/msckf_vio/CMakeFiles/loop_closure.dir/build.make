@@ -406,6 +406,8 @@ loop_closure_EXTERNAL_OBJECTS =
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libloop_closure.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ximgproc3.so.3.3.1
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libloop_closure.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xobjdetect3.so.3.3.1
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libloop_closure.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xphoto3.so.3.3.1
+/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libloop_closure.so: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/lib/libDBoW2.so
+/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libloop_closure.so: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/lib/libg2o.so
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libloop_closure.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_shape3.so.3.3.1
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libloop_closure.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_photo3.so.3.3.1
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libloop_closure.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_datasets3.so.3.3.1

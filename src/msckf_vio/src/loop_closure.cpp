@@ -19,7 +19,7 @@
 #include <image_transport/image_transport.h>
 #include <opencv2/video.hpp>
 
-#include <msckf_vio/map_points.h>
+// #include <msckf_vio/MapPoint.h>
 #include <msckf_vio/image_processor.h>
 
 

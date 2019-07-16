@@ -145,12 +145,13 @@ target_link_libraries(loop_closure
   ${catkin_LIBRARIES}
   ${SUITESPARSE_LIBRARIES}
   ${OpenCV_LIBRARIES}
+  ${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2.so
+  ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
 )
 
 # ORBExtractor
 add_library(ORBExtractor
   src/ORBExtractor.cpp
-  src/map_points.cpp
 )
 add_dependencies(ORBExtractor
   ${${PROJECT_NAME}_EXPORTED_TARGETS}
@@ -161,6 +162,24 @@ target_link_libraries(ORBExtractor
   ${catkin_LIBRARIES}
   ${SUITESPARSE_LIBRARIES}
   ${OpenCV_LIBRARIES}
+  ${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2.so
+  ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
+)
+
+# Converter
+add_library(Converter
+  src/Converter.cpp
+)
+add_dependencies(Converter
+  ${${PROJECT_NAME}_EXPORTED_TARGETS}
+  ${catkin_EXPORTED_TARGETS}
+)
+target_link_libraries(Converter
+  ${catkin_LIBRARIES}
+  ${SUITESPARSE_LIBRARIES}
+  ${OpenCV_LIBRARIES}
+  ${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2.so
+  ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
 )
 
 # # map_points
@@ -177,6 +196,8 @@ target_link_libraries(ORBExtractor
 #   ${catkin_LIBRARIES}
 #   ${SUITESPARSE_LIBRARIES}
 #   ${OpenCV_LIBRARIES}
+#   ${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2.so
+#   ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
 # )
 
 # # keyframe_processor
@@ -194,6 +215,8 @@ target_link_libraries(ORBExtractor
 #   ${catkin_LIBRARIES}
 #   ${SUITESPARSE_LIBRARIES}
 #   ${OpenCV_LIBRARIES}
+#   ${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2.so
+#   ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
 # )
 
 #############
@@ -201,7 +224,13 @@ target_link_libraries(ORBExtractor
 #############
 
 install(TARGETS
-  msckf_vio msckf_vio_nodelet image_processor image_processor_nodelet loop_closure ORBExtractor
+  msckf_vio 
+  msckf_vio_nodelet 
+  image_processor 
+  image_processor_nodelet 
+  loop_closure 
+  ORBExtractor 
+  Converter
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}

@@ -439,7 +439,6 @@ msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /usr/include
 msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/ORBExtractor.h
 msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/image_processor.h
 msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/loop_closure.h
-msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/map_points.h
 msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/utils.h
 msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/loop_closure.cpp
 msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /opt/ros/kinetic/include/cv_bridge/cv_bridge.h

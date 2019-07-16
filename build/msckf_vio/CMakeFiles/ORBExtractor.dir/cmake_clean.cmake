@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ORBExtractor.dir/src/ORBExtractor.cpp.o"
-  "CMakeFiles/ORBExtractor.dir/src/map_points.cpp.o"
   "/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.pdb"
   "/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libORBExtractor.so"
 )

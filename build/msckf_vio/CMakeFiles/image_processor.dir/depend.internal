@@ -440,7 +440,6 @@ msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o
  /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/ORBExtractor.h
  /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/image_processor.h
  /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/loop_closure.h
- /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/map_points.h
  /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/utils.h
  /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/loop_closure.cpp
  /opt/ros/kinetic/include/cv_bridge/cv_bridge.h

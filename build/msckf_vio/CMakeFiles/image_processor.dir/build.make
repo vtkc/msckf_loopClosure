@@ -425,6 +425,8 @@ image_processor_EXTERNAL_OBJECTS =
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor.so: /usr/lib/libblas.so
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor.so: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor.so: /usr/lib/x86_64-linux-gnu/librt.so
+/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor.so: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/lib/libDBoW2.so
+/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor.so: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/lib/libg2o.so
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor.so: msckf_vio/CMakeFiles/image_processor.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor.so"
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/image_processor.dir/link.txt --verbose=$(VERBOSE)

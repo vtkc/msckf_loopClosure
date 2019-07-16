@@ -37,6 +37,7 @@
 /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init.dir
 /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/run_tests_msckf_vio.dir
 /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/test_feature_init.dir
+/home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/Converter.dir
 /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/ORBExtractor.dir
 /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/image_processor.dir
 /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/msckf_vio_genpy.dir

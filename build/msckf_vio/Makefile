@@ -256,6 +256,21 @@ test_feature_init/fast:
 .PHONY : test_feature_init/fast
 
 # Convenience name for target.
+msckf_vio/CMakeFiles/Converter.dir/rule:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/Converter.dir/rule
+.PHONY : msckf_vio/CMakeFiles/Converter.dir/rule
+
+# Convenience name for target.
+Converter: msckf_vio/CMakeFiles/Converter.dir/rule
+
+.PHONY : Converter
+
+# fast build rule for target.
+Converter/fast:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Converter.dir/build.make msckf_vio/CMakeFiles/Converter.dir/build
+.PHONY : Converter/fast
+
+# Convenience name for target.
 msckf_vio/CMakeFiles/ORBExtractor.dir/rule:
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/ORBExtractor.dir/rule
 .PHONY : msckf_vio/CMakeFiles/ORBExtractor.dir/rule
@@ -1875,6 +1890,33 @@ msckf_vio_geneus/fast:
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_geneus.dir/build.make msckf_vio/CMakeFiles/msckf_vio_geneus.dir/build
 .PHONY : msckf_vio_geneus/fast
 
+src/Converter.o: src/Converter.cpp.o
+
+.PHONY : src/Converter.o
+
+# target to build an object file
+src/Converter.cpp.o:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Converter.dir/build.make msckf_vio/CMakeFiles/Converter.dir/src/Converter.cpp.o
+.PHONY : src/Converter.cpp.o
+
+src/Converter.i: src/Converter.cpp.i
+
+.PHONY : src/Converter.i
+
+# target to preprocess a source file
+src/Converter.cpp.i:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Converter.dir/build.make msckf_vio/CMakeFiles/Converter.dir/src/Converter.cpp.i
+.PHONY : src/Converter.cpp.i
+
+src/Converter.s: src/Converter.cpp.s
+
+.PHONY : src/Converter.s
+
+# target to generate assembly for a file
+src/Converter.cpp.s:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Converter.dir/build.make msckf_vio/CMakeFiles/Converter.dir/src/Converter.cpp.s
+.PHONY : src/Converter.cpp.s
+
 src/ORBExtractor.o: src/ORBExtractor.cpp.o
 
 .PHONY : src/ORBExtractor.o
@@ -1991,33 +2033,6 @@ src/loop_closure.cpp.s:
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/image_processor.dir/build.make msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.s
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.s
 .PHONY : src/loop_closure.cpp.s
-
-src/map_points.o: src/map_points.cpp.o
-
-.PHONY : src/map_points.o
-
-# target to build an object file
-src/map_points.cpp.o:
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.o
-.PHONY : src/map_points.cpp.o
-
-src/map_points.i: src/map_points.cpp.i
-
-.PHONY : src/map_points.i
-
-# target to preprocess a source file
-src/map_points.cpp.i:
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.i
-.PHONY : src/map_points.cpp.i
-
-src/map_points.s: src/map_points.cpp.s
-
-.PHONY : src/map_points.s
-
-# target to generate assembly for a file
-src/map_points.cpp.s:
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/src/map_points.cpp.s
-.PHONY : src/map_points.cpp.s
 
 src/msckf_vio.o: src/msckf_vio.cpp.o
 
@@ -2172,6 +2187,7 @@ help:
 	@echo "... run_tests_msckf_vio_gtest_test_feature_init"
 	@echo "... run_tests_msckf_vio"
 	@echo "... test_feature_init"
+	@echo "... Converter"
 	@echo "... ORBExtractor"
 	@echo "... image_processor"
 	@echo "... msckf_vio_genpy"
@@ -2284,6 +2300,9 @@ help:
 	@echo "... msckf_vio_generate_messages_cpp"
 	@echo "... msckf_vio_gencpp"
 	@echo "... msckf_vio_geneus"
+	@echo "... src/Converter.o"
+	@echo "... src/Converter.i"
+	@echo "... src/Converter.s"
 	@echo "... src/ORBExtractor.o"
 	@echo "... src/ORBExtractor.i"
 	@echo "... src/ORBExtractor.s"
@@ -2296,9 +2315,6 @@ help:
 	@echo "... src/loop_closure.o"
 	@echo "... src/loop_closure.i"
 	@echo "... src/loop_closure.s"
-	@echo "... src/map_points.o"
-	@echo "... src/map_points.i"
-	@echo "... src/map_points.s"
 	@echo "... src/msckf_vio.o"
 	@echo "... src/msckf_vio.i"
 	@echo "... src/msckf_vio.s"

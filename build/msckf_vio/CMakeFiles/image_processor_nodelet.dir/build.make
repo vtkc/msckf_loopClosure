@@ -556,6 +556,8 @@ image_processor_nodelet_EXTERNAL_OBJECTS =
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor_nodelet.so: /usr/lib/libblas.so
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor_nodelet.so: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor_nodelet.so: /usr/lib/x86_64-linux-gnu/librt.so
+/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor_nodelet.so: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/lib/libDBoW2.so
+/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor_nodelet.so: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/lib/libg2o.so
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor_nodelet.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_stitching3.so.3.3.1
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor_nodelet.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_superres3.so.3.3.1
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libimage_processor_nodelet.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_videostab3.so.3.3.1
