@@ -1,3 +1,3 @@
-You should have received this g2o version along with ORB-SLAM2 (https://github.com/raulmur/ORB_SLAM2).
-See the original g2o library at: https://github.com/RainerKuemmerle/g2o
-All files included in this g2o version are BSD, see license-bsd.txt
+version https://git-lfs.github.com/spec/v1
+oid sha256:234a825b5092cf414f86abdd69ffbcbb75f8101f6e16a5e50249fc9543153a54
+size 243
