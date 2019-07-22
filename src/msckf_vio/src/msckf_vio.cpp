@@ -406,6 +406,10 @@ void MsckfVio::featureCallback(
   double prune_cam_states_time = (
       ros::Time::now()-start_time).toSec();
 
+  // ****************************************************************************************
+  // Extract StateServer Pose here
+  // ****************************************************************************************
+
   // Publish the odometry.
   start_time = ros::Time::now();
   publish(msg->header.stamp);

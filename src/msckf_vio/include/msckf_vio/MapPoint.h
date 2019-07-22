@@ -90,6 +90,8 @@ namespace msckf_vio{
 
         static std::mutex mGlobalMutex;
 
+        uchar* desc;
+
     protected:    
 
         // Position in absolute coordinates

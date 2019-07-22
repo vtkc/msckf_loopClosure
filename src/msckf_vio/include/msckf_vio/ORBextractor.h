@@ -1,5 +1,5 @@
-#ifndef ORBEXTRACTOR_H
-#define ORBEXTRACTOR_H
+#ifndef ORBextractor_H
+#define ORBextractor_H
 
 #include <vector>
 #include <list>
@@ -22,11 +22,11 @@ namespace msckf_vio{
             bool bNoMore;
     };
 
-    class ORBExtractor{
+    class ORBextractor{
         public:
-            ORBExtractor(int nfeatures, float scaleFactor, int nlevels,
+            ORBextractor(int nfeatures, float scaleFactor, int nlevels,
                  int iniThFAST, int minThFAST);
-            ~ORBExtractor(){}
+            ~ORBextractor(){}
             void operator()(InputArray image, InputArray mask,
                             vector<KeyPoint>& keypoints,
                             OutputArray descriptors);

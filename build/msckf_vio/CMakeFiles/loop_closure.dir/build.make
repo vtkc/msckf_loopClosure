@@ -105,42 +105,42 @@ msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.o.provides: msckf_
 msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.o.provides.build: msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.o
 
 
-msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.o: msckf_vio/CMakeFiles/loop_closure.dir/flags.make
-msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/ORBExtractor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.o"
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.o -c /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/ORBExtractor.cpp
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o: msckf_vio/CMakeFiles/loop_closure.dir/flags.make
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/ORBextractor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o"
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o -c /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/ORBextractor.cpp
 
-msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.i"
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/ORBExtractor.cpp > CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.i
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.i"
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/ORBextractor.cpp > CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.i
 
-msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.s"
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/ORBExtractor.cpp -o CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.s
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.s"
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/ORBextractor.cpp -o CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.s
 
-msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.o.requires:
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.requires:
 
-.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.o.requires
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.requires
 
-msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.o.provides: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.o.requires
-	$(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.o.provides.build
-.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.o.provides
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.provides: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.requires
+	$(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.provides.build
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.provides
 
-msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.o.provides.build: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.o
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.provides.build: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o
 
 
 # Object files for target loop_closure
 loop_closure_OBJECTS = \
 "CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o" \
 "CMakeFiles/loop_closure.dir/src/image_processor.cpp.o" \
-"CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.o"
+"CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o"
 
 # External object files for target loop_closure
 loop_closure_EXTERNAL_OBJECTS =
 
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.o
-/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.o
+/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/build.make
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libloop_closure.so: /opt/ros/kinetic/lib/libeigen_conversions.so
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libloop_closure.so: /opt/ros/kinetic/lib/libtf_conversions.so
@@ -438,7 +438,7 @@ msckf_vio/CMakeFiles/loop_closure.dir/build: /home/tlab/Desktop/Victor/msckf_loo
 
 msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o.requires
 msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.o.requires
-msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.o.requires
+msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.requires
 
 .PHONY : msckf_vio/CMakeFiles/loop_closure.dir/requires
 

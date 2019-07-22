@@ -33,7 +33,7 @@ namespace msckf_vio{
     {
         cam0_img = img;
         refreshPtr = &refresh;
-        oe = new ORBExtractor(2000, 1.2, 8, 20, 7);
+        oe = new ORBextractor(2000, 1.2, 8, 20, 7);
         ROS_INFO("Object loop_closure created");
         return;
     }

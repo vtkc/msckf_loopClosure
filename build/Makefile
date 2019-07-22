@@ -361,6 +361,19 @@ test_feature_init/fast:
 .PHONY : test_feature_init/fast
 
 #=============================================================================
+# Target rules for targets named Frame
+
+# Build rule for target.
+Frame: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Frame
+.PHONY : Frame
+
+# fast build rule for target.
+Frame/fast:
+	$(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/build
+.PHONY : Frame/fast
+
+#=============================================================================
 # Target rules for targets named Converter
 
 # Build rule for target.
@@ -372,19 +385,6 @@ Converter: cmake_check_build_system
 Converter/fast:
 	$(MAKE) -f msckf_vio/CMakeFiles/Converter.dir/build.make msckf_vio/CMakeFiles/Converter.dir/build
 .PHONY : Converter/fast
-
-#=============================================================================
-# Target rules for targets named ORBExtractor
-
-# Build rule for target.
-ORBExtractor: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ORBExtractor
-.PHONY : ORBExtractor
-
-# fast build rule for target.
-ORBExtractor/fast:
-	$(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/build
-.PHONY : ORBExtractor/fast
 
 #=============================================================================
 # Target rules for targets named image_processor
@@ -1583,6 +1583,19 @@ dynamic_reconfigure_gencfg/fast:
 .PHONY : dynamic_reconfigure_gencfg/fast
 
 #=============================================================================
+# Target rules for targets named ORBextractor
+
+# Build rule for target.
+ORBextractor: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ORBextractor
+.PHONY : ORBextractor
+
+# fast build rule for target.
+ORBextractor/fast:
+	$(MAKE) -f msckf_vio/CMakeFiles/ORBextractor.dir/build.make msckf_vio/CMakeFiles/ORBextractor.dir/build
+.PHONY : ORBextractor/fast
+
+#=============================================================================
 # Target rules for targets named nodelet_topic_tools_gencfg
 
 # Build rule for target.
@@ -1805,8 +1818,8 @@ help:
 	@echo "... run_tests_msckf_vio_gtest_test_feature_init"
 	@echo "... run_tests_msckf_vio"
 	@echo "... test_feature_init"
+	@echo "... Frame"
 	@echo "... Converter"
-	@echo "... ORBExtractor"
 	@echo "... image_processor"
 	@echo "... msckf_vio_genpy"
 	@echo "... tf2_msgs_generate_messages_py"
@@ -1899,6 +1912,7 @@ help:
 	@echo "... loop_closure"
 	@echo "... msckf_vio_nodelet"
 	@echo "... dynamic_reconfigure_gencfg"
+	@echo "... ORBextractor"
 	@echo "... nodelet_topic_tools_gencfg"
 	@echo "... pcl_msgs_generate_messages_cpp"
 	@echo "... std_srvs_generate_messages_cpp"

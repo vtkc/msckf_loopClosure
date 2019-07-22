@@ -67,17 +67,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -88,6 +77,17 @@ install/strip: preinstall
 install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: install/local
+
+.PHONY : install/local/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -256,6 +256,21 @@ test_feature_init/fast:
 .PHONY : test_feature_init/fast
 
 # Convenience name for target.
+msckf_vio/CMakeFiles/Frame.dir/rule:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/Frame.dir/rule
+.PHONY : msckf_vio/CMakeFiles/Frame.dir/rule
+
+# Convenience name for target.
+Frame: msckf_vio/CMakeFiles/Frame.dir/rule
+
+.PHONY : Frame
+
+# fast build rule for target.
+Frame/fast:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/build
+.PHONY : Frame/fast
+
+# Convenience name for target.
 msckf_vio/CMakeFiles/Converter.dir/rule:
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/Converter.dir/rule
 .PHONY : msckf_vio/CMakeFiles/Converter.dir/rule
@@ -269,21 +284,6 @@ Converter: msckf_vio/CMakeFiles/Converter.dir/rule
 Converter/fast:
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Converter.dir/build.make msckf_vio/CMakeFiles/Converter.dir/build
 .PHONY : Converter/fast
-
-# Convenience name for target.
-msckf_vio/CMakeFiles/ORBExtractor.dir/rule:
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/ORBExtractor.dir/rule
-.PHONY : msckf_vio/CMakeFiles/ORBExtractor.dir/rule
-
-# Convenience name for target.
-ORBExtractor: msckf_vio/CMakeFiles/ORBExtractor.dir/rule
-
-.PHONY : ORBExtractor
-
-# fast build rule for target.
-ORBExtractor/fast:
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/build
-.PHONY : ORBExtractor/fast
 
 # Convenience name for target.
 msckf_vio/CMakeFiles/image_processor.dir/rule:
@@ -1666,6 +1666,21 @@ dynamic_reconfigure_gencfg/fast:
 .PHONY : dynamic_reconfigure_gencfg/fast
 
 # Convenience name for target.
+msckf_vio/CMakeFiles/ORBextractor.dir/rule:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/ORBextractor.dir/rule
+.PHONY : msckf_vio/CMakeFiles/ORBextractor.dir/rule
+
+# Convenience name for target.
+ORBextractor: msckf_vio/CMakeFiles/ORBextractor.dir/rule
+
+.PHONY : ORBextractor
+
+# fast build rule for target.
+ORBextractor/fast:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBextractor.dir/build.make msckf_vio/CMakeFiles/ORBextractor.dir/build
+.PHONY : ORBextractor/fast
+
+# Convenience name for target.
 msckf_vio/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule:
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
 .PHONY : msckf_vio/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
@@ -1917,35 +1932,173 @@ src/Converter.cpp.s:
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Converter.dir/build.make msckf_vio/CMakeFiles/Converter.dir/src/Converter.cpp.s
 .PHONY : src/Converter.cpp.s
 
-src/ORBExtractor.o: src/ORBExtractor.cpp.o
+src/Frame.o: src/Frame.cpp.o
 
-.PHONY : src/ORBExtractor.o
+.PHONY : src/Frame.o
 
 # target to build an object file
-src/ORBExtractor.cpp.o:
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/src/ORBExtractor.cpp.o
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.o
-.PHONY : src/ORBExtractor.cpp.o
+src/Frame.cpp.o:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Frame.cpp.o
+.PHONY : src/Frame.cpp.o
 
-src/ORBExtractor.i: src/ORBExtractor.cpp.i
+src/Frame.i: src/Frame.cpp.i
 
-.PHONY : src/ORBExtractor.i
+.PHONY : src/Frame.i
 
 # target to preprocess a source file
-src/ORBExtractor.cpp.i:
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/src/ORBExtractor.cpp.i
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.i
-.PHONY : src/ORBExtractor.cpp.i
+src/Frame.cpp.i:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Frame.cpp.i
+.PHONY : src/Frame.cpp.i
 
-src/ORBExtractor.s: src/ORBExtractor.cpp.s
+src/Frame.s: src/Frame.cpp.s
 
-.PHONY : src/ORBExtractor.s
+.PHONY : src/Frame.s
 
 # target to generate assembly for a file
-src/ORBExtractor.cpp.s:
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBExtractor.dir/build.make msckf_vio/CMakeFiles/ORBExtractor.dir/src/ORBExtractor.cpp.s
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBExtractor.cpp.s
-.PHONY : src/ORBExtractor.cpp.s
+src/Frame.cpp.s:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Frame.cpp.s
+.PHONY : src/Frame.cpp.s
+
+src/KeyFrame.o: src/KeyFrame.cpp.o
+
+.PHONY : src/KeyFrame.o
+
+# target to build an object file
+src/KeyFrame.cpp.o:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/KeyFrame.cpp.o
+.PHONY : src/KeyFrame.cpp.o
+
+src/KeyFrame.i: src/KeyFrame.cpp.i
+
+.PHONY : src/KeyFrame.i
+
+# target to preprocess a source file
+src/KeyFrame.cpp.i:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/KeyFrame.cpp.i
+.PHONY : src/KeyFrame.cpp.i
+
+src/KeyFrame.s: src/KeyFrame.cpp.s
+
+.PHONY : src/KeyFrame.s
+
+# target to generate assembly for a file
+src/KeyFrame.cpp.s:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/KeyFrame.cpp.s
+.PHONY : src/KeyFrame.cpp.s
+
+src/Map.o: src/Map.cpp.o
+
+.PHONY : src/Map.o
+
+# target to build an object file
+src/Map.cpp.o:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Map.cpp.o
+.PHONY : src/Map.cpp.o
+
+src/Map.i: src/Map.cpp.i
+
+.PHONY : src/Map.i
+
+# target to preprocess a source file
+src/Map.cpp.i:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Map.cpp.i
+.PHONY : src/Map.cpp.i
+
+src/Map.s: src/Map.cpp.s
+
+.PHONY : src/Map.s
+
+# target to generate assembly for a file
+src/Map.cpp.s:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Map.cpp.s
+.PHONY : src/Map.cpp.s
+
+src/MapPoint.o: src/MapPoint.cpp.o
+
+.PHONY : src/MapPoint.o
+
+# target to build an object file
+src/MapPoint.cpp.o:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/MapPoint.cpp.o
+.PHONY : src/MapPoint.cpp.o
+
+src/MapPoint.i: src/MapPoint.cpp.i
+
+.PHONY : src/MapPoint.i
+
+# target to preprocess a source file
+src/MapPoint.cpp.i:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/MapPoint.cpp.i
+.PHONY : src/MapPoint.cpp.i
+
+src/MapPoint.s: src/MapPoint.cpp.s
+
+.PHONY : src/MapPoint.s
+
+# target to generate assembly for a file
+src/MapPoint.cpp.s:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/MapPoint.cpp.s
+.PHONY : src/MapPoint.cpp.s
+
+src/ORBextractor.o: src/ORBextractor.cpp.o
+
+.PHONY : src/ORBextractor.o
+
+# target to build an object file
+src/ORBextractor.cpp.o:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.o
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBextractor.dir/build.make msckf_vio/CMakeFiles/ORBextractor.dir/src/ORBextractor.cpp.o
+.PHONY : src/ORBextractor.cpp.o
+
+src/ORBextractor.i: src/ORBextractor.cpp.i
+
+.PHONY : src/ORBextractor.i
+
+# target to preprocess a source file
+src/ORBextractor.cpp.i:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.i
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.i
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBextractor.dir/build.make msckf_vio/CMakeFiles/ORBextractor.dir/src/ORBextractor.cpp.i
+.PHONY : src/ORBextractor.cpp.i
+
+src/ORBextractor.s: src/ORBextractor.cpp.s
+
+.PHONY : src/ORBextractor.s
+
+# target to generate assembly for a file
+src/ORBextractor.cpp.s:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.s
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.s
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBextractor.dir/build.make msckf_vio/CMakeFiles/ORBextractor.dir/src/ORBextractor.cpp.s
+.PHONY : src/ORBextractor.cpp.s
+
+src/ORBmatcher.o: src/ORBmatcher.cpp.o
+
+.PHONY : src/ORBmatcher.o
+
+# target to build an object file
+src/ORBmatcher.cpp.o:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/ORBmatcher.cpp.o
+.PHONY : src/ORBmatcher.cpp.o
+
+src/ORBmatcher.i: src/ORBmatcher.cpp.i
+
+.PHONY : src/ORBmatcher.i
+
+# target to preprocess a source file
+src/ORBmatcher.cpp.i:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/ORBmatcher.cpp.i
+.PHONY : src/ORBmatcher.cpp.i
+
+src/ORBmatcher.s: src/ORBmatcher.cpp.s
+
+.PHONY : src/ORBmatcher.s
+
+# target to generate assembly for a file
+src/ORBmatcher.cpp.s:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/ORBmatcher.cpp.s
+.PHONY : src/ORBmatcher.cpp.s
 
 src/image_processor.o: src/image_processor.cpp.o
 
@@ -2179,7 +2332,6 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... test_math_utils"
 	@echo "... clean_test_results_msckf_vio"
@@ -2187,8 +2339,9 @@ help:
 	@echo "... run_tests_msckf_vio_gtest_test_feature_init"
 	@echo "... run_tests_msckf_vio"
 	@echo "... test_feature_init"
+	@echo "... install/local"
+	@echo "... Frame"
 	@echo "... Converter"
-	@echo "... ORBExtractor"
 	@echo "... image_processor"
 	@echo "... msckf_vio_genpy"
 	@echo "... tf2_msgs_generate_messages_py"
@@ -2285,6 +2438,7 @@ help:
 	@echo "... loop_closure"
 	@echo "... msckf_vio_nodelet"
 	@echo "... dynamic_reconfigure_gencfg"
+	@echo "... ORBextractor"
 	@echo "... nodelet_topic_tools_gencfg"
 	@echo "... pcl_msgs_generate_messages_cpp"
 	@echo "... std_srvs_generate_messages_cpp"
@@ -2303,9 +2457,24 @@ help:
 	@echo "... src/Converter.o"
 	@echo "... src/Converter.i"
 	@echo "... src/Converter.s"
-	@echo "... src/ORBExtractor.o"
-	@echo "... src/ORBExtractor.i"
-	@echo "... src/ORBExtractor.s"
+	@echo "... src/Frame.o"
+	@echo "... src/Frame.i"
+	@echo "... src/Frame.s"
+	@echo "... src/KeyFrame.o"
+	@echo "... src/KeyFrame.i"
+	@echo "... src/KeyFrame.s"
+	@echo "... src/Map.o"
+	@echo "... src/Map.i"
+	@echo "... src/Map.s"
+	@echo "... src/MapPoint.o"
+	@echo "... src/MapPoint.i"
+	@echo "... src/MapPoint.s"
+	@echo "... src/ORBextractor.o"
+	@echo "... src/ORBextractor.i"
+	@echo "... src/ORBextractor.s"
+	@echo "... src/ORBmatcher.o"
+	@echo "... src/ORBmatcher.i"
+	@echo "... src/ORBmatcher.s"
 	@echo "... src/image_processor.o"
 	@echo "... src/image_processor.i"
 	@echo "... src/image_processor.s"

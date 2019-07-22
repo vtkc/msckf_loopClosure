@@ -4,7 +4,7 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <vector>
 
-#include <msckf_vio/ORBExtractor.h>
+#include <msckf_vio/ORBextractor.h>
 #include <msckf_vio/image_processor.h>
 
 
@@ -358,7 +358,7 @@ namespace msckf_vio{
         }
     }
 
-    ORBExtractor::ORBExtractor(int _nfeatures, float _scaleFactor, int _nlevels,
+    ORBextractor::ORBextractor(int _nfeatures, float _scaleFactor, int _nlevels,
          int _iniThFAST, int _minThFAST):
         nfeatures(_nfeatures), scaleFactor(_scaleFactor), nlevels(_nlevels),
         iniThFAST(_iniThFAST), minThFAST(_minThFAST)
@@ -478,7 +478,7 @@ namespace msckf_vio{
 
     }
 
-    vector<KeyPoint> ORBExtractor::DistributeOctTree(const vector<KeyPoint>& vToDistributeKeys, const int &minX,
+    vector<KeyPoint> ORBextractor::DistributeOctTree(const vector<KeyPoint>& vToDistributeKeys, const int &minX,
                                        const int &maxX, const int &minY, const int &maxY, const int &N, const int &level)
     {
         // Compute how many initial nodes   
@@ -704,7 +704,7 @@ namespace msckf_vio{
         return vResultKeys;
     }
     
-    void ORBExtractor::ComputePyramid(Mat image)
+    void ORBextractor::ComputePyramid(Mat image)
     {
         for (int level = 0; level < nlevels; ++level)
         {
@@ -730,7 +730,7 @@ namespace msckf_vio{
         }
     }
 
-    void ORBExtractor::ComputeKeyPointsOctTree(vector<vector<KeyPoint>>& allKeypoints)
+    void ORBextractor::ComputeKeyPointsOctTree(vector<vector<KeyPoint>>& allKeypoints)
     {
         allKeypoints.resize(nlevels);
 
@@ -829,7 +829,7 @@ namespace msckf_vio{
             computeOrbDescriptor(keypoints[i], image, &pattern[0], descriptors.ptr((int)i));
     }
 
-    void ORBExtractor::operator()( InputArray _image, InputArray _mask, vector<KeyPoint>& _keypoints,
+    void ORBextractor::operator()( InputArray _image, InputArray _mask, vector<KeyPoint>& _keypoints,
                       OutputArray _descriptors)
     {
         if(_image.empty())

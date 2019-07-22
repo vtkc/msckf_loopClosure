@@ -343,6 +343,8 @@ void ImageProcessor::initializeFirstFrame() {
   Mat mask;
   lc->getFAST(mask, new_features);
 
+  cout << "Number of new_features = " << new_features.size() << endl;
+
   // Find the stereo matched points for the newly
   // detected features.
   vector<cv::Point2f> cam0_points(new_features.size());
@@ -353,6 +355,10 @@ void ImageProcessor::initializeFirstFrame() {
   vector<unsigned char> inlier_markers(0);
   stereoMatch(cam0_points, cam1_points, inlier_markers);
 
+  cout << "Number of cam0_points = " << cam0_points.size() << endl;
+  cout << "Number of cam1_points = " << cam1_points.size() << endl;
+  cout << "Number of inlier_markers = " << inlier_markers.size() << endl;
+
   vector<cv::Point2f> cam0_inliers(0);
   vector<cv::Point2f> cam1_inliers(0);
   vector<float> response_inliers(0);
@@ -362,6 +368,10 @@ void ImageProcessor::initializeFirstFrame() {
     cam1_inliers.push_back(cam1_points[i]);
     response_inliers.push_back(new_features[i].response);
   }
+
+  cout << "Number of cam0_inliers = " << cam0_inliers.size() << endl;
+  cout << "Number of cam1_inliers = " << cam1_inliers.size() << endl;
+  cout << "Number of response_inliers = " << response_inliers.size() << endl;
 
   // Group the features into grids
   GridFeatures grid_new_features;

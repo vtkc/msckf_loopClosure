@@ -60,7 +60,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/ORBExtractor.h
+/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/ORBextractor.h
 vector
 -
 list
@@ -123,7 +123,7 @@ message_filters/subscriber.h
 -
 message_filters/time_synchronizer.h
 -
-msckf_vio/ORBExtractor.h
+msckf_vio/ORBextractor.h
 -
 
 /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/utils.h
@@ -136,7 +136,7 @@ opencv2/core/core.hpp
 Eigen/Geometry
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/ORBExtractor.cpp
+/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/ORBextractor.cpp
 opencv2/core/core.hpp
 -
 opencv2/highgui/highgui.hpp
@@ -147,7 +147,7 @@ opencv2/imgproc/imgproc.hpp
 -
 vector
 -
-msckf_vio/ORBExtractor.h
+msckf_vio/ORBextractor.h
 -
 msckf_vio/image_processor.h
 -
