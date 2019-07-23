@@ -17,13 +17,15 @@ namespace msckf_vio{
     class Frame;
 
     class MapPoint{
+
+    public:
         MapPoint(const cv::Mat &Pos, KeyFrame* pRefKF, Map* pMap);
         MapPoint(const cv::Mat &Pos,  Map* pMap, Frame* pFrame, const int &idxF);
 
         void SetWorldPos(const cv::Mat &Pos);
-        cv::Mat GetWorldPos();
+        Mat GetWorldPos();
 
-        cv::Mat GetNormal();
+        Mat GetNormal();
         KeyFrame* GetReferenceKeyFrame();
 
         std::map<KeyFrame*,size_t> GetObservations();
@@ -59,7 +61,7 @@ namespace msckf_vio{
         int PredictScale(const float &currentDist, KeyFrame*pKF);
         int PredictScale(const float &currentDist, Frame* pF);
 
-    public:
+    
         long unsigned int mnId;
         static long unsigned int nNextId;
         long int mnFirstKFid;
@@ -84,7 +86,7 @@ namespace msckf_vio{
         long unsigned int mnLoopPointForKF;
         long unsigned int mnCorrectedByKF;
         long unsigned int mnCorrectedReference;    
-        cv::Mat mPosGBA;
+        Mat mPosGBA;
         long unsigned int mnBAGlobalForKF;
 
 
@@ -95,16 +97,16 @@ namespace msckf_vio{
     protected:    
 
         // Position in absolute coordinates
-        cv::Mat mWorldPos;
+        Mat mWorldPos;
 
         // Keyframes observing the point and associated index in keyframe
-        std::map<KeyFrame*,size_t> mObservations;
+        map<KeyFrame*,size_t> mObservations;
 
         // Mean viewing direction
-        cv::Mat mNormalVector;
+        Mat mNormalVector;
 
         // Best descriptor to fast matching
-        cv::Mat mDescriptor;
+        Mat mDescriptor;
 
         // Reference KeyFrame
         KeyFrame* mpRefKF;
@@ -123,8 +125,8 @@ namespace msckf_vio{
 
         Map* mpMap;
 
-        std::mutex mMutexPos;
-        std::mutex mMutexFeatures;
+        mutex mMutexPos;
+        mutex mMutexFeatures;
     };
 }
 

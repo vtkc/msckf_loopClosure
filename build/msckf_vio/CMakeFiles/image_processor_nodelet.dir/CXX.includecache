@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/ORBExtractor.h
+/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/ORBextractor.h
 vector
 -
 list
@@ -77,7 +77,7 @@ message_filters/subscriber.h
 -
 message_filters/time_synchronizer.h
 -
-msckf_vio/ORBExtractor.h
+msckf_vio/ORBextractor.h
 -
 
 /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/image_processor_nodelet.cpp

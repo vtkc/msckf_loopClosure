@@ -13,6 +13,7 @@ namespace msckf_vio{
 
     class ORBmatcher
     {
+    public:
         ORBmatcher(float nnratio=0.6, bool checkOri=true);
 
         // Computes the Hamming distance between two ORB descriptors
@@ -57,7 +58,7 @@ namespace msckf_vio{
         // Project MapPoints into KeyFrame using a given Sim3 and search for duplicated MapPoints.
         int Fuse(KeyFrame* pKF, cv::Mat Scw, const std::vector<MapPoint*> &vpPoints, float th, vector<MapPoint *> &vpReplacePoint);
 
-    public:
+    
 
         static const int TH_LOW;
         static const int TH_HIGH;
