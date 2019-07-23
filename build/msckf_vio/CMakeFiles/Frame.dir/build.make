@@ -201,6 +201,102 @@ msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.o.provides: msckf_vio/CMakeF
 msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.o.provides.build: msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.o
 
 
+msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o: msckf_vio/CMakeFiles/Frame.dir/flags.make
+msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/LoopClosing.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o"
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Frame.dir/src/LoopClosing.cpp.o -c /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/LoopClosing.cpp
+
+msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Frame.dir/src/LoopClosing.cpp.i"
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/LoopClosing.cpp > CMakeFiles/Frame.dir/src/LoopClosing.cpp.i
+
+msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Frame.dir/src/LoopClosing.cpp.s"
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/LoopClosing.cpp -o CMakeFiles/Frame.dir/src/LoopClosing.cpp.s
+
+msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o.requires:
+
+.PHONY : msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o.requires
+
+msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o.provides: msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o.requires
+	$(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o.provides.build
+.PHONY : msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o.provides
+
+msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o.provides.build: msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o
+
+
+msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o: msckf_vio/CMakeFiles/Frame.dir/flags.make
+msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/Optimizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o"
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Frame.dir/src/Optimizer.cpp.o -c /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/Optimizer.cpp
+
+msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Frame.dir/src/Optimizer.cpp.i"
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/Optimizer.cpp > CMakeFiles/Frame.dir/src/Optimizer.cpp.i
+
+msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Frame.dir/src/Optimizer.cpp.s"
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/Optimizer.cpp -o CMakeFiles/Frame.dir/src/Optimizer.cpp.s
+
+msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o.requires:
+
+.PHONY : msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o.requires
+
+msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o.provides: msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o.requires
+	$(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o.provides.build
+.PHONY : msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o.provides
+
+msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o.provides.build: msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o
+
+
+msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o: msckf_vio/CMakeFiles/Frame.dir/flags.make
+msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/Sim3Solver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o"
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o -c /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/Sim3Solver.cpp
+
+msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Frame.dir/src/Sim3Solver.cpp.i"
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/Sim3Solver.cpp > CMakeFiles/Frame.dir/src/Sim3Solver.cpp.i
+
+msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Frame.dir/src/Sim3Solver.cpp.s"
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/Sim3Solver.cpp -o CMakeFiles/Frame.dir/src/Sim3Solver.cpp.s
+
+msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o.requires:
+
+.PHONY : msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o.requires
+
+msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o.provides: msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o.requires
+	$(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o.provides.build
+.PHONY : msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o.provides
+
+msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o.provides.build: msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o
+
+
+msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o: msckf_vio/CMakeFiles/Frame.dir/flags.make
+msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/LocalMapping.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o"
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Frame.dir/src/LocalMapping.cpp.o -c /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/LocalMapping.cpp
+
+msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Frame.dir/src/LocalMapping.cpp.i"
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/LocalMapping.cpp > CMakeFiles/Frame.dir/src/LocalMapping.cpp.i
+
+msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Frame.dir/src/LocalMapping.cpp.s"
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/LocalMapping.cpp -o CMakeFiles/Frame.dir/src/LocalMapping.cpp.s
+
+msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o.requires:
+
+.PHONY : msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o.requires
+
+msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o.provides: msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o.requires
+	$(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o.provides.build
+.PHONY : msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o.provides
+
+msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o.provides.build: msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o
+
+
 # Object files for target Frame
 Frame_OBJECTS = \
 "CMakeFiles/Frame.dir/src/Frame.cpp.o" \
@@ -208,7 +304,11 @@ Frame_OBJECTS = \
 "CMakeFiles/Frame.dir/src/MapPoint.cpp.o" \
 "CMakeFiles/Frame.dir/src/Map.cpp.o" \
 "CMakeFiles/Frame.dir/src/ORBmatcher.cpp.o" \
-"CMakeFiles/Frame.dir/src/ORBextractor.cpp.o"
+"CMakeFiles/Frame.dir/src/ORBextractor.cpp.o" \
+"CMakeFiles/Frame.dir/src/LoopClosing.cpp.o" \
+"CMakeFiles/Frame.dir/src/Optimizer.cpp.o" \
+"CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o" \
+"CMakeFiles/Frame.dir/src/LocalMapping.cpp.o"
 
 # External object files for target Frame
 Frame_EXTERNAL_OBJECTS =
@@ -219,6 +319,10 @@ Frame_EXTERNAL_OBJECTS =
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libFrame.so: msckf_vio/CMakeFiles/Frame.dir/src/Map.cpp.o
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libFrame.so: msckf_vio/CMakeFiles/Frame.dir/src/ORBmatcher.cpp.o
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libFrame.so: msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.o
+/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libFrame.so: msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o
+/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libFrame.so: msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o
+/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libFrame.so: msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o
+/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libFrame.so: msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libFrame.so: msckf_vio/CMakeFiles/Frame.dir/build.make
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libFrame.so: /opt/ros/kinetic/lib/libeigen_conversions.so
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libFrame.so: /opt/ros/kinetic/lib/libtf_conversions.so
@@ -506,7 +610,7 @@ Frame_EXTERNAL_OBJECTS =
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libFrame.so: msckf_vio/CMakeFiles/Frame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libFrame.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/libFrame.so"
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Frame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -520,6 +624,10 @@ msckf_vio/CMakeFiles/Frame.dir/requires: msckf_vio/CMakeFiles/Frame.dir/src/MapP
 msckf_vio/CMakeFiles/Frame.dir/requires: msckf_vio/CMakeFiles/Frame.dir/src/Map.cpp.o.requires
 msckf_vio/CMakeFiles/Frame.dir/requires: msckf_vio/CMakeFiles/Frame.dir/src/ORBmatcher.cpp.o.requires
 msckf_vio/CMakeFiles/Frame.dir/requires: msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.o.requires
+msckf_vio/CMakeFiles/Frame.dir/requires: msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o.requires
+msckf_vio/CMakeFiles/Frame.dir/requires: msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o.requires
+msckf_vio/CMakeFiles/Frame.dir/requires: msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o.requires
+msckf_vio/CMakeFiles/Frame.dir/requires: msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o.requires
 
 .PHONY : msckf_vio/CMakeFiles/Frame.dir/requires
 

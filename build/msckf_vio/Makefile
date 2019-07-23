@@ -1986,6 +1986,60 @@ src/KeyFrame.cpp.s:
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/KeyFrame.cpp.s
 .PHONY : src/KeyFrame.cpp.s
 
+src/LocalMapping.o: src/LocalMapping.cpp.o
+
+.PHONY : src/LocalMapping.o
+
+# target to build an object file
+src/LocalMapping.cpp.o:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o
+.PHONY : src/LocalMapping.cpp.o
+
+src/LocalMapping.i: src/LocalMapping.cpp.i
+
+.PHONY : src/LocalMapping.i
+
+# target to preprocess a source file
+src/LocalMapping.cpp.i:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.i
+.PHONY : src/LocalMapping.cpp.i
+
+src/LocalMapping.s: src/LocalMapping.cpp.s
+
+.PHONY : src/LocalMapping.s
+
+# target to generate assembly for a file
+src/LocalMapping.cpp.s:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.s
+.PHONY : src/LocalMapping.cpp.s
+
+src/LoopClosing.o: src/LoopClosing.cpp.o
+
+.PHONY : src/LoopClosing.o
+
+# target to build an object file
+src/LoopClosing.cpp.o:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o
+.PHONY : src/LoopClosing.cpp.o
+
+src/LoopClosing.i: src/LoopClosing.cpp.i
+
+.PHONY : src/LoopClosing.i
+
+# target to preprocess a source file
+src/LoopClosing.cpp.i:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.i
+.PHONY : src/LoopClosing.cpp.i
+
+src/LoopClosing.s: src/LoopClosing.cpp.s
+
+.PHONY : src/LoopClosing.s
+
+# target to generate assembly for a file
+src/LoopClosing.cpp.s:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.s
+.PHONY : src/LoopClosing.cpp.s
+
 src/Map.o: src/Map.cpp.o
 
 .PHONY : src/Map.o
@@ -2099,6 +2153,60 @@ src/ORBmatcher.s: src/ORBmatcher.cpp.s
 src/ORBmatcher.cpp.s:
 	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/ORBmatcher.cpp.s
 .PHONY : src/ORBmatcher.cpp.s
+
+src/Optimizer.o: src/Optimizer.cpp.o
+
+.PHONY : src/Optimizer.o
+
+# target to build an object file
+src/Optimizer.cpp.o:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o
+.PHONY : src/Optimizer.cpp.o
+
+src/Optimizer.i: src/Optimizer.cpp.i
+
+.PHONY : src/Optimizer.i
+
+# target to preprocess a source file
+src/Optimizer.cpp.i:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.i
+.PHONY : src/Optimizer.cpp.i
+
+src/Optimizer.s: src/Optimizer.cpp.s
+
+.PHONY : src/Optimizer.s
+
+# target to generate assembly for a file
+src/Optimizer.cpp.s:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.s
+.PHONY : src/Optimizer.cpp.s
+
+src/Sim3Solver.o: src/Sim3Solver.cpp.o
+
+.PHONY : src/Sim3Solver.o
+
+# target to build an object file
+src/Sim3Solver.cpp.o:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o
+.PHONY : src/Sim3Solver.cpp.o
+
+src/Sim3Solver.i: src/Sim3Solver.cpp.i
+
+.PHONY : src/Sim3Solver.i
+
+# target to preprocess a source file
+src/Sim3Solver.cpp.i:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.i
+.PHONY : src/Sim3Solver.cpp.i
+
+src/Sim3Solver.s: src/Sim3Solver.cpp.s
+
+.PHONY : src/Sim3Solver.s
+
+# target to generate assembly for a file
+src/Sim3Solver.cpp.s:
+	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.s
+.PHONY : src/Sim3Solver.cpp.s
 
 src/image_processor.o: src/image_processor.cpp.o
 
@@ -2463,6 +2571,12 @@ help:
 	@echo "... src/KeyFrame.o"
 	@echo "... src/KeyFrame.i"
 	@echo "... src/KeyFrame.s"
+	@echo "... src/LocalMapping.o"
+	@echo "... src/LocalMapping.i"
+	@echo "... src/LocalMapping.s"
+	@echo "... src/LoopClosing.o"
+	@echo "... src/LoopClosing.i"
+	@echo "... src/LoopClosing.s"
 	@echo "... src/Map.o"
 	@echo "... src/Map.i"
 	@echo "... src/Map.s"
@@ -2475,6 +2589,12 @@ help:
 	@echo "... src/ORBmatcher.o"
 	@echo "... src/ORBmatcher.i"
 	@echo "... src/ORBmatcher.s"
+	@echo "... src/Optimizer.o"
+	@echo "... src/Optimizer.i"
+	@echo "... src/Optimizer.s"
+	@echo "... src/Sim3Solver.o"
+	@echo "... src/Sim3Solver.i"
+	@echo "... src/Sim3Solver.s"
 	@echo "... src/image_processor.o"
 	@echo "... src/image_processor.i"
 	@echo "... src/image_processor.s"

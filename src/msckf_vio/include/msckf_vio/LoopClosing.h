@@ -14,11 +14,11 @@
 
 namespace msckf_vio{
     class LocalMapping;
-class KeyFrameDatabase;
+    class KeyFrameDatabase;
 
 
-class LoopClosing
-{
+    class LoopClosing
+    {
     public:
 
         typedef pair<set<KeyFrame*>,int> ConsistentGroup;    
@@ -29,7 +29,7 @@ class LoopClosing
 
         LoopClosing(Map* pMap, KeyFrameDatabase* pDB, ORBVocabulary* pVoc,const bool bFixScale);
 
-        void SetTracker(Tracking* pTracker);
+        // void SetTracker(Tracking* pTracker);
 
         void SetLocalMapper(LocalMapping* pLocalMapper);
 
@@ -81,7 +81,7 @@ class LoopClosing
         std::mutex mMutexFinish;
 
         Map* mpMap;
-        Tracking* mpTracker;
+        // Tracking* mpTracker;
 
         KeyFrameDatabase* mpKeyFrameDB;
         ORBVocabulary* mpORBVocabulary;

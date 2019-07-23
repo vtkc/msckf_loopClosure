@@ -20,10 +20,10 @@ namespace msckf_vio{
         mnCovisibilityConsistencyTh = 3;
     }
 
-    void LoopClosing::SetTracker(Tracking *pTracker)
-    {
-        mpTracker=pTracker;
-    }
+    // void LoopClosing::SetTracker(Tracking *pTracker)
+    // {
+    //     mpTracker=pTracker;
+    // }
 
     void LoopClosing::SetLocalMapper(LocalMapping *pLocalMapper)
     {

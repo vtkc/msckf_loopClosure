@@ -6,10 +6,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/Frame.cpp" "/home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/Frame.dir/src/Frame.cpp.o"
   "/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/KeyFrame.cpp" "/home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/Frame.dir/src/KeyFrame.cpp.o"
+  "/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/LocalMapping.cpp" "/home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o"
+  "/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/LoopClosing.cpp" "/home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o"
   "/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/Map.cpp" "/home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/Frame.dir/src/Map.cpp.o"
   "/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/MapPoint.cpp" "/home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/Frame.dir/src/MapPoint.cpp.o"
   "/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/ORBextractor.cpp" "/home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.o"
   "/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/ORBmatcher.cpp" "/home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/Frame.dir/src/ORBmatcher.cpp.o"
+  "/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/Optimizer.cpp" "/home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o"
+  "/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/Sim3Solver.cpp" "/home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
