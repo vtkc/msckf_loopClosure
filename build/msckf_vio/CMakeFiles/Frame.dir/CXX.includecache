@@ -757,6 +757,10 @@ message_filters/time_synchronizer.h
 -
 msckf_vio/ORBextractor.h
 -
+msckf_vio/ORBVocabulary.h
+-
+msckf_vio/Frame.h
+-
 
 /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/Frame.cpp
 msckf_vio/Frame.h

@@ -18,7 +18,6 @@
 #include <msckf_vio/image_processor.h>
 #include <msckf_vio/utils.h>
 
-// #include <msckf_vio/loop_closure.h>
 #include <thread>
 
 
@@ -203,8 +202,7 @@ bool ImageProcessor::initialize() {
   // loop_closure* lc;
   // std::thread* loop_closure_thread;
 
-  cam0_img_refresh = false;
-  lc = new loop_closure(cam0_img_input, cam0_img_refresh);
+  lc = new loop_closure();
   loop_closure_thread = new thread(&msckf_vio::loop_closure::run, lc);
 
   // Create feature detector.
@@ -230,8 +228,9 @@ void ImageProcessor::stereoCallback(
       sensor_msgs::image_encodings::MONO8);
 
   cam0_img_input = cam0_curr_img_ptr->image;
-  cam0_img_refresh = true;
-  lc->update(cam0_img_input, cam0_img_refresh);
+  cam1_img_input = cam1_curr_img_ptr->image;
+  timestamp = cam0_img.header.stamp.to_sec();
+  lc->updateImg(cam0_img_input, cam1_img_input, timestamp);
 
   // Build the image pyramids once since they're used at multiple places
   createImagePyramids();
@@ -339,9 +338,9 @@ void ImageProcessor::initializeFirstFrame() {
 
   // Detect new features on the frist image.
   vector<KeyPoint> new_features(0);
-  // detector_ptr->detect(img, new_features);
-  Mat mask;
-  lc->getFAST(mask, new_features);
+  detector_ptr->detect(img, new_features);
+  // Mat mask;
+  // lc->getFAST(mask, new_features);
 
   cout << "Number of new_features = " << new_features.size() << endl;
 

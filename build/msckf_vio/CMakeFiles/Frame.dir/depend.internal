@@ -1794,6 +1794,19 @@ msckf_vio/CMakeFiles/Frame.dir/src/MapPoint.cpp.o
  /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/xfeatures2d/cuda.hpp
  /opt/ros/kinetic/include/opencv-3.3.1-dev/opencv2/xfeatures2d/nonfree.hpp
 msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.o
+ /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/BowVector.h
+ /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FClass.h
+ /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FORB.h
+ /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FeatureVector.h
+ /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/ScoringObject.h
+ /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h
+ /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DUtils/Random.h
+ /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/Frame.h
+ /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/KeyFrame.h
+ /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/KeyFrameDatabase.h
+ /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/Map.h
+ /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/MapPoint.h
+ /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/ORBVocabulary.h
  /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/ORBextractor.h
  /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/image_processor.h
  /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/loop_closure.h
