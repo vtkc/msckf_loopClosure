@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/BowVector.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/BowVector.h
 iostream
 -
 map
@@ -14,7 +14,7 @@ map
 vector
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FClass.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FClass.h
 opencv2/core/core.hpp
 -
 vector
@@ -22,7 +22,7 @@ vector
 string
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FORB.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FORB.h
 opencv2/core/core.hpp
 -
 vector
@@ -30,11 +30,11 @@ vector
 string
 -
 FClass.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FClass.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FClass.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FeatureVector.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FeatureVector.h
 BowVector.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/BowVector.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/BowVector.h
 map
 -
 vector
@@ -42,11 +42,11 @@ vector
 iostream
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/ScoringObject.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/ScoringObject.h
 BowVector.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/BowVector.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/BowVector.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h
 cassert
 -
 vector
@@ -64,39 +64,39 @@ opencv2/core/core.hpp
 limits
 -
 FeatureVector.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FeatureVector.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FeatureVector.h
 BowVector.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/BowVector.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/BowVector.h
 ScoringObject.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/ScoringObject.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/ScoringObject.h
 ../DUtils/Random.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DUtils/Random.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DUtils/Random.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DUtils/Random.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DUtils/Random.h
 cstdlib
 -
 vector
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/config.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/config.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/base_binary_edge.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_binary_edge.h
 iostream
 -
 limits
 -
 base_edge.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/base_edge.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_edge.h
 robust_kernel.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/robust_kernel.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/robust_kernel.h
 ../../config.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/config.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/config.h
 base_binary_edge.hpp
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/base_binary_edge.hpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_binary_edge.hpp
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/base_binary_edge.hpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_binary_edge.hpp
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/base_edge.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_edge.h
 iostream
 -
 limits
@@ -104,9 +104,9 @@ limits
 Eigen/Core
 -
 optimizable_graph.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/optimizable_graph.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/optimizable_graph.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/base_unary_edge.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_unary_edge.h
 iostream
 -
 cassert
@@ -114,23 +114,23 @@ cassert
 limits
 -
 base_edge.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/base_edge.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_edge.h
 robust_kernel.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/robust_kernel.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/robust_kernel.h
 ../../config.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/config.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/config.h
 base_unary_edge.hpp
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/base_unary_edge.hpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_unary_edge.hpp
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/base_unary_edge.hpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_unary_edge.hpp
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/base_vertex.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_vertex.h
 optimizable_graph.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/optimizable_graph.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/optimizable_graph.h
 creators.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/creators.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/creators.h
 ../stuff/macros.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/stuff/macros.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/macros.h
 Eigen/Core
 -
 Eigen/Dense
@@ -142,37 +142,37 @@ Eigen/StdVector
 stack
 -
 base_vertex.hpp
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/base_vertex.hpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_vertex.hpp
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/base_vertex.hpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_vertex.hpp
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/batch_stats.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/batch_stats.h
 iostream
 -
 vector
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/block_solver.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/block_solver.h
 Eigen/Core
 -
 solver.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/solver.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/solver.h
 linear_solver.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/linear_solver.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/linear_solver.h
 sparse_block_matrix.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix.h
 sparse_block_matrix_diagonal.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix_diagonal.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix_diagonal.h
 openmp_mutex.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/openmp_mutex.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/openmp_mutex.h
 ../../config.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/config.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/config.h
 block_solver.hpp
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/block_solver.hpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/block_solver.hpp
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/block_solver.hpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/block_solver.hpp
 sparse_optimizer.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_optimizer.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_optimizer.h
 Eigen/LU
 -
 fstream
@@ -180,27 +180,27 @@ fstream
 iomanip
 -
 ../stuff/timeutil.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/stuff/timeutil.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/timeutil.h
 ../stuff/macros.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/stuff/macros.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/macros.h
 ../stuff/misc.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/stuff/misc.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/misc.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/creators.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/creators.h
 hyper_graph.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/hyper_graph.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/hyper_graph.h
 string
 -
 typeinfo
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/eigen_types.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/eigen_types.h
 Eigen/Core
 -
 Eigen/Geometry
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/hyper_graph.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/hyper_graph.h
 map
 -
 set
@@ -220,7 +220,7 @@ unordered_map
 tr1/unordered_map
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/jacobian_workspace.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/jacobian_workspace.h
 Eigen/Core
 -
 Eigen/StdVector
@@ -230,29 +230,29 @@ vector
 cassert
 -
 hyper_graph.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/hyper_graph.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/hyper_graph.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/linear_solver.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/linear_solver.h
 sparse_block_matrix.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix.h
 sparse_block_matrix_ccs.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix_ccs.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix_ccs.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/matrix_operations.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/matrix_operations.h
 Eigen/Core
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/matrix_structure.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/matrix_structure.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/openmp_mutex.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/openmp_mutex.h
 ../../config.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/config.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/config.h
 omp.h
 -
 cassert
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/optimizable_graph.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/optimizable_graph.h
 set
 -
 iostream
@@ -266,19 +266,19 @@ cmath
 typeinfo
 -
 openmp_mutex.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/openmp_mutex.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/openmp_mutex.h
 hyper_graph.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/hyper_graph.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/hyper_graph.h
 parameter.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/parameter.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/parameter.h
 parameter_container.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/parameter_container.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/parameter_container.h
 jacobian_workspace.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/jacobian_workspace.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/jacobian_workspace.h
 ../stuff/macros.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/stuff/macros.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/macros.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/optimization_algorithm.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/optimization_algorithm.h
 vector
 -
 utility
@@ -286,27 +286,27 @@ utility
 iosfwd
 -
 ../stuff/property.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/stuff/property.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/property.h
 hyper_graph.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/hyper_graph.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/hyper_graph.h
 sparse_block_matrix.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/optimization_algorithm_levenberg.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/optimization_algorithm_levenberg.h
 optimization_algorithm_with_hessian.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/optimization_algorithm_with_hessian.h
 optimization_algorithm.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/optimization_algorithm.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/optimization_algorithm.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/parameter.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/parameter.h
 iosfwd
 -
 hyper_graph.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/hyper_graph.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/hyper_graph.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/parameter_container.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/parameter_container.h
 iosfwd
 -
 map
@@ -314,7 +314,7 @@ map
 string
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/robust_kernel.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/robust_kernel.h
 memory
 -
 tr1/memory
@@ -322,21 +322,21 @@ tr1/memory
 Eigen/Core
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/robust_kernel_impl.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/robust_kernel_impl.h
 robust_kernel.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/robust_kernel.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/robust_kernel.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/solver.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/solver.h
 hyper_graph.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/hyper_graph.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/hyper_graph.h
 batch_stats.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/batch_stats.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/batch_stats.h
 sparse_block_matrix.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix.h
 cstddef
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix.h
 map
 -
 vector
@@ -352,19 +352,19 @@ cassert
 Eigen/Core
 -
 sparse_block_matrix_ccs.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix_ccs.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix_ccs.h
 matrix_structure.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/matrix_structure.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/matrix_structure.h
 matrix_operations.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/matrix_operations.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/matrix_operations.h
 ../../config.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/config.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/config.h
 sparse_block_matrix.hpp
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix.hpp
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix_ccs.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix_ccs.h
 vector
 -
 cassert
@@ -372,15 +372,15 @@ cassert
 Eigen/Core
 -
 ../../config.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/config.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/config.h
 matrix_operations.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/matrix_operations.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/matrix_operations.h
 unordered_map
 -
 tr1/unordered_map
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix_diagonal.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix_diagonal.h
 vector
 -
 Eigen/Core
@@ -388,27 +388,27 @@ Eigen/Core
 Eigen/StdVector
 -
 ../../config.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/config.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/config.h
 matrix_operations.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/matrix_operations.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/matrix_operations.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_optimizer.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_optimizer.h
 ../stuff/macros.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/stuff/macros.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/macros.h
 optimizable_graph.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/optimizable_graph.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/optimizable_graph.h
 sparse_block_matrix.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/sparse_block_matrix.h
 batch_stats.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/batch_stats.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/batch_stats.h
 map
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/solvers/linear_solver_dense.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/solvers/linear_solver_dense.h
 ../core/linear_solver.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/linear_solver.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/linear_solver.h
 ../core/batch_stats.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/batch_stats.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/batch_stats.h
 vector
 -
 utility
@@ -418,37 +418,37 @@ Eigen/Core
 Eigen/Cholesky
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/solvers/linear_solver_eigen.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/solvers/linear_solver_eigen.h
 Eigen/Sparse
 -
 Eigen/SparseCholesky
 -
 ../core/linear_solver.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/linear_solver.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/linear_solver.h
 ../core/batch_stats.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/batch_stats.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/batch_stats.h
 ../stuff/timeutil.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/stuff/timeutil.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/timeutil.h
 ../core/eigen_types.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/eigen_types.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/eigen_types.h
 iostream
 -
 vector
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/stuff/macros.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/macros.h
 float.h
 -
 math.h
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/stuff/misc.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/misc.h
 macros.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/stuff/macros.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/macros.h
 cmath
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/stuff/property.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/property.h
 string
 -
 map
@@ -456,9 +456,9 @@ map
 sstream
 -
 string_tools.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/stuff/string_tools.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/string_tools.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/stuff/string_tools.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/string_tools.h
 string
 -
 sstream
@@ -468,9 +468,9 @@ cstdlib
 vector
 -
 macros.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/stuff/macros.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/macros.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/stuff/timeutil.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/timeutil.h
 time.h
 -
 sys/time.h
@@ -478,65 +478,65 @@ sys/time.h
 string
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/types/se3_ops.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/se3_ops.h
 Eigen/Core
 -
 Eigen/Geometry
 -
 se3_ops.hpp
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/types/se3_ops.hpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/se3_ops.hpp
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/types/se3_ops.hpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/se3_ops.hpp
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/types/se3quat.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/se3quat.h
 se3_ops.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/types/se3_ops.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/se3_ops.h
 Eigen/Core
 -
 Eigen/Geometry
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/types/sim3.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/sim3.h
 se3_ops.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/types/se3_ops.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/se3_ops.h
 Eigen/Geometry
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/types/types_sba.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/types_sba.h
 ../core/base_vertex.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/base_vertex.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_vertex.h
 Eigen/Geometry
 -
 iostream
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h
 ../core/base_vertex.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/base_vertex.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_vertex.h
 ../core/base_binary_edge.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/base_binary_edge.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_binary_edge.h
 types_six_dof_expmap.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h
 sim3.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/types/sim3.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/sim3.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h
 ../core/base_vertex.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/base_vertex.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_vertex.h
 ../core/base_binary_edge.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/base_binary_edge.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_binary_edge.h
 ../core/base_unary_edge.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/core/base_unary_edge.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_unary_edge.h
 se3_ops.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/types/se3_ops.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/se3_ops.h
 se3quat.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/types/se3quat.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/se3quat.h
 types_sba.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/g2o/g2o/types/types_sba.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/types_sba.h
 Eigen/Geometry
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/Converter.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/Converter.h
 opencv2/core/core.hpp
 -
 Eigen/Dense
@@ -546,7 +546,7 @@ Eigen/Dense
 ../Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/Frame.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/Frame.h
 vector
 -
 msckf_vio/MapPoint.h
@@ -564,7 +564,7 @@ msckf_vio/ORBextractor.h
 opencv2/opencv.hpp
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/KeyFrame.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/KeyFrame.h
 msckf_vio/MapPoint.h
 -
 ../Thirdparty/DBoW2/DBoW2/BowVector.h
@@ -582,7 +582,7 @@ msckf_vio/KeyFrameDatabase.h
 mutex
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/KeyFrameDatabase.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/KeyFrameDatabase.h
 vector
 -
 list
@@ -598,7 +598,7 @@ msckf_vio/ORBVocabulary.h
 mutex
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/LocalMapping.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/LocalMapping.h
 msckf_vio/KeyFrame.h
 -
 msckf_vio/Map.h
@@ -610,7 +610,7 @@ msckf_vio/KeyFrameDatabase.h
 mutex
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/LoopClosing.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/LoopClosing.h
 msckf_vio/KeyFrame.h
 -
 msckf_vio/LocalMapping.h
@@ -628,7 +628,7 @@ mutex
 ../Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/Map.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/Map.h
 msckf_vio/Map.h
 -
 msckf_vio/KeyFrame.h
@@ -638,25 +638,25 @@ set
 mutex
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/MapPoint.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/MapPoint.h
 KeyFrame.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/KeyFrame.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/KeyFrame.h
 Frame.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/Frame.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/Frame.h
 Map.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/Map.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/Map.h
 opencv2/core/core.hpp
 -
 mutex
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/ORBVocabulary.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/ORBVocabulary.h
 ../Thirdparty/DBoW2/DBoW2/FORB.h
 -
 ../Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/ORBextractor.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/ORBextractor.h
 vector
 -
 list
@@ -664,7 +664,7 @@ list
 opencv/cv.h
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/ORBmatcher.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/ORBmatcher.h
 vector
 -
 opencv2/core/core.hpp
@@ -678,7 +678,7 @@ msckf_vio/KeyFrame.h
 msckf_vio/Frame.h
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/Optimizer.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/Optimizer.h
 msckf_vio/Map.h
 -
 msckf_vio/MapPoint.h
@@ -692,7 +692,7 @@ msckf_vio/Frame.h
 ../Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/Sim3Solver.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/Sim3Solver.h
 opencv2/opencv.hpp
 -
 vector
@@ -700,7 +700,7 @@ vector
 msckf_vio/KeyFrame.h
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/image_processor.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/image_processor.h
 vector
 -
 map
@@ -730,7 +730,7 @@ msckf_vio/loop_closure.h
 thread
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/loop_closure.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/loop_closure.h
 vector
 -
 map
@@ -761,8 +761,10 @@ msckf_vio/ORBVocabulary.h
 -
 msckf_vio/Frame.h
 -
+msckf_vio/LocalMapping.h
+-
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/Frame.cpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/src/Frame.cpp
 msckf_vio/Frame.h
 -
 msckf_vio/Converter.h
@@ -772,7 +774,7 @@ msckf_vio/ORBmatcher.h
 thread
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/KeyFrame.cpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/src/KeyFrame.cpp
 msckf_vio/KeyFrame.h
 -
 msckf_vio/Converter.h
@@ -782,7 +784,7 @@ msckf_vio/ORBmatcher.h
 mutex
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/LocalMapping.cpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/src/LocalMapping.cpp
 msckf_vio/LocalMapping.h
 -
 msckf_vio/LoopClosing.h
@@ -794,7 +796,7 @@ msckf_vio/Optimizer.h
 mutex
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/LoopClosing.cpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/src/LoopClosing.cpp
 msckf_vio/LoopClosing.h
 -
 msckf_vio/Sim3Solver.h
@@ -810,13 +812,13 @@ mutex
 thread
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/Map.cpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/src/Map.cpp
 msckf_vio/Map.h
 -
 mutex
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/MapPoint.cpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/src/MapPoint.cpp
 msckf_vio/MapPoint.h
 -
 mutex
@@ -824,7 +826,7 @@ mutex
 msckf_vio/ORBmatcher.h
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/ORBextractor.cpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/src/ORBextractor.cpp
 opencv2/core/core.hpp
 -
 opencv2/highgui/highgui.hpp
@@ -840,7 +842,7 @@ msckf_vio/ORBextractor.h
 msckf_vio/image_processor.h
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/ORBmatcher.cpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/src/ORBmatcher.cpp
 msckf_vio/ORBmatcher.h
 -
 limits.h
@@ -854,7 +856,7 @@ opencv2/features2d/features2d.hpp
 stdint-gcc.h
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/Optimizer.cpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/src/Optimizer.cpp
 msckf_vio/Optimizer.h
 -
 ../Thirdparty/g2o/g2o/core/block_solver.h
@@ -878,7 +880,7 @@ msckf_vio/Converter.h
 mutex
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/Sim3Solver.cpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/src/Sim3Solver.cpp
 msckf_vio/Sim3Solver.h
 -
 vector

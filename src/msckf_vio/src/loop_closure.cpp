@@ -30,7 +30,15 @@
 using namespace std;
 using namespace cv;
 
+
+
 namespace msckf_vio{
+
+	bool has_suffix(const std::string &str, const std::string &suffix) 
+	{
+		std::size_t index = str.find(suffix, str.size() - suffix.size());
+		return (index != std::string::npos);
+	}
 
     loop_closure::loop_closure()
     {
@@ -155,8 +163,8 @@ namespace msckf_vio{
 		  bVocLoad = mpVocabulary->loadFromTextFile(strVocFile);//txt格式打开  
 		
 		// -> 指针对象 的 解引用和 访问成员函数  相当于  (*mpVocabulary).loadFromTextFile(strVocFile);
-	    else
-		  bVocLoad = mpVocabulary->loadFromBinaryFile(strVocFile);//bin格式打开
+	    // else
+		//   bVocLoad = mpVocabulary->loadFromBinaryFile(strVocFile);//bin格式打开
 	    if(!bVocLoad)
 	    {
 		cerr << "字典路径错误 " << endl;
@@ -189,33 +197,22 @@ namespace msckf_vio{
 		return;
     }
 
-
-    // /****************** vector2Mat *********************/
-    // template<typename _Tp>
-    // cv::Mat loop_closure::convertVector2Mat(vector<_Tp> v, int channels, int rows)
-    // {
-    //     cv::Mat mat = cv::Mat(v);//将vector变成单列的mat
-    //     cv::Mat dest = mat.reshape(channels, rows).clone();
-    //     return dest;
-    // }
-
-
-    void loop_closure::createFrame(pair<pair<Mat, Mat>, double> imgData)
+    void loop_closure::createFrame(ImgData imgData)
     {
-        *newFrame = Frame(imgData.first.first, imgData.first.second, imgData.second, 
-			mpORBextractorLeft, mpORBextractorRight,mpORBVocabulary,mK,mDistCoef,mbf,mThDepth); 
+        newFrame = Frame(imgData.first.first, imgData.first.second, imgData.second, 
+			mpORBextractorLeft, mpORBextractorRight,mpVocabulary,mK,mDistCoef,mbf,mThDepth); 
 		frameQueue.push_back(newFrame);
     }
 
     void loop_closure::KFInitialization()
 	{
-	    if(mCurrentFrame.N>500)
+	    if(newFrame.N>500)
   		// 【0】找到的关键点个数 大于 500 时进行初始化将当前帧构建为第一个关键帧
 	    {
 		// Set Frame pose to the origin
        	//【1】 初始化 第一帧为世界坐标系原点 变换矩阵 对角单位阵 R = eye(3,3)   t=zero(3,1)
 		// 步骤1：设定初始位姿
-		mCurrentFrame.SetPose(cv::Mat::eye(4,4,CV_32F));
+		newFrame.SetPose(cv::Mat::eye(4,4,CV_32F));
 
        	// 【2】创建第一帧为关键帧  Create KeyFrame  普通帧      地图       关键帧数据库
 		// 加入地图 加入关键帧数据库
@@ -225,7 +222,7 @@ namespace msckf_vio{
 		// KeyFrame里有一个mpMap，Tracking里有一个mpMap，而KeyFrame里的mpMap都指向Tracking里的这个mpMap
 		// KeyFrame里有一个mpKeyFrameDB，Tracking里有一个mpKeyFrameDB，而KeyFrame里的mpMap都指向Tracking里的这个mpKeyFrameDB
 		
-		KeyFrame* pKFini = new KeyFrame(mCurrentFrame,mpMap,mpKeyFrameDB);
+		KeyFrame* pKFini = new KeyFrame(newFrame,mpMap,mpKeyFrameDatabase);
 		// 地图添加第一帧关键帧 关键帧存入地图关键帧set集合里 Insert KeyFrame in the map
       
 		// KeyFrame中包含了地图、反过来地图中也包含了KeyFrame，相互包含
@@ -235,13 +232,13 @@ namespace msckf_vio{
 		// Create MapPoints and asscoiate to KeyFrame
     	// 【3】创建地图点 并关联到 相应的关键帧  关键帧也添加地图点  地图添加地图点 地图点描述子 距离
 		// 步骤4：为每个特征点构造MapPoint		
-		for(int i=0; i<mCurrentFrame.N;i++)// 该帧的每一个关键点
+		for(int i=0; i<newFrame.N;i++)// 该帧的每一个关键点
 		{
-		    float z = mCurrentFrame.mvDepth[i];// 关键点对应的深度值  双目和 深度相机有深度值
+		    float z = newFrame.mvDepth[i];// 关键点对应的深度值  双目和 深度相机有深度值
 		    if(z>0)// 有效深度 
 		    {
 		   	// 步骤4.1：通过反投影得到该特征点的3D坐标  
-			cv::Mat x3D = mCurrentFrame.UnprojectStereo(i);// 投影到 在世界坐标系下的三维点坐标
+			cv::Mat x3D = newFrame.UnprojectStereo(i);// 投影到 在世界坐标系下的三维点坐标
 		   	// 步骤4.2：将3D点构造为MapPoint	
 			// 每个 具有有效深度 关键点 对应的3d点 转换到 地图点对象
 			MapPoint* pNewMP = new MapPoint(x3D,pKFini,mpMap);
@@ -264,7 +261,7 @@ namespace msckf_vio{
 			 pKFini->AddMapPoint(pNewMP,i);
 		   	// 步骤4.6：将该MapPoint添加到当前帧的mvpMapPoints中
                         // 为当前Frame的特征点与MapPoint之间建立索引
-			mCurrentFrame.mvpMapPoints[i]=pNewMP;//当前帧 添加地图点
+			newFrame.mvpMapPoints[i]=pNewMP;//当前帧 添加地图点
 		    }
 		}
 		cout << "新地图创建成功 new map ,具有 地图点数 : " << mpMap->MapPointsInMap() << "  地图点 points" << endl;
@@ -272,27 +269,27 @@ namespace msckf_vio{
 		// 【4】局部建图添加关键帧  局部关键帧添加关键帧     局部地图点添加所有地图点
 		mpLocalMapper->InsertKeyFrame(pKFini);
                // 记录
-		mLastFrame = Frame(mCurrentFrame);// 上一个 普通帧
-		mnLastKeyFrameId=mCurrentFrame.mnId;// id
-	 	mpLastKeyFrame = pKFini;// 上一个关键帧
+		// mLastFrame = Frame(mCurrentFrame);// 上一个 普通帧
+		// mnLastKeyFrameId=mCurrentFrame.mnId;// id
+	 	// mpLastKeyFrame = pKFini;// 上一个关键帧
                // 局部
-		mvpLocalKeyFrames.push_back(pKFini);// 局部关键帧 添加 关键帧
-		mvpLocalMapPoints=mpMap->GetAllMapPoints();//局部地图点  添加所有地图点
-		mpReferenceKF = pKFini;// 参考帧
-		mCurrentFrame.mpReferenceKF = pKFini;//当前帧 参考关键帧
+		// mvpLocalKeyFrames.push_back(pKFini);// 局部关键帧 添加 关键帧
+		// mvpLocalMapPoints=mpMap->GetAllMapPoints();//局部地图点  添加所有地图点
+		// mpReferenceKF = pKFini;// 参考帧
+		// newFrame.mpReferenceKF = pKFini;//当前帧 参考关键帧
                 // 地图
-		mpMap->SetReferenceMapPoints(mvpLocalMapPoints);//地图 参考地图点
+		// mpMap->SetReferenceMapPoints(mvpLocalMapPoints);//地图 参考地图点
 		mpMap->mvpKeyFrameOrigins.push_back(pKFini);// 地图关键帧
                 // 可视化
-		mpMapDrawer->SetCurrentCameraPose(mCurrentFrame.mTcw);
-		mState=OK;// 跟踪正常
+		// mpMapDrawer->SetCurrentCameraPose(newFrame.mTcw);
+		// mState=OK;// 跟踪正常
 	    }
 	}
 
     void loop_closure::run(){
         while(1){
             if(imgQueue.size()){
-                createFrame(imgQueue.begin());
+                createFrame(*imgQueue.begin());
 				imgQueue.erase(imgQueue.begin());
             }
         }

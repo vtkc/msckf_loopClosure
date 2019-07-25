@@ -229,7 +229,7 @@ void ImageProcessor::stereoCallback(
 
   cam0_img_input = cam0_curr_img_ptr->image;
   cam1_img_input = cam1_curr_img_ptr->image;
-  timestamp = cam0_img.header.stamp.to_sec();
+  timestamp = cam0_img->header.stamp.toSec();
   lc->updateImg(cam0_img_input, cam1_img_input, timestamp);
 
   // Build the image pyramids once since they're used at multiple places
@@ -755,7 +755,7 @@ void ImageProcessor::addNewFeatures() {
   // Detect new features.
   vector<KeyPoint> new_features(0);
   // detector_ptr->detect(curr_img, new_features, mask);
-  lc->getFAST(mask, new_features);
+  // lc->getFAST(mask, new_features);
 
   // Collect the new detected features based on the grid.
   // Select the ones with top response within each grid afterwards.

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/devel/include/msckf_vio/CameraMeasurement.h
+/home/zcy/msckf_loopClosure/devel/include/msckf_vio/CameraMeasurement.h
 string
 -
 vector
@@ -26,7 +26,7 @@ std_msgs/Header.h
 msckf_vio/FeatureMeasurement.h
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/devel/include/msckf_vio/FeatureMeasurement.h
+/home/zcy/msckf_loopClosure/devel/include/msckf_vio/FeatureMeasurement.h
 string
 -
 vector
@@ -42,7 +42,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/devel/include/msckf_vio/TrackingInfo.h
+/home/zcy/msckf_loopClosure/devel/include/msckf_vio/TrackingInfo.h
 string
 -
 vector
@@ -60,7 +60,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/BowVector.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/BowVector.h
 iostream
 -
 map
@@ -68,7 +68,7 @@ map
 vector
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FClass.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FClass.h
 opencv2/core/core.hpp
 -
 vector
@@ -76,7 +76,7 @@ vector
 string
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FORB.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FORB.h
 opencv2/core/core.hpp
 -
 vector
@@ -84,11 +84,11 @@ vector
 string
 -
 FClass.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FClass.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FClass.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FeatureVector.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FeatureVector.h
 BowVector.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/BowVector.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/BowVector.h
 map
 -
 vector
@@ -96,11 +96,11 @@ vector
 iostream
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/ScoringObject.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/ScoringObject.h
 BowVector.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/BowVector.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/BowVector.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h
 cassert
 -
 vector
@@ -118,21 +118,249 @@ opencv2/core/core.hpp
 limits
 -
 FeatureVector.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FeatureVector.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FeatureVector.h
 BowVector.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/BowVector.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/BowVector.h
 ScoringObject.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DBoW2/ScoringObject.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/ScoringObject.h
 ../DUtils/Random.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DUtils/Random.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DUtils/Random.h
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/Thirdparty/DBoW2/DUtils/Random.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DUtils/Random.h
 cstdlib
 -
 vector
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/Frame.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/config.h
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_binary_edge.h
+iostream
+-
+limits
+-
+base_edge.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_edge.h
+robust_kernel.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/robust_kernel.h
+../../config.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/config.h
+base_binary_edge.hpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_binary_edge.hpp
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_binary_edge.hpp
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_edge.h
+iostream
+-
+limits
+-
+Eigen/Core
+-
+optimizable_graph.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/optimizable_graph.h
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_unary_edge.h
+iostream
+-
+cassert
+-
+limits
+-
+base_edge.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_edge.h
+robust_kernel.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/robust_kernel.h
+../../config.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/config.h
+base_unary_edge.hpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_unary_edge.hpp
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_unary_edge.hpp
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_vertex.h
+optimizable_graph.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/optimizable_graph.h
+creators.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/creators.h
+../stuff/macros.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/macros.h
+Eigen/Core
+-
+Eigen/Dense
+-
+Eigen/Cholesky
+-
+Eigen/StdVector
+-
+stack
+-
+base_vertex.hpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_vertex.hpp
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_vertex.hpp
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/creators.h
+hyper_graph.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/hyper_graph.h
+string
+-
+typeinfo
+-
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/hyper_graph.h
+map
+-
+set
+-
+bitset
+-
+cassert
+-
+vector
+-
+limits
+-
+cstddef
+-
+unordered_map
+-
+tr1/unordered_map
+-
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/jacobian_workspace.h
+Eigen/Core
+-
+Eigen/StdVector
+-
+vector
+-
+cassert
+-
+hyper_graph.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/hyper_graph.h
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/openmp_mutex.h
+../../config.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/config.h
+omp.h
+-
+cassert
+-
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/optimizable_graph.h
+set
+-
+iostream
+-
+list
+-
+limits
+-
+cmath
+-
+typeinfo
+-
+openmp_mutex.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/openmp_mutex.h
+hyper_graph.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/hyper_graph.h
+parameter.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/parameter.h
+parameter_container.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/parameter_container.h
+jacobian_workspace.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/jacobian_workspace.h
+../stuff/macros.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/macros.h
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/parameter.h
+iosfwd
+-
+hyper_graph.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/hyper_graph.h
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/parameter_container.h
+iosfwd
+-
+map
+-
+string
+-
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/robust_kernel.h
+memory
+-
+tr1/memory
+-
+Eigen/Core
+-
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/macros.h
+float.h
+-
+math.h
+-
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/se3_ops.h
+Eigen/Core
+-
+Eigen/Geometry
+-
+se3_ops.hpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/se3_ops.hpp
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/se3_ops.hpp
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/se3quat.h
+se3_ops.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/se3_ops.h
+Eigen/Core
+-
+Eigen/Geometry
+-
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/sim3.h
+se3_ops.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/se3_ops.h
+Eigen/Geometry
+-
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/types_sba.h
+../core/base_vertex.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_vertex.h
+Eigen/Geometry
+-
+iostream
+-
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h
+../core/base_vertex.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_vertex.h
+../core/base_binary_edge.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_binary_edge.h
+types_six_dof_expmap.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h
+sim3.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/sim3.h
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h
+../core/base_vertex.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_vertex.h
+../core/base_binary_edge.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_binary_edge.h
+../core/base_unary_edge.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/core/base_unary_edge.h
+se3_ops.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/se3_ops.h
+se3quat.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/se3quat.h
+types_sba.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/types_sba.h
+Eigen/Geometry
+-
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/Frame.h
 vector
 -
 msckf_vio/MapPoint.h
@@ -150,7 +378,7 @@ msckf_vio/ORBextractor.h
 opencv2/opencv.hpp
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/KeyFrame.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/KeyFrame.h
 msckf_vio/MapPoint.h
 -
 ../Thirdparty/DBoW2/DBoW2/BowVector.h
@@ -168,7 +396,7 @@ msckf_vio/KeyFrameDatabase.h
 mutex
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/KeyFrameDatabase.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/KeyFrameDatabase.h
 vector
 -
 list
@@ -184,7 +412,37 @@ msckf_vio/ORBVocabulary.h
 mutex
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/Map.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/LocalMapping.h
+msckf_vio/KeyFrame.h
+-
+msckf_vio/Map.h
+-
+msckf_vio/LoopClosing.h
+-
+msckf_vio/KeyFrameDatabase.h
+-
+mutex
+-
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/LoopClosing.h
+msckf_vio/KeyFrame.h
+-
+msckf_vio/LocalMapping.h
+-
+msckf_vio/Map.h
+-
+msckf_vio/ORBVocabulary.h
+-
+msckf_vio/KeyFrameDatabase.h
+-
+thread
+-
+mutex
+-
+../Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h
+-
+
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/Map.h
 msckf_vio/Map.h
 -
 msckf_vio/KeyFrame.h
@@ -194,25 +452,25 @@ set
 mutex
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/MapPoint.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/MapPoint.h
 KeyFrame.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/KeyFrame.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/KeyFrame.h
 Frame.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/Frame.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/Frame.h
 Map.h
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/Map.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/Map.h
 opencv2/core/core.hpp
 -
 mutex
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/ORBVocabulary.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/ORBVocabulary.h
 ../Thirdparty/DBoW2/DBoW2/FORB.h
 -
 ../Thirdparty/DBoW2/DBoW2/TemplatedVocabulary.h
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/ORBextractor.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/ORBextractor.h
 vector
 -
 list
@@ -220,7 +478,7 @@ list
 opencv/cv.h
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/image_processor.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/image_processor.h
 vector
 -
 map
@@ -250,7 +508,7 @@ msckf_vio/loop_closure.h
 thread
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/loop_closure.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/loop_closure.h
 vector
 -
 map
@@ -281,8 +539,10 @@ msckf_vio/ORBVocabulary.h
 -
 msckf_vio/Frame.h
 -
+msckf_vio/LocalMapping.h
+-
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/include/msckf_vio/utils.h
+/home/zcy/msckf_loopClosure/src/msckf_vio/include/msckf_vio/utils.h
 ros/ros.h
 -
 string
@@ -292,7 +552,7 @@ opencv2/core/core.hpp
 Eigen/Geometry
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/ORBextractor.cpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/src/ORBextractor.cpp
 opencv2/core/core.hpp
 -
 opencv2/highgui/highgui.hpp
@@ -308,7 +568,7 @@ msckf_vio/ORBextractor.h
 msckf_vio/image_processor.h
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/image_processor.cpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/src/image_processor.cpp
 iostream
 -
 algorithm
@@ -332,7 +592,7 @@ msckf_vio/utils.h
 thread
 -
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/src/loop_closure.cpp
+/home/zcy/msckf_loopClosure/src/msckf_vio/src/loop_closure.cpp
 thread
 -
 string
@@ -374,6 +634,8 @@ msckf_vio/image_processor.h
 msckf_vio/Frame.h
 -
 msckf_vio/KeyFrame.h
+-
+iomanip
 -
 
 /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
@@ -3324,6 +3586,14 @@ src/SVD/JacobiSVD_MKL.h
 src/Core/util/ReenableStupidWarnings.h
 /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
 
+/usr/include/eigen3/Eigen/StdVector
+Core
+/usr/include/eigen3/Eigen/Core
+vector
+-
+src/StlSupport/StdVector.h
+/usr/include/eigen3/Eigen/src/StlSupport/StdVector.h
+
 /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h
 
 /usr/include/eigen3/Eigen/src/Cholesky/LLT.h
@@ -3745,6 +4015,12 @@ Eigen/src/Core/util/MKL_support.h
 /usr/include/eigen3/Eigen/src/SVD/SVDBase.h
 
 /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h
+
+/usr/include/eigen3/Eigen/src/StlSupport/StdVector.h
+details.h
+/usr/include/eigen3/Eigen/src/StlSupport/details.h
+
+/usr/include/eigen3/Eigen/src/StlSupport/details.h
 
 /usr/include/eigen3/Eigen/src/misc/Image.h
 

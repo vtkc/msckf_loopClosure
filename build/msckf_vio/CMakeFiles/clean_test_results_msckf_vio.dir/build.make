@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tlab/Desktop/Victor/msckf_loop_v02/src
+CMAKE_SOURCE_DIR = /home/zcy/msckf_loopClosure/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tlab/Desktop/Victor/msckf_loop_v02/build
+CMAKE_BINARY_DIR = /home/zcy/msckf_loopClosure/build
 
 # Utility rule file for clean_test_results_msckf_vio.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/tlab/Desktop/Victor/msckf_loop_v02/build
 include msckf_vio/CMakeFiles/clean_test_results_msckf_vio.dir/progress.make
 
 msckf_vio/CMakeFiles/clean_test_results_msckf_vio:
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/tlab/Desktop/Victor/msckf_loop_v02/build/test_results/msckf_vio
+	cd /home/zcy/msckf_loopClosure/build/msckf_vio && /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/zcy/msckf_loopClosure/build/test_results/msckf_vio
 
 clean_test_results_msckf_vio: msckf_vio/CMakeFiles/clean_test_results_msckf_vio
 clean_test_results_msckf_vio: msckf_vio/CMakeFiles/clean_test_results_msckf_vio.dir/build.make
@@ -67,10 +67,10 @@ msckf_vio/CMakeFiles/clean_test_results_msckf_vio.dir/build: clean_test_results_
 .PHONY : msckf_vio/CMakeFiles/clean_test_results_msckf_vio.dir/build
 
 msckf_vio/CMakeFiles/clean_test_results_msckf_vio.dir/clean:
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_msckf_vio.dir/cmake_clean.cmake
+	cd /home/zcy/msckf_loopClosure/build/msckf_vio && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_msckf_vio.dir/cmake_clean.cmake
 .PHONY : msckf_vio/CMakeFiles/clean_test_results_msckf_vio.dir/clean
 
 msckf_vio/CMakeFiles/clean_test_results_msckf_vio.dir/depend:
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tlab/Desktop/Victor/msckf_loop_v02/src /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio /home/tlab/Desktop/Victor/msckf_loop_v02/build /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/clean_test_results_msckf_vio.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zcy/msckf_loopClosure/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zcy/msckf_loopClosure/src /home/zcy/msckf_loopClosure/src/msckf_vio /home/zcy/msckf_loopClosure/build /home/zcy/msckf_loopClosure/build/msckf_vio /home/zcy/msckf_loopClosure/build/msckf_vio/CMakeFiles/clean_test_results_msckf_vio.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : msckf_vio/CMakeFiles/clean_test_results_msckf_vio.dir/depend
 

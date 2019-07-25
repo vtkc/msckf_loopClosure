@@ -47,5 +47,9 @@
         "utility": "cpp",
         "valarray": "cpp",
         "core": "cpp"
-    }
+    },
+    "python.autoComplete.extraPaths": [
+        "/home/zcy/msckf_loopClosure/devel/lib/python2.7/dist-packages",
+        "/opt/ros/kinetic/lib/python2.7/dist-packages"
+    ]
 }

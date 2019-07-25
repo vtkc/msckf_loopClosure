@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tlab/Desktop/Victor/msckf_loop_v02/src
+CMAKE_SOURCE_DIR = /home/zcy/msckf_loopClosure/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tlab/Desktop/Victor/msckf_loop_v02/build
+CMAKE_BINARY_DIR = /home/zcy/msckf_loopClosure/build
 
 # Utility rule file for nav_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ msckf_vio/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build: nav_msgs_generate
 .PHONY : msckf_vio/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
 
 msckf_vio/CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean:
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/zcy/msckf_loopClosure/build/msckf_vio && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : msckf_vio/CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean
 
 msckf_vio/CMakeFiles/nav_msgs_generate_messages_cpp.dir/depend:
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tlab/Desktop/Victor/msckf_loop_v02/src /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio /home/tlab/Desktop/Victor/msckf_loop_v02/build /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/nav_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zcy/msckf_loopClosure/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zcy/msckf_loopClosure/src /home/zcy/msckf_loopClosure/src/msckf_vio /home/zcy/msckf_loopClosure/build /home/zcy/msckf_loopClosure/build/msckf_vio /home/zcy/msckf_loopClosure/build/msckf_vio/CMakeFiles/nav_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : msckf_vio/CMakeFiles/nav_msgs_generate_messages_cpp.dir/depend
 

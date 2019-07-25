@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/msckf_vio_generate_messages_cpp"
-  "/home/tlab/Desktop/Victor/msckf_loop_v02/devel/include/msckf_vio/FeatureMeasurement.h"
-  "/home/tlab/Desktop/Victor/msckf_loop_v02/devel/include/msckf_vio/CameraMeasurement.h"
-  "/home/tlab/Desktop/Victor/msckf_loop_v02/devel/include/msckf_vio/TrackingInfo.h"
+  "/home/zcy/msckf_loopClosure/devel/include/msckf_vio/FeatureMeasurement.h"
+  "/home/zcy/msckf_loopClosure/devel/include/msckf_vio/TrackingInfo.h"
+  "/home/zcy/msckf_loopClosure/devel/include/msckf_vio/CameraMeasurement.h"
 )
 
 # Per-language clean rules from dependency scanning.

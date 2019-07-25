@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tlab/Desktop/Victor/msckf_loop_v02/src
+CMAKE_SOURCE_DIR = /home/zcy/msckf_loopClosure/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tlab/Desktop/Victor/msckf_loop_v02/build
+CMAKE_BINARY_DIR = /home/zcy/msckf_loopClosure/build
 
 # Include any dependencies generated for this target.
 include msckf_vio/CMakeFiles/test_math_utils.dir/depend.make
@@ -58,17 +58,17 @@ include msckf_vio/CMakeFiles/test_math_utils.dir/progress.make
 include msckf_vio/CMakeFiles/test_math_utils.dir/flags.make
 
 msckf_vio/CMakeFiles/test_math_utils.dir/test/math_utils_test.cpp.o: msckf_vio/CMakeFiles/test_math_utils.dir/flags.make
-msckf_vio/CMakeFiles/test_math_utils.dir/test/math_utils_test.cpp.o: /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/test/math_utils_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object msckf_vio/CMakeFiles/test_math_utils.dir/test/math_utils_test.cpp.o"
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_math_utils.dir/test/math_utils_test.cpp.o -c /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/test/math_utils_test.cpp
+msckf_vio/CMakeFiles/test_math_utils.dir/test/math_utils_test.cpp.o: /home/zcy/msckf_loopClosure/src/msckf_vio/test/math_utils_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zcy/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object msckf_vio/CMakeFiles/test_math_utils.dir/test/math_utils_test.cpp.o"
+	cd /home/zcy/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_math_utils.dir/test/math_utils_test.cpp.o -c /home/zcy/msckf_loopClosure/src/msckf_vio/test/math_utils_test.cpp
 
 msckf_vio/CMakeFiles/test_math_utils.dir/test/math_utils_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_math_utils.dir/test/math_utils_test.cpp.i"
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/test/math_utils_test.cpp > CMakeFiles/test_math_utils.dir/test/math_utils_test.cpp.i
+	cd /home/zcy/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zcy/msckf_loopClosure/src/msckf_vio/test/math_utils_test.cpp > CMakeFiles/test_math_utils.dir/test/math_utils_test.cpp.i
 
 msckf_vio/CMakeFiles/test_math_utils.dir/test/math_utils_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_math_utils.dir/test/math_utils_test.cpp.s"
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio/test/math_utils_test.cpp -o CMakeFiles/test_math_utils.dir/test/math_utils_test.cpp.s
+	cd /home/zcy/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zcy/msckf_loopClosure/src/msckf_vio/test/math_utils_test.cpp -o CMakeFiles/test_math_utils.dir/test/math_utils_test.cpp.s
 
 msckf_vio/CMakeFiles/test_math_utils.dir/test/math_utils_test.cpp.o.requires:
 
@@ -88,15 +88,15 @@ test_math_utils_OBJECTS = \
 # External object files for target test_math_utils
 test_math_utils_EXTERNAL_OBJECTS =
 
-/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/msckf_vio/test_math_utils: msckf_vio/CMakeFiles/test_math_utils.dir/test/math_utils_test.cpp.o
-/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/msckf_vio/test_math_utils: msckf_vio/CMakeFiles/test_math_utils.dir/build.make
-/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/msckf_vio/test_math_utils: gtest/gtest/libgtest.so
-/home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/msckf_vio/test_math_utils: msckf_vio/CMakeFiles/test_math_utils.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tlab/Desktop/Victor/msckf_loop_v02/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/msckf_vio/test_math_utils"
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_math_utils.dir/link.txt --verbose=$(VERBOSE)
+/home/zcy/msckf_loopClosure/devel/lib/msckf_vio/test_math_utils: msckf_vio/CMakeFiles/test_math_utils.dir/test/math_utils_test.cpp.o
+/home/zcy/msckf_loopClosure/devel/lib/msckf_vio/test_math_utils: msckf_vio/CMakeFiles/test_math_utils.dir/build.make
+/home/zcy/msckf_loopClosure/devel/lib/msckf_vio/test_math_utils: gtest/gtest/libgtest.so
+/home/zcy/msckf_loopClosure/devel/lib/msckf_vio/test_math_utils: msckf_vio/CMakeFiles/test_math_utils.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zcy/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/zcy/msckf_loopClosure/devel/lib/msckf_vio/test_math_utils"
+	cd /home/zcy/msckf_loopClosure/build/msckf_vio && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_math_utils.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-msckf_vio/CMakeFiles/test_math_utils.dir/build: /home/tlab/Desktop/Victor/msckf_loop_v02/devel/lib/msckf_vio/test_math_utils
+msckf_vio/CMakeFiles/test_math_utils.dir/build: /home/zcy/msckf_loopClosure/devel/lib/msckf_vio/test_math_utils
 
 .PHONY : msckf_vio/CMakeFiles/test_math_utils.dir/build
 
@@ -105,10 +105,10 @@ msckf_vio/CMakeFiles/test_math_utils.dir/requires: msckf_vio/CMakeFiles/test_mat
 .PHONY : msckf_vio/CMakeFiles/test_math_utils.dir/requires
 
 msckf_vio/CMakeFiles/test_math_utils.dir/clean:
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio && $(CMAKE_COMMAND) -P CMakeFiles/test_math_utils.dir/cmake_clean.cmake
+	cd /home/zcy/msckf_loopClosure/build/msckf_vio && $(CMAKE_COMMAND) -P CMakeFiles/test_math_utils.dir/cmake_clean.cmake
 .PHONY : msckf_vio/CMakeFiles/test_math_utils.dir/clean
 
 msckf_vio/CMakeFiles/test_math_utils.dir/depend:
-	cd /home/tlab/Desktop/Victor/msckf_loop_v02/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tlab/Desktop/Victor/msckf_loop_v02/src /home/tlab/Desktop/Victor/msckf_loop_v02/src/msckf_vio /home/tlab/Desktop/Victor/msckf_loop_v02/build /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio /home/tlab/Desktop/Victor/msckf_loop_v02/build/msckf_vio/CMakeFiles/test_math_utils.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zcy/msckf_loopClosure/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zcy/msckf_loopClosure/src /home/zcy/msckf_loopClosure/src/msckf_vio /home/zcy/msckf_loopClosure/build /home/zcy/msckf_loopClosure/build/msckf_vio /home/zcy/msckf_loopClosure/build/msckf_vio/CMakeFiles/test_math_utils.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : msckf_vio/CMakeFiles/test_math_utils.dir/depend
 

@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/tlab/Desktop/Victor/msckf_loop_v02/src
-# Build directory: /home/tlab/Desktop/Victor/msckf_loop_v02/build
+# Source directory: /home/zcy/msckf_loopClosure/src
+# Build directory: /home/zcy/msckf_loopClosure/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
