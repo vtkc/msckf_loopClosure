@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zcy/msckf_loopClosure/src
+CMAKE_SOURCE_DIR = /home/vtkc/tlab/msckf_loopClosure/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zcy/msckf_loopClosure/build
+CMAKE_BINARY_DIR = /home/vtkc/tlab/msckf_loopClosure/build
 
 # Utility rule file for run_tests_msckf_vio_gtest.
 
@@ -63,10 +63,10 @@ msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest.dir/build: run_tests_msckf_vio_gt
 .PHONY : msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest.dir/build
 
 msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest.dir/clean:
-	cd /home/zcy/msckf_loopClosure/build/msckf_vio && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_msckf_vio_gtest.dir/cmake_clean.cmake
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_msckf_vio_gtest.dir/cmake_clean.cmake
 .PHONY : msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest.dir/clean
 
 msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest.dir/depend:
-	cd /home/zcy/msckf_loopClosure/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zcy/msckf_loopClosure/src /home/zcy/msckf_loopClosure/src/msckf_vio /home/zcy/msckf_loopClosure/build /home/zcy/msckf_loopClosure/build/msckf_vio /home/zcy/msckf_loopClosure/build/msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vtkc/tlab/msckf_loopClosure/src /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio /home/vtkc/tlab/msckf_loopClosure/build /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest.dir/depend
 

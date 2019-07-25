@@ -60,6 +60,7 @@ namespace msckf_vio{
 
             vector<Frame> frameQueue;
             vector<ImgData> imgQueue;
+            vector<pair<Mat, double>> fPose;
 
             //New KeyFrame rules (according to fps)
             int mMinFrames;

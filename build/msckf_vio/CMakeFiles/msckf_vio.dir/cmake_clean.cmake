@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/msckf_vio.dir/src/msckf_vio.cpp.o"
   "CMakeFiles/msckf_vio.dir/src/utils.cpp.o"
-  "/home/zcy/msckf_loopClosure/devel/lib/libmsckf_vio.pdb"
-  "/home/zcy/msckf_loopClosure/devel/lib/libmsckf_vio.so"
+  "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libmsckf_vio.pdb"
+  "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libmsckf_vio.so"
 )
 
 # Per-language clean rules from dependency scanning.
