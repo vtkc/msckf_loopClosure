@@ -46,7 +46,10 @@
         "typeinfo": "cpp",
         "utility": "cpp",
         "valarray": "cpp",
-        "core": "cpp"
+        "core": "cpp",
+        "csignal": "cpp",
+        "cstdarg": "cpp",
+        "mutex": "cpp"
     },
     "python.autoComplete.extraPaths": [
         "/home/zcy/msckf_loopClosure/devel/lib/python2.7/dist-packages",

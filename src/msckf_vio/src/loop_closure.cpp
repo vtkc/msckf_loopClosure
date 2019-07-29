@@ -206,13 +206,13 @@ namespace msckf_vio{
 
     void loop_closure::KFInitialization()
 	{
-	    if(newFrame.N>500)
+	    if(frameQueue.back().N>500)
   		// 【0】找到的关键点个数 大于 500 时进行初始化将当前帧构建为第一个关键帧
 	    {
 		// Set Frame pose to the origin
        	//【1】 初始化 第一帧为世界坐标系原点 变换矩阵 对角单位阵 R = eye(3,3)   t=zero(3,1)
 		// 步骤1：设定初始位姿
-		newFrame.SetPose(cv::Mat::eye(4,4,CV_32F));
+		frameQueue.back().SetPose(cv::Mat::eye(4,4,CV_32F));
 
        	// 【2】创建第一帧为关键帧  Create KeyFrame  普通帧      地图       关键帧数据库
 		// 加入地图 加入关键帧数据库
@@ -222,7 +222,7 @@ namespace msckf_vio{
 		// KeyFrame里有一个mpMap，Tracking里有一个mpMap，而KeyFrame里的mpMap都指向Tracking里的这个mpMap
 		// KeyFrame里有一个mpKeyFrameDB，Tracking里有一个mpKeyFrameDB，而KeyFrame里的mpMap都指向Tracking里的这个mpKeyFrameDB
 		
-		KeyFrame* pKFini = new KeyFrame(newFrame,mpMap,mpKeyFrameDatabase);
+		KeyFrame* pKFini = new KeyFrame(frameQueue.back(),mpMap,mpKeyFrameDatabase);
 		// 地图添加第一帧关键帧 关键帧存入地图关键帧set集合里 Insert KeyFrame in the map
       
 		// KeyFrame中包含了地图、反过来地图中也包含了KeyFrame，相互包含
@@ -232,13 +232,13 @@ namespace msckf_vio{
 		// Create MapPoints and asscoiate to KeyFrame
     	// 【3】创建地图点 并关联到 相应的关键帧  关键帧也添加地图点  地图添加地图点 地图点描述子 距离
 		// 步骤4：为每个特征点构造MapPoint		
-		for(int i=0; i<newFrame.N;i++)// 该帧的每一个关键点
+		for(int i=0; i<frameQueue.back().N;i++)// 该帧的每一个关键点
 		{
-		    float z = newFrame.mvDepth[i];// 关键点对应的深度值  双目和 深度相机有深度值
+		    float z = frameQueue.back().mvDepth[i];// 关键点对应的深度值  双目和 深度相机有深度值
 		    if(z>0)// 有效深度 
 		    {
 		   	// 步骤4.1：通过反投影得到该特征点的3D坐标  
-			cv::Mat x3D = newFrame.UnprojectStereo(i);// 投影到 在世界坐标系下的三维点坐标
+			cv::Mat x3D = frameQueue.back().UnprojectStereo(i);// 投影到 在世界坐标系下的三维点坐标
 		   	// 步骤4.2：将3D点构造为MapPoint	
 			// 每个 具有有效深度 关键点 对应的3d点 转换到 地图点对象
 			MapPoint* pNewMP = new MapPoint(x3D,pKFini,mpMap);
@@ -261,7 +261,7 @@ namespace msckf_vio{
 			 pKFini->AddMapPoint(pNewMP,i);
 		   	// 步骤4.6：将该MapPoint添加到当前帧的mvpMapPoints中
                         // 为当前Frame的特征点与MapPoint之间建立索引
-			newFrame.mvpMapPoints[i]=pNewMP;//当前帧 添加地图点
+			frameQueue.back().mvpMapPoints[i]=pNewMP;//当前帧 添加地图点
 		    }
 		}
 		cout << "新地图创建成功 new map ,具有 地图点数 : " << mpMap->MapPointsInMap() << "  地图点 points" << endl;
@@ -286,11 +286,121 @@ namespace msckf_vio{
 	    }
 	}
 
+	/**
+ * @brief 创建新的关键帧
+ *
+ * 对于非单目的情况，同时创建新的MapPoints
+ */
+	void loop_closure::creatKF()
+	{
+	    // if(!mpLocalMapper->SetNotStop(true))
+		// return;
+	    // 关键帧 加入到地图 加入到 关键帧数据库
+	    
+// 步骤1：将当前帧构造成关键帧	    
+	    KeyFrame* pKF = new KeyFrame(frameQueue.back(),mpMap,mpKeyFrameDatabase);
+	    
+// 步骤2：将当前关键帧设置为当前帧的参考关键帧
+    // 在UpdateLocalKeyFrames函数中会将与当前关键帧共视程度最高的关键帧设定为当前帧的参考关键帧
+	    // mpReferenceKF = pKF;
+	    // newFrame.mpReferenceKF = pKF;
+	    
+    // 这段代码和UpdateLastFrame中的那一部分代码功能相同
+// 步骤3：对于双目或rgbd摄像头，为当前帧生成新的MapPoints
+	    // if(mSensor != System::MONOCULAR)
+	    {
+	      // 根据Tcw计算mRcw、mtcw和mRwc、mOw
+		frameQueue.back().UpdatePoseMatrices();
+
+		// We sort points by the measured depth by the stereo/RGBD sensor.
+		// We create all those MapPoints whose depth < mThDepth.
+		// If there are less than 100 close points we create the 100 closest.
+		// 双目 / 深度
+     // 步骤3.1：得到当前帧深度小于阈值的特征点
+               // 创建新的MapPoint, depth < mThDepth
+		vector<pair<float,int> > vDepthIdx;
+		vDepthIdx.reserve(frameQueue.back().N);
+		for(int i=0; i<frameQueue.back().N; i++)
+		{
+		    float z = frameQueue.back().mvDepth[i];
+		    if(z>0)
+		    {
+			vDepthIdx.push_back(make_pair(z,i));
+		    }
+		}
+
+		if(!vDepthIdx.empty())
+		{
+	         // 步骤3.2：按照深度从小到大排序  
+		    sort(vDepthIdx.begin(),vDepthIdx.end());
+                 // 步骤3.3：将距离比较近的点包装成MapPoints
+		    int nPoints = 0;
+		    for(size_t j=0; j<vDepthIdx.size();j++)
+		    {
+			int i = vDepthIdx[j].second;
+
+			bool bCreateNew = false;
+
+			MapPoint* pMP = frameQueue.back().mvpMapPoints[i];
+			if(!pMP)
+			    bCreateNew = true;
+			else if(pMP->Observations()<1)
+			{
+			    bCreateNew = true;
+			    frameQueue.back().mvpMapPoints[i] = static_cast<MapPoint*>(NULL);
+			}
+
+			if(bCreateNew)
+			{
+			    cv::Mat x3D = frameQueue.back().UnprojectStereo(i);
+			    MapPoint* pNewMP = new MapPoint(x3D,pKF,mpMap);
+			    // 这些添加属性的操作是每次创建MapPoint后都要做的
+			    pNewMP->AddObservation(pKF,i);
+			    pKF->AddMapPoint(pNewMP,i);
+			    pNewMP->ComputeDistinctiveDescriptors();
+			    pNewMP->UpdateNormalAndDepth();
+			    mpMap->AddMapPoint(pNewMP);
+
+			    frameQueue.back().mvpMapPoints[i]=pNewMP;
+			    nPoints++;
+			}
+			else
+			{
+			    nPoints++;
+			}
+                // 这里决定了双目和rgbd摄像头时地图点云的稠密程度
+                // 但是仅仅为了让地图稠密直接改这些不太好，
+                // 因为这些MapPoints会参与之后整个slam过程
+			if(vDepthIdx[j].first>mThDepth && nPoints>100)
+			    break;
+		    }
+		}
+	    }
+
+	    mpLocalMapper->InsertKeyFrame(pKF);
+
+	    mpLocalMapper->SetNotStop(false);
+
+
+	    // mnLastKeyFrameId = newFrame.mnId;
+	    // mpLastKeyFrame = pKF;
+	}
+	
+
     void loop_closure::run(){
         while(1){
             if(imgQueue.size()){
                 createFrame(*imgQueue.begin());
 				imgQueue.erase(imgQueue.begin());
+				if (!mpKeyFrameDatabase->getKFDB().size())
+				{
+					KFInitialization();
+				}
+				else
+				{
+					creatKF();
+				}
+				
             }
         }
         return;

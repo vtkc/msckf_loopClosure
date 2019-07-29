@@ -26,8 +26,10 @@
 #include "cam_state.h"
 #include "feature.hpp"
 #include <msckf_vio/CameraMeasurement.h>
+#include <msckf_vio/image_processor.h>
 
 namespace msckf_vio {
+    class ImageProcessor;
 /*
  * @brief MsckfVio Implements the algorithm in
  *    Anatasios I. Mourikis, and Stergios I. Roumeliotis,

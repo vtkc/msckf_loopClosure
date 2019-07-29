@@ -50,6 +50,11 @@ namespace msckf_vio{
         mvInvertedFile.resize(mpVoc->size());
     }
 
+    vector<list<KeyFrame*>> KeyFrameDatabase::getKFDB()
+    {
+        return mvInvertedFile;
+    }
+
 
     vector<KeyFrame*> KeyFrameDatabase::DetectLoopCandidates(KeyFrame* pKF, float minScore)
     {

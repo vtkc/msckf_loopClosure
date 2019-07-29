@@ -26,7 +26,7 @@ using namespace cv;
 
 namespace msckf_vio{
 
-    
+    class KeyFrameDatabase;
 
     class Frame;
 
@@ -38,6 +38,8 @@ namespace msckf_vio{
             void updateImg(Mat img0, Mat img1);
 
             void createFrame(ImgData imgData);
+
+            void creatKF();
 
             void KFInitialization();
             void updateImg(Mat img0, Mat img1, double timestamp);

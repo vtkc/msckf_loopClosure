@@ -25,11 +25,14 @@
 #include <msckf_vio/loop_closure.h>
 #include <thread>
 
+#include <msckf_vio/msckf_vio.h>
+
 using namespace std;
 using namespace cv;
 
 namespace msckf_vio {
 
+class MsckfVio;
 /*
  * @brief ImageProcessor Detects and tracks features
  *    in image sequences.
