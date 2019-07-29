@@ -2,7 +2,7 @@
 
 message(STATUS "msckf_vio: 3 messages, 0 services")
 
-set(MSG_I_FLAGS "-Imsckf_vio:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Imsckf_vio:/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,19 +17,19 @@ add_custom_target(msckf_vio_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" NAME_WE)
 add_custom_target(_msckf_vio_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msckf_vio" "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msckf_vio" "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" ""
 )
 
-get_filename_component(_filename "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" NAME_WE)
+get_filename_component(_filename "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" NAME_WE)
 add_custom_target(_msckf_vio_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msckf_vio" "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" "msckf_vio/FeatureMeasurement:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msckf_vio" "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" "std_msgs/Header:msckf_vio/FeatureMeasurement"
 )
 
-get_filename_component(_filename "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" NAME_WE)
+get_filename_component(_filename "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg" NAME_WE)
 add_custom_target(_msckf_vio_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msckf_vio" "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msckf_vio" "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg" "std_msgs/Header"
 )
 
 #
@@ -39,21 +39,21 @@ add_custom_target(_msckf_vio_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(msckf_vio
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msckf_vio
-)
-_generate_msg_cpp(msckf_vio
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg"
-  "${MSG_I_FLAGS}"
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msckf_vio
-)
-_generate_msg_cpp(msckf_vio
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
+  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msckf_vio
+)
+_generate_msg_cpp(msckf_vio
+  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msckf_vio
+)
+_generate_msg_cpp(msckf_vio
+  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msckf_vio
 )
 
@@ -71,11 +71,11 @@ add_custom_target(msckf_vio_generate_messages_cpp
 add_dependencies(msckf_vio_generate_messages msckf_vio_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_cpp _msckf_vio_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" NAME_WE)
+get_filename_component(_filename "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_cpp _msckf_vio_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" NAME_WE)
+get_filename_component(_filename "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_cpp _msckf_vio_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -88,21 +88,21 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS msckf_vio_generate_messages_cpp)
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(msckf_vio
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msckf_vio
-)
-_generate_msg_eus(msckf_vio
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg"
-  "${MSG_I_FLAGS}"
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msckf_vio
-)
-_generate_msg_eus(msckf_vio
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
+  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msckf_vio
+)
+_generate_msg_eus(msckf_vio
+  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msckf_vio
+)
+_generate_msg_eus(msckf_vio
+  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msckf_vio
 )
 
@@ -120,11 +120,11 @@ add_custom_target(msckf_vio_generate_messages_eus
 add_dependencies(msckf_vio_generate_messages msckf_vio_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_eus _msckf_vio_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" NAME_WE)
+get_filename_component(_filename "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_eus _msckf_vio_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" NAME_WE)
+get_filename_component(_filename "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_eus _msckf_vio_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -137,21 +137,21 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS msckf_vio_generate_messages_eus)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(msckf_vio
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msckf_vio
-)
-_generate_msg_lisp(msckf_vio
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg"
-  "${MSG_I_FLAGS}"
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msckf_vio
-)
-_generate_msg_lisp(msckf_vio
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
+  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msckf_vio
+)
+_generate_msg_lisp(msckf_vio
+  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msckf_vio
+)
+_generate_msg_lisp(msckf_vio
+  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msckf_vio
 )
 
@@ -169,11 +169,11 @@ add_custom_target(msckf_vio_generate_messages_lisp
 add_dependencies(msckf_vio_generate_messages msckf_vio_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_lisp _msckf_vio_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" NAME_WE)
+get_filename_component(_filename "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_lisp _msckf_vio_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" NAME_WE)
+get_filename_component(_filename "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_lisp _msckf_vio_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -186,21 +186,21 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS msckf_vio_generate_messages_lisp)
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(msckf_vio
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msckf_vio
-)
-_generate_msg_nodejs(msckf_vio
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg"
-  "${MSG_I_FLAGS}"
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msckf_vio
-)
-_generate_msg_nodejs(msckf_vio
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
+  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msckf_vio
+)
+_generate_msg_nodejs(msckf_vio
+  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msckf_vio
+)
+_generate_msg_nodejs(msckf_vio
+  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msckf_vio
 )
 
@@ -218,11 +218,11 @@ add_custom_target(msckf_vio_generate_messages_nodejs
 add_dependencies(msckf_vio_generate_messages msckf_vio_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_nodejs _msckf_vio_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" NAME_WE)
+get_filename_component(_filename "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_nodejs _msckf_vio_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" NAME_WE)
+get_filename_component(_filename "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_nodejs _msckf_vio_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -235,21 +235,21 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS msckf_vio_generate_messages_nodejs)
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(msckf_vio
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msckf_vio
-)
-_generate_msg_py(msckf_vio
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg"
-  "${MSG_I_FLAGS}"
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msckf_vio
-)
-_generate_msg_py(msckf_vio
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
+  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msckf_vio
+)
+_generate_msg_py(msckf_vio
+  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msckf_vio
+)
+_generate_msg_py(msckf_vio
+  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msckf_vio
 )
 
@@ -267,11 +267,11 @@ add_custom_target(msckf_vio_generate_messages_py
 add_dependencies(msckf_vio_generate_messages msckf_vio_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_py _msckf_vio_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" NAME_WE)
+get_filename_component(_filename "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_py _msckf_vio_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" NAME_WE)
+get_filename_component(_filename "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_py _msckf_vio_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

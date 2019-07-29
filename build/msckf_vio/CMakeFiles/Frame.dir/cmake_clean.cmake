@@ -9,8 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Frame.dir/src/Optimizer.cpp.o"
   "CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o"
   "CMakeFiles/Frame.dir/src/LocalMapping.cpp.o"
-  "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.pdb"
-  "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so"
+  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/libFrame.pdb"
+  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/libFrame.so"
 )
 
 # Per-language clean rules from dependency scanning.

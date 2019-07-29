@@ -43,43 +43,43 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vtkc/tlab/msckf_loopClosure/src
+CMAKE_SOURCE_DIR = /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vtkc/tlab/msckf_loopClosure/build
+CMAKE_BINARY_DIR = /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build
 
 # Utility rule file for msckf_vio_generate_messages_nodejs.
 
 # Include the progress variables for this target.
 include msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/progress.make
 
-msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs: /home/vtkc/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/TrackingInfo.js
-msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs: /home/vtkc/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/CameraMeasurement.js
-msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs: /home/vtkc/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/FeatureMeasurement.js
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/FeatureMeasurement.js
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/CameraMeasurement.js
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/TrackingInfo.js
 
 
-/home/vtkc/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/TrackingInfo.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-/home/vtkc/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/TrackingInfo.js: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg
-/home/vtkc/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/TrackingInfo.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from msckf_vio/TrackingInfo.msg"
-	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg -Imsckf_vio:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg
+/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/FeatureMeasurement.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/FeatureMeasurement.js: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from msckf_vio/FeatureMeasurement.msg"
+	cd /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg -Imsckf_vio:/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg
 
-/home/vtkc/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/CameraMeasurement.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-/home/vtkc/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/CameraMeasurement.js: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg
-/home/vtkc/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/CameraMeasurement.js: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg
-/home/vtkc/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/CameraMeasurement.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from msckf_vio/CameraMeasurement.msg"
-	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg -Imsckf_vio:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg
+/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/CameraMeasurement.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/CameraMeasurement.js: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg
+/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/CameraMeasurement.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/CameraMeasurement.js: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from msckf_vio/CameraMeasurement.msg"
+	cd /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg -Imsckf_vio:/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg
 
-/home/vtkc/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/FeatureMeasurement.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-/home/vtkc/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/FeatureMeasurement.js: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from msckf_vio/FeatureMeasurement.msg"
-	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg -Imsckf_vio:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg
+/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/TrackingInfo.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/TrackingInfo.js: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg
+/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/TrackingInfo.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from msckf_vio/TrackingInfo.msg"
+	cd /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg -Imsckf_vio:/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg
 
 msckf_vio_generate_messages_nodejs: msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs
-msckf_vio_generate_messages_nodejs: /home/vtkc/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/TrackingInfo.js
-msckf_vio_generate_messages_nodejs: /home/vtkc/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/CameraMeasurement.js
-msckf_vio_generate_messages_nodejs: /home/vtkc/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/FeatureMeasurement.js
+msckf_vio_generate_messages_nodejs: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/FeatureMeasurement.js
+msckf_vio_generate_messages_nodejs: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/CameraMeasurement.js
+msckf_vio_generate_messages_nodejs: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/TrackingInfo.js
 msckf_vio_generate_messages_nodejs: msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/build.make
 
 .PHONY : msckf_vio_generate_messages_nodejs
@@ -90,10 +90,10 @@ msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/build: msckf_vio_gen
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/build
 
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/clean:
-	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && $(CMAKE_COMMAND) -P CMakeFiles/msckf_vio_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/msckf_vio && $(CMAKE_COMMAND) -P CMakeFiles/msckf_vio_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/clean
 
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/depend:
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vtkc/tlab/msckf_loopClosure/src /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio /home/vtkc/tlab/msckf_loopClosure/build /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/msckf_vio /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/depend
 

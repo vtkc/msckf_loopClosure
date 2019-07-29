@@ -12,6 +12,7 @@
 #include <image_transport/image_transport.h>
 #include <sensor_msgs/Imu.h>
 #include <sensor_msgs/Image.h>
+#include <nav_msgs/Odometry.h>
 #include <message_filters/subscriber.h>
 #include <message_filters/time_synchronizer.h>
 #include <msckf_vio/ORBextractor.h>
@@ -60,10 +61,13 @@ namespace msckf_vio{
             void createFrame(ImgData imgData);
 
             void creatKF();
+            void ProcessorCallback(const sensor_msgs::ImageConstPtr& cam0_img,
+    								const sensor_msgs::ImageConstPtr& cam1_img,
+    								const nav_msgs::Odometry::ConstPtr& odom_msg);
 
             void KFInitialization();
             void updateImg(Mat img0, Mat img1, double timestamp);
-
+            bool createRosIO();
         private:
             
             ////////////////////////////////
@@ -113,11 +117,29 @@ namespace msckf_vio{
 
             std::thread* mptLocalMapping;
             std::thread* mptLoopClosing;
+    //////////////////////////////////////////////
+    //current images
+        private:
+            cv_bridge::CvImageConstPtr cam0_curr_img_ptr;
+            cv_bridge::CvImageConstPtr cam1_curr_img_ptr;
 
+
+            // Subscribers and publishers.
+            message_filters::Subscriber<
+                sensor_msgs::Image> cam0_img_sub;
+            message_filters::Subscriber<
+                sensor_msgs::Image> cam1_img_sub;
+            message_filters::Subscriber<
+                nav_msgs::Odometry> odom_sub;
+            message_filters::TimeSynchronizer<
+                sensor_msgs::Image, sensor_msgs::Image,nav_msgs::Odometry> process_sub;
+            
+            ros::Publisher pose_pub;
 
     };
 
     typedef loop_closure::Ptr LoopClosurePtr;
+    
 }
 
 #endif

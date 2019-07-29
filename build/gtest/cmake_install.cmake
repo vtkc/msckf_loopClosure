@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vtkc/tlab/msckf_loopClosure/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/vtkc/tlab/msckf_loopClosure/build/gtest/gtest/cmake_install.cmake")
+  include("/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/gtest/gtest/cmake_install.cmake")
 
 endif()
 

@@ -40,7 +40,38 @@ namespace msckf_vio{
 		return (index != std::string::npos);
 	}
 
-	loop_closure::loop_closure(ros::NodeHandle& n):nh(n)
+	bool loop_closure::createRosIO() {
+		pose_pub = nh.advertise<nav_msgs::Odometry>(
+			"correct_pose", 3);
+		
+		cam0_img_sub.subscribe(nh, "cam0_image", 10);
+		cam1_img_sub.subscribe(nh, "cam1_image", 10);
+		process_sub.connectInput(cam0_img_sub, cam1_img_sub,odom_sub);
+		process_sub.registerCallback(&loop_closure::ProcessorCallback, this);
+
+		return true;
+	}
+	loop_closure::ProcessorCallback(const sensor_msgs::ImageConstPtr& cam0_img,
+    								const sensor_msgs::ImageConstPtr& cam1_img,
+    								const nav_msgs::Odometry::ConstPtr& odom_msg){
+
+			// Get the current image.
+		cam0_curr_img_ptr = cv_bridge::toCvShare(cam0_img,
+			sensor_msgs::image_encodings::MONO8);
+		cam1_curr_img_ptr = cv_bridge::toCvShare(cam1_img,
+			sensor_msgs::image_encodings::MONO8);
+
+		cam0_img_input = cam0_curr_img_ptr->image;
+		cam1_img_input = cam1_curr_img_ptr->image;
+		timestamp = cam0_img->header.stamp.toSec();
+		ROS_INFO("cam timestamp=",timestamp);
+		ROS_INFO("pose timestamp=", odom_msg->header.stamp.toSec());
+  		ROS_INFO("Position-> x: [%f], y: [%f], z: [%f]", odom_msg->pose.pose.position.x,odom_msg->pose.pose.position.y, odom_msg->pose.pose.position.z);
+  		ROS_INFO("Orientation-> x: [%f], y: [%f], z: [%f], w: [%f]", odom_msg->pose.pose.orientation.x, odom_msg->pose.pose.orientation.y, odom_msg->pose.pose.orientation.z, odom_msg->pose.pose.orientation.w);
+		return;
+	}
+
+	loop_closure::loop_closure(ros::NodeHandle& n):nh(n),process_sub(10)
 	{
 		return;
 	}
@@ -50,6 +81,7 @@ namespace msckf_vio{
 		destroyAllWindows();
 		return;
 	}
+
 
 	bool loop_closure::initialize() {
 		string strSettingPath;
@@ -209,6 +241,10 @@ namespace msckf_vio{
 		mpLocalMapper->SetLoopCloser(mpLoopCloser);
 		mpLoopCloser->SetLocalMapper(mpLocalMapper);
 
+		//////////////////////////////////////////////////////////
+		if (!createRosIO()) return false;
+ 		ROS_INFO("Finish creating ROS IO...");
+		//////////////////////////////////////////////////////////
 		return true;
 	}
 
