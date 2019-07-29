@@ -565,6 +565,10 @@ msckf_vio/Frame.h
 -
 msckf_vio/LocalMapping.h
 -
+msckf_vio/LoopClosing.h
+-
+msckf_vio/Map.h
+-
 
 /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/include/msckf_vio/math_utils.hpp
 cmath

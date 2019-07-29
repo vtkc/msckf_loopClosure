@@ -40,9 +40,19 @@ namespace msckf_vio{
 		return (index != std::string::npos);
 	}
 
-    loop_closure::loop_closure()
-    {
-        string strSettingPath;
+	loop_closure::loop_closure(ros::NodeHandle& n):nh(n)
+	{
+		return;
+	}
+
+	loop_closure::~loop_closure() 
+	{
+		destroyAllWindows();
+		return;
+	}
+
+	bool loop_closure::initialize() {
+		string strSettingPath;
         string strVocFile;
 
         //Check settings file opencv 读取 配置 文件
@@ -186,7 +196,24 @@ namespace msckf_vio{
 	    // mpMapDrawer = new MapDrawer(mpMap, strSettingsFile);//地图显示
         // mpFrameDrawer = new FrameDrawer(mpMap, mpMapDrawer, strSettingsFile);//关键帧显示
 
-        ROS_INFO("Object loop_closure created");
+        // ROS_INFO("Object loop_closure created");
+
+		//Initialize the Local Mapping thread and launch
+		mpLocalMapper = new LocalMapping(mpMap, mSensor==MONOCULAR);
+		mptLocalMapping = new thread(&msckf_vio::LocalMapping::Run,mpLocalMapper);
+
+		//Initialize the Loop Closing thread and launch
+		mpLoopCloser = new LoopClosing(mpMap, mpKeyFrameDatabase, mpVocabulary, mSensor!=MONOCULAR);
+		mptLoopClosing = new thread(&msckf_vio::LoopClosing::Run, mpLoopCloser);
+
+		mpLocalMapper->SetLoopCloser(mpLoopCloser);
+		mpLoopCloser->SetLocalMapper(mpLocalMapper);
+
+		return true;
+	}
+
+    loop_closure::loop_closure()
+    {
         return;
     }
 
