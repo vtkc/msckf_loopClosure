@@ -75,11 +75,6 @@ private:
     double stereo_threshold;
   };
 
-  loop_closure* lc;
-  std::thread* loop_closure_thread;
-  bool cam0_img_refresh;
-  Mat cam0_img_input;
-  Mat cam1_img_input;
   double timestamp;
 
   /*

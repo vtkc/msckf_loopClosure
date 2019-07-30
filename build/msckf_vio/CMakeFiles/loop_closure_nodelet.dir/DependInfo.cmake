@@ -4,9 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/ORBextractor.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure_nodelet.dir/src/ORBextractor.cpp.o"
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/image_processor.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure_nodelet.dir/src/image_processor.cpp.o"
-  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/loop_closure.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure_nodelet.dir/src/loop_closure.cpp.o"
   "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/loop_closure_nodelet.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure_nodelet.dir/src/loop_closure_nodelet.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
@@ -45,6 +42,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

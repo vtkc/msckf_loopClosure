@@ -143,6 +143,7 @@ namespace msckf_vio{
     };
 
     typedef loop_closure::Ptr LoopClosurePtr;
+    typedef loop_closure::ConstPtr LoopClosureConstPtr;
     
 }
 

@@ -81,66 +81,14 @@ msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o.provides: msckf_vio
 msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o.provides.build: msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o
 
 
-msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.o: msckf_vio/CMakeFiles/loop_closure.dir/flags.make
-msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/image_processor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.o"
-	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/loop_closure.dir/src/image_processor.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/image_processor.cpp
-
-msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/loop_closure.dir/src/image_processor.cpp.i"
-	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/image_processor.cpp > CMakeFiles/loop_closure.dir/src/image_processor.cpp.i
-
-msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/loop_closure.dir/src/image_processor.cpp.s"
-	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/image_processor.cpp -o CMakeFiles/loop_closure.dir/src/image_processor.cpp.s
-
-msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.o.requires:
-
-.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.o.requires
-
-msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.o.provides: msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.o.requires
-	$(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.o.provides.build
-.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.o.provides
-
-msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.o.provides.build: msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.o
-
-
-msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o: msckf_vio/CMakeFiles/loop_closure.dir/flags.make
-msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/ORBextractor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o"
-	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/ORBextractor.cpp
-
-msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.i"
-	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/ORBextractor.cpp > CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.i
-
-msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.s"
-	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/ORBextractor.cpp -o CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.s
-
-msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.requires:
-
-.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.requires
-
-msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.provides: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.requires
-	$(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.provides.build
-.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.provides
-
-msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.provides.build: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o
-
-
 # Object files for target loop_closure
 loop_closure_OBJECTS = \
-"CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o" \
-"CMakeFiles/loop_closure.dir/src/image_processor.cpp.o" \
-"CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o"
+"CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o"
 
 # External object files for target loop_closure
 loop_closure_EXTERNAL_OBJECTS =
 
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.o
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/build.make
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /opt/ros/kinetic/lib/libeigen_conversions.so
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /opt/ros/kinetic/lib/libtf_conversions.so
@@ -369,19 +317,6 @@ loop_closure_EXTERNAL_OBJECTS =
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /usr/lib/x86_64-linux-gnu/libspqr.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /usr/lib/x86_64-linux-gnu/libcholmod.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /usr/lib/x86_64-linux-gnu/libccolamd.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /usr/lib/x86_64-linux-gnu/libcamd.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /usr/lib/x86_64-linux-gnu/libcolamd.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /usr/lib/x86_64-linux-gnu/libamd.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /usr/lib/liblapack.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /usr/lib/libf77blas.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /usr/lib/libatlas.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /usr/lib/libf77blas.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /usr/lib/libatlas.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /usr/lib/x86_64-linux-gnu/librt.so
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_stitching3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_superres3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_videostab3.so.3.3.1
@@ -430,7 +365,7 @@ loop_closure_EXTERNAL_OBJECTS =
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so"
 	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/loop_closure.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -439,8 +374,6 @@ msckf_vio/CMakeFiles/loop_closure.dir/build: /home/vtkc/tlab/msckf_loopClosure/d
 .PHONY : msckf_vio/CMakeFiles/loop_closure.dir/build
 
 msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o.requires
-msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.o.requires
-msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.requires
 
 .PHONY : msckf_vio/CMakeFiles/loop_closure.dir/requires
 

@@ -2116,8 +2116,6 @@ src/ORBextractor.o: src/ORBextractor.cpp.o
 # target to build an object file
 src/ORBextractor.cpp.o:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.o
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure_nodelet.dir/build.make msckf_vio/CMakeFiles/loop_closure_nodelet.dir/src/ORBextractor.cpp.o
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBextractor.dir/build.make msckf_vio/CMakeFiles/ORBextractor.dir/src/ORBextractor.cpp.o
 .PHONY : src/ORBextractor.cpp.o
 
@@ -2128,8 +2126,6 @@ src/ORBextractor.i: src/ORBextractor.cpp.i
 # target to preprocess a source file
 src/ORBextractor.cpp.i:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.i
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure_nodelet.dir/build.make msckf_vio/CMakeFiles/loop_closure_nodelet.dir/src/ORBextractor.cpp.i
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.i
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBextractor.dir/build.make msckf_vio/CMakeFiles/ORBextractor.dir/src/ORBextractor.cpp.i
 .PHONY : src/ORBextractor.cpp.i
 
@@ -2140,8 +2136,6 @@ src/ORBextractor.s: src/ORBextractor.cpp.s
 # target to generate assembly for a file
 src/ORBextractor.cpp.s:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.s
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure_nodelet.dir/build.make msckf_vio/CMakeFiles/loop_closure_nodelet.dir/src/ORBextractor.cpp.s
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.s
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBextractor.dir/build.make msckf_vio/CMakeFiles/ORBextractor.dir/src/ORBextractor.cpp.s
 .PHONY : src/ORBextractor.cpp.s
 
@@ -2232,9 +2226,7 @@ src/image_processor.o: src/image_processor.cpp.o
 
 # target to build an object file
 src/image_processor.cpp.o:
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure_nodelet.dir/build.make msckf_vio/CMakeFiles/loop_closure_nodelet.dir/src/image_processor.cpp.o
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/image_processor.dir/build.make msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.o
 .PHONY : src/image_processor.cpp.o
 
 src/image_processor.i: src/image_processor.cpp.i
@@ -2243,9 +2235,7 @@ src/image_processor.i: src/image_processor.cpp.i
 
 # target to preprocess a source file
 src/image_processor.cpp.i:
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure_nodelet.dir/build.make msckf_vio/CMakeFiles/loop_closure_nodelet.dir/src/image_processor.cpp.i
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/image_processor.dir/build.make msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.i
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.i
 .PHONY : src/image_processor.cpp.i
 
 src/image_processor.s: src/image_processor.cpp.s
@@ -2254,9 +2244,7 @@ src/image_processor.s: src/image_processor.cpp.s
 
 # target to generate assembly for a file
 src/image_processor.cpp.s:
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure_nodelet.dir/build.make msckf_vio/CMakeFiles/loop_closure_nodelet.dir/src/image_processor.cpp.s
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/image_processor.dir/build.make msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.s
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/image_processor.cpp.s
 .PHONY : src/image_processor.cpp.s
 
 src/image_processor_nodelet.o: src/image_processor_nodelet.cpp.o
@@ -2292,8 +2280,6 @@ src/loop_closure.o: src/loop_closure.cpp.o
 
 # target to build an object file
 src/loop_closure.cpp.o:
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure_nodelet.dir/build.make msckf_vio/CMakeFiles/loop_closure_nodelet.dir/src/loop_closure.cpp.o
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/image_processor.dir/build.make msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o
 .PHONY : src/loop_closure.cpp.o
 
@@ -2303,8 +2289,6 @@ src/loop_closure.i: src/loop_closure.cpp.i
 
 # target to preprocess a source file
 src/loop_closure.cpp.i:
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure_nodelet.dir/build.make msckf_vio/CMakeFiles/loop_closure_nodelet.dir/src/loop_closure.cpp.i
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/image_processor.dir/build.make msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.i
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.i
 .PHONY : src/loop_closure.cpp.i
 
@@ -2314,8 +2298,6 @@ src/loop_closure.s: src/loop_closure.cpp.s
 
 # target to generate assembly for a file
 src/loop_closure.cpp.s:
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure_nodelet.dir/build.make msckf_vio/CMakeFiles/loop_closure_nodelet.dir/src/loop_closure.cpp.s
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/image_processor.dir/build.make msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.s
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.s
 .PHONY : src/loop_closure.cpp.s
 

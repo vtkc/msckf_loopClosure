@@ -105,44 +105,17 @@ msckf_vio/CMakeFiles/image_processor.dir/src/utils.cpp.o.provides: msckf_vio/CMa
 msckf_vio/CMakeFiles/image_processor.dir/src/utils.cpp.o.provides.build: msckf_vio/CMakeFiles/image_processor.dir/src/utils.cpp.o
 
 
-msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: msckf_vio/CMakeFiles/image_processor.dir/flags.make
-msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/loop_closure.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o"
-	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/src/loop_closure.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/loop_closure.cpp
-
-msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/src/loop_closure.cpp.i"
-	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/loop_closure.cpp > CMakeFiles/image_processor.dir/src/loop_closure.cpp.i
-
-msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/src/loop_closure.cpp.s"
-	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/loop_closure.cpp -o CMakeFiles/image_processor.dir/src/loop_closure.cpp.s
-
-msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o.requires:
-
-.PHONY : msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o.requires
-
-msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o.provides: msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o.requires
-	$(MAKE) -f msckf_vio/CMakeFiles/image_processor.dir/build.make msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o.provides.build
-.PHONY : msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o.provides
-
-msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o.provides.build: msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o
-
-
 # Object files for target image_processor
 image_processor_OBJECTS = \
 "CMakeFiles/image_processor.dir/src/image_processor.cpp.o" \
-"CMakeFiles/image_processor.dir/src/utils.cpp.o" \
-"CMakeFiles/image_processor.dir/src/loop_closure.cpp.o"
+"CMakeFiles/image_processor.dir/src/utils.cpp.o"
 
 # External object files for target image_processor
 image_processor_EXTERNAL_OBJECTS =
 
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: msckf_vio/CMakeFiles/image_processor.dir/src/utils.cpp.o
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: msckf_vio/CMakeFiles/image_processor.dir/build.make
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/libeigen_conversions.so
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/libtf_conversions.so
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/libkdl_conversions.so
@@ -396,42 +369,27 @@ image_processor_EXTERNAL_OBJECTS =
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ximgproc3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xobjdetect3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xphoto3.so.3.3.1
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_shape3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_photo3.so.3.3.1
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_viz3.so.3.3.1
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_phase_unwrapping3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_datasets3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_plot3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_text3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_dnn3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ml3.so.3.3.1
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_shape3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_video3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_calib3d3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_features2d3.so.3.3.1
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_flann3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_highgui3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_videoio3.so.3.3.1
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_viz3.so.3.3.1
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_phase_unwrapping3.so.3.3.1
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_flann3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_objdetect3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /usr/lib/x86_64-linux-gnu/libspqr.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /usr/lib/x86_64-linux-gnu/libcholmod.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /usr/lib/x86_64-linux-gnu/libccolamd.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /usr/lib/x86_64-linux-gnu/libcamd.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /usr/lib/x86_64-linux-gnu/libcolamd.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /usr/lib/x86_64-linux-gnu/libamd.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /usr/lib/liblapack.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /usr/lib/libf77blas.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /usr/lib/libatlas.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /usr/lib/libf77blas.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /usr/lib/libatlas.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /usr/lib/x86_64-linux-gnu/librt.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/lib/libDBoW2.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/lib/libg2o.so
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so: msckf_vio/CMakeFiles/image_processor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library /home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so"
 	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/image_processor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -441,7 +399,6 @@ msckf_vio/CMakeFiles/image_processor.dir/build: /home/vtkc/tlab/msckf_loopClosur
 
 msckf_vio/CMakeFiles/image_processor.dir/requires: msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o.requires
 msckf_vio/CMakeFiles/image_processor.dir/requires: msckf_vio/CMakeFiles/image_processor.dir/src/utils.cpp.o.requires
-msckf_vio/CMakeFiles/image_processor.dir/requires: msckf_vio/CMakeFiles/image_processor.dir/src/loop_closure.cpp.o.requires
 
 .PHONY : msckf_vio/CMakeFiles/image_processor.dir/requires
 

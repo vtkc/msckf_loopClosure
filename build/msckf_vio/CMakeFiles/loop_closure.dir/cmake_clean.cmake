@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o"
-  "CMakeFiles/loop_closure.dir/src/image_processor.cpp.o"
-  "CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o"
   "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.pdb"
   "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so"
 )

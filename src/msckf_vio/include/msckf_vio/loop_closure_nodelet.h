@@ -13,6 +13,9 @@
 #include <msckf_vio/loop_closure.h>
 
 namespace msckf_vio {
+
+class loop_closure;
+
 class LoopClosureNodelet : public nodelet::Nodelet {
 public:
   LoopClosureNodelet() { return; }

@@ -53,7 +53,7 @@ generate_messages(
 ###################################
 catkin_package(
   INCLUDE_DIRS include
-  LIBRARIES msckf_vio image_processor
+  LIBRARIES msckf_vio image_processor loop_closure
   CATKIN_DEPENDS
     roscpp std_msgs tf nav_msgs sensor_msgs geometry_msgs
     eigen_conversions tf_conversions random_numbers message_runtime
@@ -106,14 +106,12 @@ target_link_libraries(msckf_vio_nodelet
 add_library(image_processor
   src/image_processor.cpp
   src/utils.cpp
-  src/loop_closure.cpp
 )
 add_dependencies(image_processor
   ${${PROJECT_NAME}_EXPORTED_TARGETS}
   ${catkin_EXPORTED_TARGETS}
 )
 target_link_libraries(image_processor
-  loop_closure
   ${catkin_LIBRARIES}
   ${OpenCV_LIBRARIES}
 )
@@ -134,8 +132,6 @@ target_link_libraries(image_processor_nodelet
 # loop_closure
 add_library(loop_closure
   src/loop_closure.cpp
-  src/image_processor.cpp
-  src/ORBextractor.cpp
 )
 add_dependencies(loop_closure
   ${${PROJECT_NAME}_EXPORTED_TARGETS}
@@ -143,16 +139,13 @@ add_dependencies(loop_closure
 )
 target_link_libraries(loop_closure
   ${catkin_LIBRARIES}
-  ${SUITESPARSE_LIBRARIES}
   ${OpenCV_LIBRARIES}
   ${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2.so
   ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
 )
+
 # loop_closure_nodelet
 add_library(loop_closure_nodelet
-  src/loop_closure.cpp
-  src/image_processor.cpp
-  src/ORBextractor.cpp
   src/loop_closure_nodelet
 )
 add_dependencies(loop_closure_nodelet
@@ -160,11 +153,8 @@ add_dependencies(loop_closure_nodelet
   ${catkin_EXPORTED_TARGETS}
 )
 target_link_libraries(loop_closure_nodelet
+  loop_closure
   ${catkin_LIBRARIES}
-  ${SUITESPARSE_LIBRARIES}
-  ${OpenCV_LIBRARIES}
-  ${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2.so
-  ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
 )
 
 # ORBextractor

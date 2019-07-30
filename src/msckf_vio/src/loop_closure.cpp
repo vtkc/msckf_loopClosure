@@ -85,6 +85,11 @@ namespace msckf_vio{
 
 
 	bool loop_closure::initialize() {
+
+		ROS_INFO("===========================================");
+		ROS_INFO("Starting Loop_Closure Node");
+		ROS_INFO("===========================================");
+
 		string strSettingPath = "/home/vtkc/tlab/orb-slam_ws/src/ORB_SLAM2/Examples/Stereo/KITTI04-12.yaml";
         string strVocFile = "/home/vtkc/tlab/orb-slam_ws/src/ORB_SLAM2/Vocabulary/ORBvoc.txt";
 
@@ -244,7 +249,9 @@ namespace msckf_vio{
 
 		//////////////////////////////////////////////////////////
 		if (!createRosIO()) return false;
- 		ROS_INFO("Finish creating ROS IO...");
+		ROS_INFO("===========================================");
+ 		ROS_INFO("Finish Initializing Loop_Closure");
+		 ROS_INFO("===========================================");
 		//////////////////////////////////////////////////////////
 		return true;
 	}

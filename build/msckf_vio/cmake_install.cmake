@@ -139,7 +139,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libimage_processor.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libimage_processor.so"
-         OLD_RPATH "/home/vtkc/tlab/msckf_loopClosure/devel/lib:/opt/ros/kinetic/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/lib:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/lib:"
+         OLD_RPATH "/opt/ros/kinetic/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libimage_processor.so")
@@ -159,7 +159,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libimage_processor_nodelet.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libimage_processor_nodelet.so"
-         OLD_RPATH "/home/vtkc/tlab/msckf_loopClosure/devel/lib:/opt/ros/kinetic/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/lib:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
+         OLD_RPATH "/home/vtkc/tlab/msckf_loopClosure/devel/lib:/opt/ros/kinetic/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libimage_processor_nodelet.so")
@@ -199,7 +199,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libloop_closure_nodelet.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libloop_closure_nodelet.so"
-         OLD_RPATH "/opt/ros/kinetic/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/lib:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/lib:"
+         OLD_RPATH "/home/vtkc/tlab/msckf_loopClosure/devel/lib:/opt/ros/kinetic/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/lib:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libloop_closure_nodelet.so")

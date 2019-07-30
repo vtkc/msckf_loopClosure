@@ -18,9 +18,6 @@
 #include <msckf_vio/image_processor.h>
 #include <msckf_vio/utils.h>
 
-#include <thread>
-
-
 using namespace std;
 using namespace cv;
 using namespace Eigen;
@@ -32,7 +29,8 @@ ImageProcessor::ImageProcessor(ros::NodeHandle& n) :
   //img_transport(n),
   stereo_sub(10),
   prev_features_ptr(new GridFeatures()),
-  curr_features_ptr(new GridFeatures()) {
+  curr_features_ptr(new GridFeatures()) 
+{
   return;
 }
 
@@ -199,17 +197,11 @@ bool ImageProcessor::initialize() {
   if (!loadParameters()) return false;
   ROS_INFO("Finish loading ROS parameters...");
 
-  // loop_closure* lc;
-  // std::thread* loop_closure_thread;
-
-  // lc = new loop_closure();
-  // loop_closure_thread = new thread(&msckf_vio::loop_closure::run, lc);
-
   // Create feature detector.
-  // detector_ptr = FastFeatureDetector::create(
-  //     processor_config.fast_threshold);
+  detector_ptr = FastFeatureDetector::create(
+      processor_config.fast_threshold);
 
-    if (!createRosIO()) return false;
+  if (!createRosIO()) return false;
   ROS_INFO("Finish creating ROS IO...");
 
   return true;
@@ -226,11 +218,6 @@ void ImageProcessor::stereoCallback(
       sensor_msgs::image_encodings::MONO8);
   cam1_curr_img_ptr = cv_bridge::toCvShare(cam1_img,
       sensor_msgs::image_encodings::MONO8);
-
-  // cam0_img_input = cam0_curr_img_ptr->image;
-  // cam1_img_input = cam1_curr_img_ptr->image;
-  // timestamp = cam0_img->header.stamp.toSec();
-  // lc->updateImg(cam0_img_input, cam1_img_input, timestamp);
 
   // Build the image pyramids once since they're used at multiple places
   createImagePyramids();
@@ -325,24 +312,14 @@ void ImageProcessor::createImagePyramids() {
 }
 
 void ImageProcessor::initializeFirstFrame() {
-
-  vector<KeyPoint> orbKeyPoints;
-
   // Size of each grid.
   const Mat& img = cam0_curr_img_ptr->image;
   static int grid_height = img.rows / processor_config.grid_row;
   static int grid_width = img.cols / processor_config.grid_col;
 
-  // loop_closure lc(img, orbKeyPoints);
-  // thread loop_closure_thread(&loop_closure::task1, lc, "Init First KF");
-
   // Detect new features on the frist image.
   vector<KeyPoint> new_features(0);
   detector_ptr->detect(img, new_features);
-  // Mat mask;
-  // lc->getFAST(mask, new_features);
-
-  // cout << "Number of new_features = " << new_features.size() << endl;
 
   // Find the stereo matched points for the newly
   // detected features.
@@ -354,10 +331,6 @@ void ImageProcessor::initializeFirstFrame() {
   vector<unsigned char> inlier_markers(0);
   stereoMatch(cam0_points, cam1_points, inlier_markers);
 
-  // cout << "Number of cam0_points = " << cam0_points.size() << endl;
-  // cout << "Number of cam1_points = " << cam1_points.size() << endl;
-  // cout << "Number of inlier_markers = " << inlier_markers.size() << endl;
-
   vector<cv::Point2f> cam0_inliers(0);
   vector<cv::Point2f> cam1_inliers(0);
   vector<float> response_inliers(0);
@@ -367,10 +340,6 @@ void ImageProcessor::initializeFirstFrame() {
     cam1_inliers.push_back(cam1_points[i]);
     response_inliers.push_back(new_features[i].response);
   }
-
-  // cout << "Number of cam0_inliers = " << cam0_inliers.size() << endl;
-  // cout << "Number of cam1_inliers = " << cam1_inliers.size() << endl;
-  // cout << "Number of response_inliers = " << response_inliers.size() << endl;
 
   // Group the features into grids
   GridFeatures grid_new_features;
@@ -754,8 +723,7 @@ void ImageProcessor::addNewFeatures() {
 
   // Detect new features.
   vector<KeyPoint> new_features(0);
-  // detector_ptr->detect(curr_img, new_features, mask);
-  // lc->getFAST(mask, new_features);
+  detector_ptr->detect(curr_img, new_features, mask);
 
   // Collect the new detected features based on the grid.
   // Select the ones with top response within each grid afterwards.

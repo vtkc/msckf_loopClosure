@@ -7,10 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/vtkc/tlab/msckf_loopClosure/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/vtkc/tlab/msckf_loopClosure/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/vtkc/tlab/msckf_loopClosure/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export LD_LIBRARY_PATH="/home/vtkc/Desktop/SVO/svo1/devel/lib:/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu"
+export PKG_CONFIG_PATH="/home/vtkc/Desktop/SVO/svo1/devel/lib/pkgconfig:/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig"
 export PWD="/home/vtkc/tlab/msckf_loopClosure/build"
-export PYTHONPATH="/home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/vtkc/tlab/msckf_loopClosure/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/vtkc/tlab/msckf_loopClosure/src:/home/vtkc/Desktop/SVO/svo1/src:/opt/ros/kinetic/share"
+export PYTHONPATH="/home/vtkc/Desktop/SVO/svo1/devel/lib/python2.7/dist-packages:/opt/ros/kinetic/lib/python2.7/dist-packages"

@@ -18,3 +18,13 @@
     </description>
   </class>
 </library>
+
+<library path="lib/libloop_closure_nodelet">
+  <class name="msckf_vio/LoopClosureNodelet"
+         type="msckf_vio::LoopClosureNodelet"
+         base_class_type="nodelet::Nodelet">
+    <description>
+      Loop Closure Algorithm from ORB_SLAM2
+    </description>
+  </class>
+</library>

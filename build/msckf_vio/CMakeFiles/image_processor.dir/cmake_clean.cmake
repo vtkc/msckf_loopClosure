@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/image_processor.dir/src/image_processor.cpp.o"
   "CMakeFiles/image_processor.dir/src/utils.cpp.o"
-  "CMakeFiles/image_processor.dir/src/loop_closure.cpp.o"
   "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.pdb"
   "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so"
 )
