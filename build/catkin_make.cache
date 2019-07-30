@@ -1,2 +1,2 @@
 msckf_vio
--DCATKIN_DEVEL_PREFIX=/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel -DCMAKE_INSTALL_PREFIX=/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/vtkc/tlab/msckf_loopClosure/devel -DCMAKE_INSTALL_PREFIX=/home/vtkc/tlab/msckf_loopClosure/install -G Unix Makefiles

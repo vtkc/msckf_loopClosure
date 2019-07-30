@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/msckf_vio_nodelet.dir/src/msckf_vio_nodelet.cpp.o"
-  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/libmsckf_vio_nodelet.pdb"
-  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/libmsckf_vio_nodelet.so"
+  "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libmsckf_vio_nodelet.pdb"
+  "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libmsckf_vio_nodelet.so"
 )
 
 # Per-language clean rules from dependency scanning.

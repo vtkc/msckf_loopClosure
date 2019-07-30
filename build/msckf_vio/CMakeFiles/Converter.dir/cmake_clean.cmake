@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Converter.dir/src/Converter.cpp.o"
-  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/libConverter.pdb"
-  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/libConverter.so"
+  "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.pdb"
+  "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so"
 )
 
 # Per-language clean rules from dependency scanning.

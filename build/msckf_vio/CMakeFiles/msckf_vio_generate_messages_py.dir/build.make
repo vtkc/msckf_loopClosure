@@ -43,52 +43,52 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src
+CMAKE_SOURCE_DIR = /home/vtkc/tlab/msckf_loopClosure/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build
+CMAKE_BINARY_DIR = /home/vtkc/tlab/msckf_loopClosure/build
 
 # Utility rule file for msckf_vio_generate_messages_py.
 
 # Include the progress variables for this target.
 include msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/progress.make
 
-msckf_vio/CMakeFiles/msckf_vio_generate_messages_py: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_FeatureMeasurement.py
-msckf_vio/CMakeFiles/msckf_vio_generate_messages_py: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_CameraMeasurement.py
-msckf_vio/CMakeFiles/msckf_vio_generate_messages_py: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_TrackingInfo.py
-msckf_vio/CMakeFiles/msckf_vio_generate_messages_py: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/__init__.py
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_py: /home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_TrackingInfo.py
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_py: /home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_CameraMeasurement.py
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_py: /home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_FeatureMeasurement.py
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_py: /home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/__init__.py
 
 
-/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_FeatureMeasurement.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_FeatureMeasurement.py: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG msckf_vio/FeatureMeasurement"
-	cd /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg -Imsckf_vio:/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_TrackingInfo.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_TrackingInfo.py: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_TrackingInfo.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG msckf_vio/TrackingInfo"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg -Imsckf_vio:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg
 
-/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_CameraMeasurement.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_CameraMeasurement.py: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg
-/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_CameraMeasurement.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_CameraMeasurement.py: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG msckf_vio/CameraMeasurement"
-	cd /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg -Imsckf_vio:/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_CameraMeasurement.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_CameraMeasurement.py: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_CameraMeasurement.py: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_CameraMeasurement.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG msckf_vio/CameraMeasurement"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg -Imsckf_vio:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg
 
-/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_TrackingInfo.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_TrackingInfo.py: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg
-/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_TrackingInfo.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG msckf_vio/TrackingInfo"
-	cd /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg -Imsckf_vio:/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_FeatureMeasurement.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_FeatureMeasurement.py: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG msckf_vio/FeatureMeasurement"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg -Imsckf_vio:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg
 
-/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/__init__.py: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_FeatureMeasurement.py
-/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/__init__.py: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_CameraMeasurement.py
-/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/__init__.py: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_TrackingInfo.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python msg __init__.py for msckf_vio"
-	cd /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg --initpy
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/__init__.py: /home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_TrackingInfo.py
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/__init__.py: /home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_CameraMeasurement.py
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/__init__.py: /home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_FeatureMeasurement.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python msg __init__.py for msckf_vio"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg --initpy
 
 msckf_vio_generate_messages_py: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py
-msckf_vio_generate_messages_py: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_FeatureMeasurement.py
-msckf_vio_generate_messages_py: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_CameraMeasurement.py
-msckf_vio_generate_messages_py: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_TrackingInfo.py
-msckf_vio_generate_messages_py: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/__init__.py
+msckf_vio_generate_messages_py: /home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_TrackingInfo.py
+msckf_vio_generate_messages_py: /home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_CameraMeasurement.py
+msckf_vio_generate_messages_py: /home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/_FeatureMeasurement.py
+msckf_vio_generate_messages_py: /home/vtkc/tlab/msckf_loopClosure/devel/lib/python2.7/dist-packages/msckf_vio/msg/__init__.py
 msckf_vio_generate_messages_py: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/build.make
 
 .PHONY : msckf_vio_generate_messages_py
@@ -99,10 +99,10 @@ msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/build: msckf_vio_generat
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/build
 
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/clean:
-	cd /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/msckf_vio && $(CMAKE_COMMAND) -P CMakeFiles/msckf_vio_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && $(CMAKE_COMMAND) -P CMakeFiles/msckf_vio_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/clean
 
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/depend:
-	cd /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/src/msckf_vio /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/msckf_vio /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vtkc/tlab/msckf_loopClosure/src /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio /home/vtkc/tlab/msckf_loopClosure/build /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/depend
 

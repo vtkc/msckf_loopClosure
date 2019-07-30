@@ -2,8 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o"
   "CMakeFiles/loop_closure.dir/src/image_processor.cpp.o"
   "CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o"
-  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/libloop_closure.pdb"
-  "/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/devel/lib/libloop_closure.so"
+  "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.pdb"
+  "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -136,6 +136,10 @@ namespace msckf_vio{
             
             ros::Publisher pose_pub;
 
+            ////////////////////////////////////////////////////
+            Mat cam0_img_input;
+            Mat cam1_img_input;
+            
     };
 
     typedef loop_closure::Ptr LoopClosurePtr;

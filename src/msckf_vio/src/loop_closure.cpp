@@ -51,7 +51,7 @@ namespace msckf_vio{
 
 		return true;
 	}
-	loop_closure::ProcessorCallback(const sensor_msgs::ImageConstPtr& cam0_img,
+	void loop_closure::ProcessorCallback(const sensor_msgs::ImageConstPtr& cam0_img,
     								const sensor_msgs::ImageConstPtr& cam1_img,
     								const nav_msgs::Odometry::ConstPtr& odom_msg){
 
@@ -248,7 +248,7 @@ namespace msckf_vio{
 		return true;
 	}
 
-    loop_closure::loop_closure()
+    loop_closure::loop_closure() : process_sub(10)
     {
         return;
     }

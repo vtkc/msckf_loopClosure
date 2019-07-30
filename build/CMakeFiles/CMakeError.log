@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/CMakeFiles/CMakeTmp
+Change Dir: /home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c619f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c619f.dir/build.make CMakeFiles/cmTC_c619f.dir/build
-make[1]: Entering directory '/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c619f.dir/CheckSymbolExists.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_c619f.dir/CheckSymbolExists.c.o   -c /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_c619f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c619f.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_c619f.dir/CheckSymbolExists.c.o  -o cmTC_c619f -rdynamic 
-CMakeFiles/cmTC_c619f.dir/CheckSymbolExists.c.o：在函数‘main’中：
-CheckSymbolExists.c:(.text+0x16)：对‘pthread_create’未定义的引用
+Run Build Command:"/usr/bin/make" "cmTC_9e7cc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9e7cc.dir/build.make CMakeFiles/cmTC_9e7cc.dir/build
+make[1]: Entering directory '/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9e7cc.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_9e7cc.dir/CheckSymbolExists.c.o   -c /home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_9e7cc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e7cc.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_9e7cc.dir/CheckSymbolExists.c.o  -o cmTC_9e7cc -rdynamic 
+CMakeFiles/cmTC_9e7cc.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_c619f.dir/build.make:97: recipe for target 'cmTC_c619f' failed
-make[1]: *** [cmTC_c619f] Error 1
-make[1]: Leaving directory '/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_c619f/fast' failed
-make: *** [cmTC_c619f/fast] Error 2
+CMakeFiles/cmTC_9e7cc.dir/build.make:97: recipe for target 'cmTC_9e7cc' failed
+make[1]: *** [cmTC_9e7cc] Error 1
+make[1]: Leaving directory '/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9e7cc/fast' failed
+make: *** [cmTC_9e7cc/fast] Error 2
 
-File /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/CMakeFiles/CMakeTmp
+Change Dir: /home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_44652/fast"
-/usr/bin/make -f CMakeFiles/cmTC_44652.dir/build.make CMakeFiles/cmTC_44652.dir/build
-make[1]: Entering directory '/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_44652.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_44652.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_44652
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_44652.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_44652.dir/CheckFunctionExists.c.o  -o cmTC_44652 -rdynamic -lpthreads 
-/usr/bin/ld: 找不到 -lpthreads
+Run Build Command:"/usr/bin/make" "cmTC_91ae4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_91ae4.dir/build.make CMakeFiles/cmTC_91ae4.dir/build
+make[1]: Entering directory '/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_91ae4.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_91ae4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_91ae4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91ae4.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_91ae4.dir/CheckFunctionExists.c.o  -o cmTC_91ae4 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_44652.dir/build.make:97: recipe for target 'cmTC_44652' failed
-make[1]: *** [cmTC_44652] Error 1
-make[1]: Leaving directory '/home/zcy/KFbased_ORBSLAM2/msckf_loopClosure/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_44652/fast' failed
-make: *** [cmTC_44652/fast] Error 2
+CMakeFiles/cmTC_91ae4.dir/build.make:97: recipe for target 'cmTC_91ae4' failed
+make[1]: *** [cmTC_91ae4] Error 1
+make[1]: Leaving directory '/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_91ae4/fast' failed
+make: *** [cmTC_91ae4/fast] Error 2
 
 
