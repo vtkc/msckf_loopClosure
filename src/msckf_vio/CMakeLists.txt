@@ -148,6 +148,24 @@ target_link_libraries(loop_closure
   ${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2.so
   ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
 )
+# loop_closure_nodelet
+add_library(loop_closure_nodelet
+  src/loop_closure.cpp
+  src/image_processor.cpp
+  src/ORBextractor.cpp
+  src/loop_closure_nodelet
+)
+add_dependencies(loop_closure_nodelet
+  ${${PROJECT_NAME}_EXPORTED_TARGETS}
+  ${catkin_EXPORTED_TARGETS}
+)
+target_link_libraries(loop_closure_nodelet
+  ${catkin_LIBRARIES}
+  ${SUITESPARSE_LIBRARIES}
+  ${OpenCV_LIBRARIES}
+  ${PROJECT_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2.so
+  ${PROJECT_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so
+)
 
 # ORBextractor
 add_library(ORBextractor
@@ -254,6 +272,7 @@ install(TARGETS
   image_processor 
   image_processor_nodelet 
   loop_closure 
+  loop_closure_nodelet
   ORBextractor 
   Converter
   Frame

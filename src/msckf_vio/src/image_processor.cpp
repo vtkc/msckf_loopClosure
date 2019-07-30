@@ -202,8 +202,8 @@ bool ImageProcessor::initialize() {
   // loop_closure* lc;
   // std::thread* loop_closure_thread;
 
-  lc = new loop_closure();
-  loop_closure_thread = new thread(&msckf_vio::loop_closure::run, lc);
+  // lc = new loop_closure();
+  // loop_closure_thread = new thread(&msckf_vio::loop_closure::run, lc);
 
   // Create feature detector.
   // detector_ptr = FastFeatureDetector::create(
@@ -227,10 +227,10 @@ void ImageProcessor::stereoCallback(
   cam1_curr_img_ptr = cv_bridge::toCvShare(cam1_img,
       sensor_msgs::image_encodings::MONO8);
 
-  cam0_img_input = cam0_curr_img_ptr->image;
-  cam1_img_input = cam1_curr_img_ptr->image;
-  timestamp = cam0_img->header.stamp.toSec();
-  lc->updateImg(cam0_img_input, cam1_img_input, timestamp);
+  // cam0_img_input = cam0_curr_img_ptr->image;
+  // cam1_img_input = cam1_curr_img_ptr->image;
+  // timestamp = cam0_img->header.stamp.toSec();
+  // lc->updateImg(cam0_img_input, cam1_img_input, timestamp);
 
   // Build the image pyramids once since they're used at multiple places
   createImagePyramids();
@@ -342,7 +342,7 @@ void ImageProcessor::initializeFirstFrame() {
   // Mat mask;
   // lc->getFAST(mask, new_features);
 
-  cout << "Number of new_features = " << new_features.size() << endl;
+  // cout << "Number of new_features = " << new_features.size() << endl;
 
   // Find the stereo matched points for the newly
   // detected features.
@@ -354,9 +354,9 @@ void ImageProcessor::initializeFirstFrame() {
   vector<unsigned char> inlier_markers(0);
   stereoMatch(cam0_points, cam1_points, inlier_markers);
 
-  cout << "Number of cam0_points = " << cam0_points.size() << endl;
-  cout << "Number of cam1_points = " << cam1_points.size() << endl;
-  cout << "Number of inlier_markers = " << inlier_markers.size() << endl;
+  // cout << "Number of cam0_points = " << cam0_points.size() << endl;
+  // cout << "Number of cam1_points = " << cam1_points.size() << endl;
+  // cout << "Number of inlier_markers = " << inlier_markers.size() << endl;
 
   vector<cv::Point2f> cam0_inliers(0);
   vector<cv::Point2f> cam1_inliers(0);
@@ -368,9 +368,9 @@ void ImageProcessor::initializeFirstFrame() {
     response_inliers.push_back(new_features[i].response);
   }
 
-  cout << "Number of cam0_inliers = " << cam0_inliers.size() << endl;
-  cout << "Number of cam1_inliers = " << cam1_inliers.size() << endl;
-  cout << "Number of response_inliers = " << response_inliers.size() << endl;
+  // cout << "Number of cam0_inliers = " << cam0_inliers.size() << endl;
+  // cout << "Number of cam1_inliers = " << cam1_inliers.size() << endl;
+  // cout << "Number of response_inliers = " << response_inliers.size() << endl;
 
   // Group the features into grids
   GridFeatures grid_new_features;

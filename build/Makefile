@@ -387,6 +387,19 @@ Converter/fast:
 .PHONY : Converter/fast
 
 #=============================================================================
+# Target rules for targets named loop_closure_nodelet
+
+# Build rule for target.
+loop_closure_nodelet: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 loop_closure_nodelet
+.PHONY : loop_closure_nodelet
+
+# fast build rule for target.
+loop_closure_nodelet/fast:
+	$(MAKE) -f msckf_vio/CMakeFiles/loop_closure_nodelet.dir/build.make msckf_vio/CMakeFiles/loop_closure_nodelet.dir/build
+.PHONY : loop_closure_nodelet/fast
+
+#=============================================================================
 # Target rules for targets named image_processor
 
 # Build rule for target.
@@ -1820,6 +1833,7 @@ help:
 	@echo "... test_feature_init"
 	@echo "... Frame"
 	@echo "... Converter"
+	@echo "... loop_closure_nodelet"
 	@echo "... image_processor"
 	@echo "... msckf_vio_genpy"
 	@echo "... tf2_msgs_generate_messages_py"

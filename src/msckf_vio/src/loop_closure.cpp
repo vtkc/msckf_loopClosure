@@ -64,10 +64,11 @@ namespace msckf_vio{
 		cam0_img_input = cam0_curr_img_ptr->image;
 		cam1_img_input = cam1_curr_img_ptr->image;
 		timestamp = cam0_img->header.stamp.toSec();
-		ROS_INFO("cam timestamp=",timestamp);
-		ROS_INFO("pose timestamp=", odom_msg->header.stamp.toSec());
-  		ROS_INFO("Position-> x: [%f], y: [%f], z: [%f]", odom_msg->pose.pose.position.x,odom_msg->pose.pose.position.y, odom_msg->pose.pose.position.z);
-  		ROS_INFO("Orientation-> x: [%f], y: [%f], z: [%f], w: [%f]", odom_msg->pose.pose.orientation.x, odom_msg->pose.pose.orientation.y, odom_msg->pose.pose.orientation.z, odom_msg->pose.pose.orientation.w);
+		cout << "cam timestamp=" << timestamp << endl;
+		cout << "pose timestamp=" <<  odom_msg->header.stamp.toSec() << endl;
+  		cout << "Position-> x: " << odom_msg->pose.pose.position.x << "y: " << odom_msg->pose.pose.position.y << "z: " << odom_msg->pose.pose.position.z << endl;
+  		cout << "Orientation-> x: " << odom_msg->pose.pose.orientation.x << "y: " << odom_msg->pose.pose.orientation.y 
+		  << "z: " << odom_msg->pose.pose.orientation.z << "w: " << odom_msg->pose.pose.orientation.w << endl;
 		return;
 	}
 
@@ -84,8 +85,8 @@ namespace msckf_vio{
 
 
 	bool loop_closure::initialize() {
-		string strSettingPath;
-        string strVocFile;
+		string strSettingPath = "/home/vtkc/tlab/orb-slam_ws/src/ORB_SLAM2/Examples/Stereo/KITTI04-12.yaml";
+        string strVocFile = "/home/vtkc/tlab/orb-slam_ws/src/ORB_SLAM2/Vocabulary/ORBvoc.txt";
 
         //Check settings file opencv 读取 配置 文件
 	    cv::FileStorage fsSettings(strSettingPath.c_str(), cv::FileStorage::READ);
@@ -450,22 +451,22 @@ namespace msckf_vio{
 	}
 	
 
-    void loop_closure::run(){
-        while(1){
-            if(imgQueue.size()){
-                createFrame(*imgQueue.begin());
-				imgQueue.erase(imgQueue.begin());
-				if (!mpKeyFrameDatabase->getKFDB().size())
-				{
-					KFInitialization();
-				}
-				else
-				{
-					creatKF();
-				}
+    // void loop_closure::run(){
+    //     while(1){
+    //         if(imgQueue.size()){
+    //             createFrame(*imgQueue.begin());
+	// 			imgQueue.erase(imgQueue.begin());
+	// 			if (!mpKeyFrameDatabase->getKFDB().size())
+	// 			{
+	// 				KFInitialization();
+	// 			}
+	// 			else
+	// 			{
+	// 				creatKF();
+	// 			}
 				
-            }
-        }
-        return;
-    }
+    //         }
+    //     }
+    //     return;
+    // }
 }

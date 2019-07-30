@@ -39,6 +39,7 @@
 /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/install/local.dir
 /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/Frame.dir
 /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/Converter.dir
+/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure_nodelet.dir
 /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/image_processor.dir
 /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/msckf_vio_genpy.dir
 /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/tf2_msgs_generate_messages_py.dir
