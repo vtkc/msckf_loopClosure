@@ -90,6 +90,7 @@ Converter_EXTERNAL_OBJECTS =
 
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: msckf_vio/CMakeFiles/Converter.dir/src/Converter.cpp.o
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: msckf_vio/CMakeFiles/Converter.dir/build.make
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/libeigen_conversions.so
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/libtf_conversions.so
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/libkdl_conversions.so
@@ -358,21 +359,21 @@ Converter_EXTERNAL_OBJECTS =
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xphoto3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/lib/libDBoW2.so
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/lib/libg2o.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_shape3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_photo3.so.3.3.1
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_viz3.so.3.3.1
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_phase_unwrapping3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_datasets3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_plot3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_text3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_dnn3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ml3.so.3.3.1
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_shape3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_video3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_calib3d3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_features2d3.so.3.3.1
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_flann3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_highgui3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_videoio3.so.3.3.1
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_viz3.so.3.3.1
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_phase_unwrapping3.so.3.3.1
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_flann3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_objdetect3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libConverter.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1

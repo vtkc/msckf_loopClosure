@@ -35,6 +35,7 @@ msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /home/vtkc/t
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/types_sba.h
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h
+msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/include/msckf_vio/Converter.h
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/include/msckf_vio/Frame.h
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/include/msckf_vio/KeyFrame.h
 msckf_vio/CMakeFiles/image_processor.dir/src/image_processor.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/include/msckf_vio/KeyFrameDatabase.h

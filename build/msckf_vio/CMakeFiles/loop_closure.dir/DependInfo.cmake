@@ -4,6 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Converter.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure.dir/src/Converter.cpp.o"
+  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Frame.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure.dir/src/Frame.cpp.o"
+  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/KeyFrame.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.o"
+  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/KeyFrameDatabase.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.o"
+  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/LocalMapping.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.o"
+  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/LoopClosing.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.o"
+  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Map.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure.dir/src/Map.cpp.o"
+  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/MapPoint.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure.dir/src/MapPoint.cpp.o"
+  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/ORBextractor.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o"
+  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/ORBmatcher.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.o"
+  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Optimizer.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure.dir/src/Optimizer.cpp.o"
+  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Sim3Solver.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.o"
   "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/loop_closure.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

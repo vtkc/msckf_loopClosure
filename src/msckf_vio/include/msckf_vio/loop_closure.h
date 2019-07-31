@@ -21,6 +21,7 @@
 #include <msckf_vio/LocalMapping.h>
 #include <msckf_vio/LoopClosing.h>
 #include <msckf_vio/Map.h>
+#include <msckf_vio/Converter.h>
 // #include <msckf_vio/FrameDrawer.h>
 // #include <msckf_vio/MapDrawer.h>
 // #include <msckf_vio/Viewer.h>
@@ -120,10 +121,9 @@ namespace msckf_vio{
     //////////////////////////////////////////////
     //current images
         private:
+            Converter converter;
             cv_bridge::CvImageConstPtr cam0_curr_img_ptr;
             cv_bridge::CvImageConstPtr cam1_curr_img_ptr;
-
-
             // Subscribers and publishers.
             message_filters::Subscriber<
                 sensor_msgs::Image> cam0_img_sub;
@@ -143,7 +143,6 @@ namespace msckf_vio{
     };
 
     typedef loop_closure::Ptr LoopClosurePtr;
-    typedef loop_closure::ConstPtr LoopClosureConstPtr;
     
 }
 

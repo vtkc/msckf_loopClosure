@@ -7,15 +7,9 @@
 
 #include <msckf_vio/loop_closure_nodelet.h>
 
-using namespace std;
-
 namespace msckf_vio {
 void LoopClosureNodelet::onInit() {
-  ros::NodeHandle& private_nh = getPrivateNodeHandle();
-  loop_closure* lc = new loop_closure(private_nh);
-  cout << "Step in loop_closure_nodelet~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
-  exit(-1);
-  loop_closure_ptr.reset(lc);
+  loop_closure_ptr.reset(new loop_closure(getPrivateNodeHandle()));
   if (!loop_closure_ptr->initialize()) {
     ROS_ERROR("Cannot initialize Image Processor...");
     return;

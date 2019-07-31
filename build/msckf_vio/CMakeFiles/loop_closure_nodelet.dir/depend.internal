@@ -33,6 +33,7 @@ msckf_vio/CMakeFiles/loop_closure_nodelet.dir/src/loop_closure_nodelet.cpp.o
  /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/types_sba.h
  /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h
  /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h
+ /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/include/msckf_vio/Converter.h
  /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/include/msckf_vio/Frame.h
  /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/include/msckf_vio/KeyFrame.h
  /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/include/msckf_vio/KeyFrameDatabase.h

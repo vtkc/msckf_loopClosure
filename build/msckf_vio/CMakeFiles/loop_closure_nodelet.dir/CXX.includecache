@@ -306,6 +306,16 @@ types_sba.h
 Eigen/Geometry
 -
 
+/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/include/msckf_vio/Converter.h
+opencv2/core/core.hpp
+-
+Eigen/Dense
+-
+../Thirdparty/g2o/g2o/types/types_six_dof_expmap.h
+-
+../Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h
+-
+
 /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/include/msckf_vio/Frame.h
 vector
 -
@@ -462,6 +472,8 @@ msckf_vio/LocalMapping.h
 msckf_vio/LoopClosing.h
 -
 msckf_vio/Map.h
+-
+msckf_vio/Converter.h
 -
 
 /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/include/msckf_vio/loop_closure_nodelet.h

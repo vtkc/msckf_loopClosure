@@ -105,9 +105,33 @@ msckf_vio/CMakeFiles/Frame.dir/src/KeyFrame.cpp.o.provides: msckf_vio/CMakeFiles
 msckf_vio/CMakeFiles/Frame.dir/src/KeyFrame.cpp.o.provides.build: msckf_vio/CMakeFiles/Frame.dir/src/KeyFrame.cpp.o
 
 
+msckf_vio/CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.o: msckf_vio/CMakeFiles/Frame.dir/flags.make
+msckf_vio/CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/KeyFrameDatabase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.o"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/KeyFrameDatabase.cpp
+
+msckf_vio/CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.i"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/KeyFrameDatabase.cpp > CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.i
+
+msckf_vio/CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.s"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/KeyFrameDatabase.cpp -o CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.s
+
+msckf_vio/CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.o.requires:
+
+.PHONY : msckf_vio/CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.o.requires
+
+msckf_vio/CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.o.provides: msckf_vio/CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.o.requires
+	$(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.o.provides.build
+.PHONY : msckf_vio/CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.o.provides
+
+msckf_vio/CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.o.provides.build: msckf_vio/CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.o
+
+
 msckf_vio/CMakeFiles/Frame.dir/src/MapPoint.cpp.o: msckf_vio/CMakeFiles/Frame.dir/flags.make
 msckf_vio/CMakeFiles/Frame.dir/src/MapPoint.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/MapPoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/MapPoint.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/MapPoint.cpp.o"
 	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Frame.dir/src/MapPoint.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/MapPoint.cpp
 
 msckf_vio/CMakeFiles/Frame.dir/src/MapPoint.cpp.i: cmake_force
@@ -131,7 +155,7 @@ msckf_vio/CMakeFiles/Frame.dir/src/MapPoint.cpp.o.provides.build: msckf_vio/CMak
 
 msckf_vio/CMakeFiles/Frame.dir/src/Map.cpp.o: msckf_vio/CMakeFiles/Frame.dir/flags.make
 msckf_vio/CMakeFiles/Frame.dir/src/Map.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/Map.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/Map.cpp.o"
 	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Frame.dir/src/Map.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Map.cpp
 
 msckf_vio/CMakeFiles/Frame.dir/src/Map.cpp.i: cmake_force
@@ -155,7 +179,7 @@ msckf_vio/CMakeFiles/Frame.dir/src/Map.cpp.o.provides.build: msckf_vio/CMakeFile
 
 msckf_vio/CMakeFiles/Frame.dir/src/ORBmatcher.cpp.o: msckf_vio/CMakeFiles/Frame.dir/flags.make
 msckf_vio/CMakeFiles/Frame.dir/src/ORBmatcher.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/ORBmatcher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/ORBmatcher.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/ORBmatcher.cpp.o"
 	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Frame.dir/src/ORBmatcher.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/ORBmatcher.cpp
 
 msckf_vio/CMakeFiles/Frame.dir/src/ORBmatcher.cpp.i: cmake_force
@@ -179,7 +203,7 @@ msckf_vio/CMakeFiles/Frame.dir/src/ORBmatcher.cpp.o.provides.build: msckf_vio/CM
 
 msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.o: msckf_vio/CMakeFiles/Frame.dir/flags.make
 msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/ORBextractor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.o"
 	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Frame.dir/src/ORBextractor.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/ORBextractor.cpp
 
 msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.i: cmake_force
@@ -203,7 +227,7 @@ msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.o.provides.build: msckf_vio/
 
 msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o: msckf_vio/CMakeFiles/Frame.dir/flags.make
 msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/LoopClosing.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o"
 	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Frame.dir/src/LoopClosing.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/LoopClosing.cpp
 
 msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.i: cmake_force
@@ -227,7 +251,7 @@ msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o.provides.build: msckf_vio/C
 
 msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o: msckf_vio/CMakeFiles/Frame.dir/flags.make
 msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Optimizer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o"
 	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Frame.dir/src/Optimizer.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Optimizer.cpp
 
 msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.i: cmake_force
@@ -251,7 +275,7 @@ msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o.provides.build: msckf_vio/CMa
 
 msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o: msckf_vio/CMakeFiles/Frame.dir/flags.make
 msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Sim3Solver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o"
 	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Sim3Solver.cpp
 
 msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.i: cmake_force
@@ -275,7 +299,7 @@ msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o.provides.build: msckf_vio/CM
 
 msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o: msckf_vio/CMakeFiles/Frame.dir/flags.make
 msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/LocalMapping.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o"
 	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Frame.dir/src/LocalMapping.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/LocalMapping.cpp
 
 msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.i: cmake_force
@@ -301,6 +325,7 @@ msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o.provides.build: msckf_vio/
 Frame_OBJECTS = \
 "CMakeFiles/Frame.dir/src/Frame.cpp.o" \
 "CMakeFiles/Frame.dir/src/KeyFrame.cpp.o" \
+"CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.o" \
 "CMakeFiles/Frame.dir/src/MapPoint.cpp.o" \
 "CMakeFiles/Frame.dir/src/Map.cpp.o" \
 "CMakeFiles/Frame.dir/src/ORBmatcher.cpp.o" \
@@ -315,6 +340,7 @@ Frame_EXTERNAL_OBJECTS =
 
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: msckf_vio/CMakeFiles/Frame.dir/src/Frame.cpp.o
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: msckf_vio/CMakeFiles/Frame.dir/src/KeyFrame.cpp.o
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: msckf_vio/CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.o
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: msckf_vio/CMakeFiles/Frame.dir/src/MapPoint.cpp.o
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: msckf_vio/CMakeFiles/Frame.dir/src/Map.cpp.o
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: msckf_vio/CMakeFiles/Frame.dir/src/ORBmatcher.cpp.o
@@ -324,6 +350,7 @@ Frame_EXTERNAL_OBJECTS =
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: msckf_vio/CMakeFiles/Frame.dir/build.make
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/libeigen_conversions.so
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/libtf_conversions.so
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/libkdl_conversions.so
@@ -592,27 +619,27 @@ Frame_EXTERNAL_OBJECTS =
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xphoto3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/lib/libDBoW2.so
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/lib/libg2o.so
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_shape3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_photo3.so.3.3.1
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_viz3.so.3.3.1
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_phase_unwrapping3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_datasets3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_plot3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_text3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_dnn3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ml3.so.3.3.1
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_shape3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_video3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_calib3d3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_features2d3.so.3.3.1
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_flann3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_highgui3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_videoio3.so.3.3.1
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_viz3.so.3.3.1
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_phase_unwrapping3.so.3.3.1
-/home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_flann3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_objdetect3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so: msckf_vio/CMakeFiles/Frame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX shared library /home/vtkc/tlab/msckf_loopClosure/devel/lib/libFrame.so"
 	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Frame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -622,6 +649,7 @@ msckf_vio/CMakeFiles/Frame.dir/build: /home/vtkc/tlab/msckf_loopClosure/devel/li
 
 msckf_vio/CMakeFiles/Frame.dir/requires: msckf_vio/CMakeFiles/Frame.dir/src/Frame.cpp.o.requires
 msckf_vio/CMakeFiles/Frame.dir/requires: msckf_vio/CMakeFiles/Frame.dir/src/KeyFrame.cpp.o.requires
+msckf_vio/CMakeFiles/Frame.dir/requires: msckf_vio/CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.o.requires
 msckf_vio/CMakeFiles/Frame.dir/requires: msckf_vio/CMakeFiles/Frame.dir/src/MapPoint.cpp.o.requires
 msckf_vio/CMakeFiles/Frame.dir/requires: msckf_vio/CMakeFiles/Frame.dir/src/Map.cpp.o.requires
 msckf_vio/CMakeFiles/Frame.dir/requires: msckf_vio/CMakeFiles/Frame.dir/src/ORBmatcher.cpp.o.requires

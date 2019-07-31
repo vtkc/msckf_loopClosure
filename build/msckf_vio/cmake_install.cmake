@@ -239,7 +239,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libConverter.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libConverter.so"
-         OLD_RPATH "/opt/ros/kinetic/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/lib:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/lib:"
+         OLD_RPATH "/home/vtkc/tlab/msckf_loopClosure/devel/lib:/opt/ros/kinetic/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/lib:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libConverter.so")
@@ -259,7 +259,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libFrame.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libFrame.so"
-         OLD_RPATH "/opt/ros/kinetic/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/lib:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/lib:"
+         OLD_RPATH "/home/vtkc/tlab/msckf_loopClosure/devel/lib:/opt/ros/kinetic/lib:/usr/lib/x86_64-linux-gnu/hdf5/serial/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/lib:/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libFrame.so")

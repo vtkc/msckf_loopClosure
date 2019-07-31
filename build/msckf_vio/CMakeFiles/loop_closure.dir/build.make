@@ -81,14 +81,326 @@ msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o.provides: msckf_vio
 msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o.provides.build: msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o
 
 
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o: msckf_vio/CMakeFiles/loop_closure.dir/flags.make
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/ORBextractor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/ORBextractor.cpp
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.i"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/ORBextractor.cpp > CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.i
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.s"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/ORBextractor.cpp -o CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.s
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.requires:
+
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.requires
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.provides: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.requires
+	$(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.provides.build
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.provides
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.provides.build: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o
+
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Converter.cpp.o: msckf_vio/CMakeFiles/loop_closure.dir/flags.make
+msckf_vio/CMakeFiles/loop_closure.dir/src/Converter.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Converter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object msckf_vio/CMakeFiles/loop_closure.dir/src/Converter.cpp.o"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/loop_closure.dir/src/Converter.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Converter.cpp
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Converter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/loop_closure.dir/src/Converter.cpp.i"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Converter.cpp > CMakeFiles/loop_closure.dir/src/Converter.cpp.i
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Converter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/loop_closure.dir/src/Converter.cpp.s"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Converter.cpp -o CMakeFiles/loop_closure.dir/src/Converter.cpp.s
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Converter.cpp.o.requires:
+
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/Converter.cpp.o.requires
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Converter.cpp.o.provides: msckf_vio/CMakeFiles/loop_closure.dir/src/Converter.cpp.o.requires
+	$(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Converter.cpp.o.provides.build
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/Converter.cpp.o.provides
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Converter.cpp.o.provides.build: msckf_vio/CMakeFiles/loop_closure.dir/src/Converter.cpp.o
+
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Frame.cpp.o: msckf_vio/CMakeFiles/loop_closure.dir/flags.make
+msckf_vio/CMakeFiles/loop_closure.dir/src/Frame.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Frame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object msckf_vio/CMakeFiles/loop_closure.dir/src/Frame.cpp.o"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/loop_closure.dir/src/Frame.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Frame.cpp
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Frame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/loop_closure.dir/src/Frame.cpp.i"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Frame.cpp > CMakeFiles/loop_closure.dir/src/Frame.cpp.i
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Frame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/loop_closure.dir/src/Frame.cpp.s"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Frame.cpp -o CMakeFiles/loop_closure.dir/src/Frame.cpp.s
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Frame.cpp.o.requires:
+
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/Frame.cpp.o.requires
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Frame.cpp.o.provides: msckf_vio/CMakeFiles/loop_closure.dir/src/Frame.cpp.o.requires
+	$(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Frame.cpp.o.provides.build
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/Frame.cpp.o.provides
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Frame.cpp.o.provides.build: msckf_vio/CMakeFiles/loop_closure.dir/src/Frame.cpp.o
+
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.o: msckf_vio/CMakeFiles/loop_closure.dir/flags.make
+msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/KeyFrame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.o"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/KeyFrame.cpp
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.i"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/KeyFrame.cpp > CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.i
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.s"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/KeyFrame.cpp -o CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.s
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.o.requires:
+
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.o.requires
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.o.provides: msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.o.requires
+	$(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.o.provides.build
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.o.provides
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.o.provides.build: msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.o
+
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.o: msckf_vio/CMakeFiles/loop_closure.dir/flags.make
+msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/KeyFrameDatabase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.o"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/KeyFrameDatabase.cpp
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.i"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/KeyFrameDatabase.cpp > CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.i
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.s"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/KeyFrameDatabase.cpp -o CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.s
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.o.requires:
+
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.o.requires
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.o.provides: msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.o.requires
+	$(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.o.provides.build
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.o.provides
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.o.provides.build: msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.o
+
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/MapPoint.cpp.o: msckf_vio/CMakeFiles/loop_closure.dir/flags.make
+msckf_vio/CMakeFiles/loop_closure.dir/src/MapPoint.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/MapPoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object msckf_vio/CMakeFiles/loop_closure.dir/src/MapPoint.cpp.o"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/loop_closure.dir/src/MapPoint.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/MapPoint.cpp
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/MapPoint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/loop_closure.dir/src/MapPoint.cpp.i"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/MapPoint.cpp > CMakeFiles/loop_closure.dir/src/MapPoint.cpp.i
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/MapPoint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/loop_closure.dir/src/MapPoint.cpp.s"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/MapPoint.cpp -o CMakeFiles/loop_closure.dir/src/MapPoint.cpp.s
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/MapPoint.cpp.o.requires:
+
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/MapPoint.cpp.o.requires
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/MapPoint.cpp.o.provides: msckf_vio/CMakeFiles/loop_closure.dir/src/MapPoint.cpp.o.requires
+	$(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/MapPoint.cpp.o.provides.build
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/MapPoint.cpp.o.provides
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/MapPoint.cpp.o.provides.build: msckf_vio/CMakeFiles/loop_closure.dir/src/MapPoint.cpp.o
+
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Map.cpp.o: msckf_vio/CMakeFiles/loop_closure.dir/flags.make
+msckf_vio/CMakeFiles/loop_closure.dir/src/Map.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object msckf_vio/CMakeFiles/loop_closure.dir/src/Map.cpp.o"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/loop_closure.dir/src/Map.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Map.cpp
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/loop_closure.dir/src/Map.cpp.i"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Map.cpp > CMakeFiles/loop_closure.dir/src/Map.cpp.i
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/loop_closure.dir/src/Map.cpp.s"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Map.cpp -o CMakeFiles/loop_closure.dir/src/Map.cpp.s
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Map.cpp.o.requires:
+
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/Map.cpp.o.requires
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Map.cpp.o.provides: msckf_vio/CMakeFiles/loop_closure.dir/src/Map.cpp.o.requires
+	$(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Map.cpp.o.provides.build
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/Map.cpp.o.provides
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Map.cpp.o.provides.build: msckf_vio/CMakeFiles/loop_closure.dir/src/Map.cpp.o
+
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.o: msckf_vio/CMakeFiles/loop_closure.dir/flags.make
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/ORBmatcher.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object msckf_vio/CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.o"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/ORBmatcher.cpp
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.i"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/ORBmatcher.cpp > CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.i
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.s"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/ORBmatcher.cpp -o CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.s
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.o.requires:
+
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.o.requires
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.o.provides: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.o.requires
+	$(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.o.provides.build
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.o.provides
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.o.provides.build: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.o
+
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.o: msckf_vio/CMakeFiles/loop_closure.dir/flags.make
+msckf_vio/CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/LoopClosing.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object msckf_vio/CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.o"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/LoopClosing.cpp
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.i"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/LoopClosing.cpp > CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.i
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.s"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/LoopClosing.cpp -o CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.s
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.o.requires:
+
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.o.requires
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.o.provides: msckf_vio/CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.o.requires
+	$(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.o.provides.build
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.o.provides
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.o.provides.build: msckf_vio/CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.o
+
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Optimizer.cpp.o: msckf_vio/CMakeFiles/loop_closure.dir/flags.make
+msckf_vio/CMakeFiles/loop_closure.dir/src/Optimizer.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Optimizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object msckf_vio/CMakeFiles/loop_closure.dir/src/Optimizer.cpp.o"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/loop_closure.dir/src/Optimizer.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Optimizer.cpp
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Optimizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/loop_closure.dir/src/Optimizer.cpp.i"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Optimizer.cpp > CMakeFiles/loop_closure.dir/src/Optimizer.cpp.i
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Optimizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/loop_closure.dir/src/Optimizer.cpp.s"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Optimizer.cpp -o CMakeFiles/loop_closure.dir/src/Optimizer.cpp.s
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Optimizer.cpp.o.requires:
+
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/Optimizer.cpp.o.requires
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Optimizer.cpp.o.provides: msckf_vio/CMakeFiles/loop_closure.dir/src/Optimizer.cpp.o.requires
+	$(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Optimizer.cpp.o.provides.build
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/Optimizer.cpp.o.provides
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Optimizer.cpp.o.provides.build: msckf_vio/CMakeFiles/loop_closure.dir/src/Optimizer.cpp.o
+
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.o: msckf_vio/CMakeFiles/loop_closure.dir/flags.make
+msckf_vio/CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Sim3Solver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object msckf_vio/CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.o"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Sim3Solver.cpp
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.i"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Sim3Solver.cpp > CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.i
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.s"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Sim3Solver.cpp -o CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.s
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.o.requires:
+
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.o.requires
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.o.provides: msckf_vio/CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.o.requires
+	$(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.o.provides.build
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.o.provides
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.o.provides.build: msckf_vio/CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.o
+
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.o: msckf_vio/CMakeFiles/loop_closure.dir/flags.make
+msckf_vio/CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.o: /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/LocalMapping.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object msckf_vio/CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.o"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.o -c /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/LocalMapping.cpp
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.i"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/LocalMapping.cpp > CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.i
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.s"
+	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/LocalMapping.cpp -o CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.s
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.o.requires:
+
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.o.requires
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.o.provides: msckf_vio/CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.o.requires
+	$(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.o.provides.build
+.PHONY : msckf_vio/CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.o.provides
+
+msckf_vio/CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.o.provides.build: msckf_vio/CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.o
+
+
 # Object files for target loop_closure
 loop_closure_OBJECTS = \
-"CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o"
+"CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o" \
+"CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o" \
+"CMakeFiles/loop_closure.dir/src/Converter.cpp.o" \
+"CMakeFiles/loop_closure.dir/src/Frame.cpp.o" \
+"CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.o" \
+"CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.o" \
+"CMakeFiles/loop_closure.dir/src/MapPoint.cpp.o" \
+"CMakeFiles/loop_closure.dir/src/Map.cpp.o" \
+"CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.o" \
+"CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.o" \
+"CMakeFiles/loop_closure.dir/src/Optimizer.cpp.o" \
+"CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.o" \
+"CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.o"
 
 # External object files for target loop_closure
 loop_closure_EXTERNAL_OBJECTS =
 
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/Converter.cpp.o
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/Frame.cpp.o
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.o
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.o
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/MapPoint.cpp.o
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/Map.cpp.o
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.o
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.o
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/Optimizer.cpp.o
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.o
+/home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.o
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/build.make
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /opt/ros/kinetic/lib/libeigen_conversions.so
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /opt/ros/kinetic/lib/libtf_conversions.so
@@ -365,7 +677,7 @@ loop_closure_EXTERNAL_OBJECTS =
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so: msckf_vio/CMakeFiles/loop_closure.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vtkc/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX shared library /home/vtkc/tlab/msckf_loopClosure/devel/lib/libloop_closure.so"
 	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/loop_closure.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -374,6 +686,18 @@ msckf_vio/CMakeFiles/loop_closure.dir/build: /home/vtkc/tlab/msckf_loopClosure/d
 .PHONY : msckf_vio/CMakeFiles/loop_closure.dir/build
 
 msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o.requires
+msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o.requires
+msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/Converter.cpp.o.requires
+msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/Frame.cpp.o.requires
+msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.o.requires
+msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.o.requires
+msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/MapPoint.cpp.o.requires
+msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/Map.cpp.o.requires
+msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.o.requires
+msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.o.requires
+msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/Optimizer.cpp.o.requires
+msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.o.requires
+msckf_vio/CMakeFiles/loop_closure.dir/requires: msckf_vio/CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.o.requires
 
 .PHONY : msckf_vio/CMakeFiles/loop_closure.dir/requires
 

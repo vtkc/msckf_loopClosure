@@ -132,6 +132,18 @@ target_link_libraries(image_processor_nodelet
 # loop_closure
 add_library(loop_closure
   src/loop_closure.cpp
+  src/ORBextractor.cpp
+  src/Converter.cpp
+  src/Frame.cpp
+  src/KeyFrame.cpp
+  src/KeyFrameDatabase.cpp
+  src/MapPoint.cpp
+  src/Map.cpp
+  src/ORBmatcher.cpp
+  src/LoopClosing.cpp
+  src/Optimizer.cpp
+  src/Sim3Solver.cpp
+  src/LocalMapping.cpp
 )
 add_dependencies(loop_closure
   ${${PROJECT_NAME}_EXPORTED_TARGETS}
@@ -146,7 +158,7 @@ target_link_libraries(loop_closure
 
 # loop_closure_nodelet
 add_library(loop_closure_nodelet
-  src/loop_closure_nodelet
+  src/loop_closure_nodelet.cpp
 )
 add_dependencies(loop_closure_nodelet
   ${${PROJECT_NAME}_EXPORTED_TARGETS}
@@ -183,6 +195,7 @@ add_dependencies(Converter
   ${catkin_EXPORTED_TARGETS}
 )
 target_link_libraries(Converter
+  loop_closure
   ${catkin_LIBRARIES}
   ${SUITESPARSE_LIBRARIES}
   ${OpenCV_LIBRARIES}
@@ -194,6 +207,7 @@ target_link_libraries(Converter
 add_library(Frame
   src/Frame.cpp
   src/KeyFrame.cpp
+  src/KeyFrameDatabase.cpp
   src/MapPoint.cpp
   src/Map.cpp
   src/ORBmatcher.cpp
@@ -208,6 +222,7 @@ add_dependencies(Frame
   ${catkin_EXPORTED_TARGETS}
 )
 target_link_libraries(Frame
+  loop_closure
   ${catkin_LIBRARIES}
   ${SUITESPARSE_LIBRARIES}
   ${OpenCV_LIBRARIES}

@@ -1927,6 +1927,7 @@ src/Converter.o: src/Converter.cpp.o
 # target to build an object file
 src/Converter.cpp.o:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Converter.dir/build.make msckf_vio/CMakeFiles/Converter.dir/src/Converter.cpp.o
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Converter.cpp.o
 .PHONY : src/Converter.cpp.o
 
 src/Converter.i: src/Converter.cpp.i
@@ -1936,6 +1937,7 @@ src/Converter.i: src/Converter.cpp.i
 # target to preprocess a source file
 src/Converter.cpp.i:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Converter.dir/build.make msckf_vio/CMakeFiles/Converter.dir/src/Converter.cpp.i
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Converter.cpp.i
 .PHONY : src/Converter.cpp.i
 
 src/Converter.s: src/Converter.cpp.s
@@ -1945,6 +1947,7 @@ src/Converter.s: src/Converter.cpp.s
 # target to generate assembly for a file
 src/Converter.cpp.s:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Converter.dir/build.make msckf_vio/CMakeFiles/Converter.dir/src/Converter.cpp.s
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Converter.cpp.s
 .PHONY : src/Converter.cpp.s
 
 src/Frame.o: src/Frame.cpp.o
@@ -1954,6 +1957,7 @@ src/Frame.o: src/Frame.cpp.o
 # target to build an object file
 src/Frame.cpp.o:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Frame.cpp.o
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Frame.cpp.o
 .PHONY : src/Frame.cpp.o
 
 src/Frame.i: src/Frame.cpp.i
@@ -1963,6 +1967,7 @@ src/Frame.i: src/Frame.cpp.i
 # target to preprocess a source file
 src/Frame.cpp.i:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Frame.cpp.i
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Frame.cpp.i
 .PHONY : src/Frame.cpp.i
 
 src/Frame.s: src/Frame.cpp.s
@@ -1972,6 +1977,7 @@ src/Frame.s: src/Frame.cpp.s
 # target to generate assembly for a file
 src/Frame.cpp.s:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Frame.cpp.s
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Frame.cpp.s
 .PHONY : src/Frame.cpp.s
 
 src/KeyFrame.o: src/KeyFrame.cpp.o
@@ -1981,6 +1987,7 @@ src/KeyFrame.o: src/KeyFrame.cpp.o
 # target to build an object file
 src/KeyFrame.cpp.o:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/KeyFrame.cpp.o
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.o
 .PHONY : src/KeyFrame.cpp.o
 
 src/KeyFrame.i: src/KeyFrame.cpp.i
@@ -1990,6 +1997,7 @@ src/KeyFrame.i: src/KeyFrame.cpp.i
 # target to preprocess a source file
 src/KeyFrame.cpp.i:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/KeyFrame.cpp.i
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.i
 .PHONY : src/KeyFrame.cpp.i
 
 src/KeyFrame.s: src/KeyFrame.cpp.s
@@ -1999,7 +2007,38 @@ src/KeyFrame.s: src/KeyFrame.cpp.s
 # target to generate assembly for a file
 src/KeyFrame.cpp.s:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/KeyFrame.cpp.s
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrame.cpp.s
 .PHONY : src/KeyFrame.cpp.s
+
+src/KeyFrameDatabase.o: src/KeyFrameDatabase.cpp.o
+
+.PHONY : src/KeyFrameDatabase.o
+
+# target to build an object file
+src/KeyFrameDatabase.cpp.o:
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.o
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.o
+.PHONY : src/KeyFrameDatabase.cpp.o
+
+src/KeyFrameDatabase.i: src/KeyFrameDatabase.cpp.i
+
+.PHONY : src/KeyFrameDatabase.i
+
+# target to preprocess a source file
+src/KeyFrameDatabase.cpp.i:
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.i
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.i
+.PHONY : src/KeyFrameDatabase.cpp.i
+
+src/KeyFrameDatabase.s: src/KeyFrameDatabase.cpp.s
+
+.PHONY : src/KeyFrameDatabase.s
+
+# target to generate assembly for a file
+src/KeyFrameDatabase.cpp.s:
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.s
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/KeyFrameDatabase.cpp.s
+.PHONY : src/KeyFrameDatabase.cpp.s
 
 src/LocalMapping.o: src/LocalMapping.cpp.o
 
@@ -2008,6 +2047,7 @@ src/LocalMapping.o: src/LocalMapping.cpp.o
 # target to build an object file
 src/LocalMapping.cpp.o:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.o
 .PHONY : src/LocalMapping.cpp.o
 
 src/LocalMapping.i: src/LocalMapping.cpp.i
@@ -2017,6 +2057,7 @@ src/LocalMapping.i: src/LocalMapping.cpp.i
 # target to preprocess a source file
 src/LocalMapping.cpp.i:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.i
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.i
 .PHONY : src/LocalMapping.cpp.i
 
 src/LocalMapping.s: src/LocalMapping.cpp.s
@@ -2026,6 +2067,7 @@ src/LocalMapping.s: src/LocalMapping.cpp.s
 # target to generate assembly for a file
 src/LocalMapping.cpp.s:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.s
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.s
 .PHONY : src/LocalMapping.cpp.s
 
 src/LoopClosing.o: src/LoopClosing.cpp.o
@@ -2035,6 +2077,7 @@ src/LoopClosing.o: src/LoopClosing.cpp.o
 # target to build an object file
 src/LoopClosing.cpp.o:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.o
 .PHONY : src/LoopClosing.cpp.o
 
 src/LoopClosing.i: src/LoopClosing.cpp.i
@@ -2044,6 +2087,7 @@ src/LoopClosing.i: src/LoopClosing.cpp.i
 # target to preprocess a source file
 src/LoopClosing.cpp.i:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.i
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.i
 .PHONY : src/LoopClosing.cpp.i
 
 src/LoopClosing.s: src/LoopClosing.cpp.s
@@ -2053,6 +2097,7 @@ src/LoopClosing.s: src/LoopClosing.cpp.s
 # target to generate assembly for a file
 src/LoopClosing.cpp.s:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.s
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/LoopClosing.cpp.s
 .PHONY : src/LoopClosing.cpp.s
 
 src/Map.o: src/Map.cpp.o
@@ -2062,6 +2107,7 @@ src/Map.o: src/Map.cpp.o
 # target to build an object file
 src/Map.cpp.o:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Map.cpp.o
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Map.cpp.o
 .PHONY : src/Map.cpp.o
 
 src/Map.i: src/Map.cpp.i
@@ -2071,6 +2117,7 @@ src/Map.i: src/Map.cpp.i
 # target to preprocess a source file
 src/Map.cpp.i:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Map.cpp.i
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Map.cpp.i
 .PHONY : src/Map.cpp.i
 
 src/Map.s: src/Map.cpp.s
@@ -2080,6 +2127,7 @@ src/Map.s: src/Map.cpp.s
 # target to generate assembly for a file
 src/Map.cpp.s:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Map.cpp.s
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Map.cpp.s
 .PHONY : src/Map.cpp.s
 
 src/MapPoint.o: src/MapPoint.cpp.o
@@ -2089,6 +2137,7 @@ src/MapPoint.o: src/MapPoint.cpp.o
 # target to build an object file
 src/MapPoint.cpp.o:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/MapPoint.cpp.o
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/MapPoint.cpp.o
 .PHONY : src/MapPoint.cpp.o
 
 src/MapPoint.i: src/MapPoint.cpp.i
@@ -2098,6 +2147,7 @@ src/MapPoint.i: src/MapPoint.cpp.i
 # target to preprocess a source file
 src/MapPoint.cpp.i:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/MapPoint.cpp.i
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/MapPoint.cpp.i
 .PHONY : src/MapPoint.cpp.i
 
 src/MapPoint.s: src/MapPoint.cpp.s
@@ -2107,6 +2157,7 @@ src/MapPoint.s: src/MapPoint.cpp.s
 # target to generate assembly for a file
 src/MapPoint.cpp.s:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/MapPoint.cpp.s
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/MapPoint.cpp.s
 .PHONY : src/MapPoint.cpp.s
 
 src/ORBextractor.o: src/ORBextractor.cpp.o
@@ -2116,6 +2167,7 @@ src/ORBextractor.o: src/ORBextractor.cpp.o
 # target to build an object file
 src/ORBextractor.cpp.o:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.o
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBextractor.dir/build.make msckf_vio/CMakeFiles/ORBextractor.dir/src/ORBextractor.cpp.o
 .PHONY : src/ORBextractor.cpp.o
 
@@ -2126,6 +2178,7 @@ src/ORBextractor.i: src/ORBextractor.cpp.i
 # target to preprocess a source file
 src/ORBextractor.cpp.i:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.i
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.i
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBextractor.dir/build.make msckf_vio/CMakeFiles/ORBextractor.dir/src/ORBextractor.cpp.i
 .PHONY : src/ORBextractor.cpp.i
 
@@ -2136,6 +2189,7 @@ src/ORBextractor.s: src/ORBextractor.cpp.s
 # target to generate assembly for a file
 src/ORBextractor.cpp.s:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/ORBextractor.cpp.s
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.s
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/ORBextractor.dir/build.make msckf_vio/CMakeFiles/ORBextractor.dir/src/ORBextractor.cpp.s
 .PHONY : src/ORBextractor.cpp.s
 
@@ -2146,6 +2200,7 @@ src/ORBmatcher.o: src/ORBmatcher.cpp.o
 # target to build an object file
 src/ORBmatcher.cpp.o:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/ORBmatcher.cpp.o
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.o
 .PHONY : src/ORBmatcher.cpp.o
 
 src/ORBmatcher.i: src/ORBmatcher.cpp.i
@@ -2155,6 +2210,7 @@ src/ORBmatcher.i: src/ORBmatcher.cpp.i
 # target to preprocess a source file
 src/ORBmatcher.cpp.i:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/ORBmatcher.cpp.i
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.i
 .PHONY : src/ORBmatcher.cpp.i
 
 src/ORBmatcher.s: src/ORBmatcher.cpp.s
@@ -2164,6 +2220,7 @@ src/ORBmatcher.s: src/ORBmatcher.cpp.s
 # target to generate assembly for a file
 src/ORBmatcher.cpp.s:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/ORBmatcher.cpp.s
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/ORBmatcher.cpp.s
 .PHONY : src/ORBmatcher.cpp.s
 
 src/Optimizer.o: src/Optimizer.cpp.o
@@ -2173,6 +2230,7 @@ src/Optimizer.o: src/Optimizer.cpp.o
 # target to build an object file
 src/Optimizer.cpp.o:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.o
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Optimizer.cpp.o
 .PHONY : src/Optimizer.cpp.o
 
 src/Optimizer.i: src/Optimizer.cpp.i
@@ -2182,6 +2240,7 @@ src/Optimizer.i: src/Optimizer.cpp.i
 # target to preprocess a source file
 src/Optimizer.cpp.i:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.i
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Optimizer.cpp.i
 .PHONY : src/Optimizer.cpp.i
 
 src/Optimizer.s: src/Optimizer.cpp.s
@@ -2191,6 +2250,7 @@ src/Optimizer.s: src/Optimizer.cpp.s
 # target to generate assembly for a file
 src/Optimizer.cpp.s:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Optimizer.cpp.s
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Optimizer.cpp.s
 .PHONY : src/Optimizer.cpp.s
 
 src/Sim3Solver.o: src/Sim3Solver.cpp.o
@@ -2200,6 +2260,7 @@ src/Sim3Solver.o: src/Sim3Solver.cpp.o
 # target to build an object file
 src/Sim3Solver.cpp.o:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.o
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.o
 .PHONY : src/Sim3Solver.cpp.o
 
 src/Sim3Solver.i: src/Sim3Solver.cpp.i
@@ -2209,6 +2270,7 @@ src/Sim3Solver.i: src/Sim3Solver.cpp.i
 # target to preprocess a source file
 src/Sim3Solver.cpp.i:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.i
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.i
 .PHONY : src/Sim3Solver.cpp.i
 
 src/Sim3Solver.s: src/Sim3Solver.cpp.s
@@ -2218,6 +2280,7 @@ src/Sim3Solver.s: src/Sim3Solver.cpp.s
 # target to generate assembly for a file
 src/Sim3Solver.cpp.s:
 	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/Frame.dir/build.make msckf_vio/CMakeFiles/Frame.dir/src/Sim3Solver.cpp.s
+	cd /home/vtkc/tlab/msckf_loopClosure/build && $(MAKE) -f msckf_vio/CMakeFiles/loop_closure.dir/build.make msckf_vio/CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.s
 .PHONY : src/Sim3Solver.cpp.s
 
 src/image_processor.o: src/image_processor.cpp.o
@@ -2605,6 +2668,9 @@ help:
 	@echo "... src/KeyFrame.o"
 	@echo "... src/KeyFrame.i"
 	@echo "... src/KeyFrame.s"
+	@echo "... src/KeyFrameDatabase.o"
+	@echo "... src/KeyFrameDatabase.i"
+	@echo "... src/KeyFrameDatabase.s"
 	@echo "... src/LocalMapping.o"
 	@echo "... src/LocalMapping.i"
 	@echo "... src/LocalMapping.s"

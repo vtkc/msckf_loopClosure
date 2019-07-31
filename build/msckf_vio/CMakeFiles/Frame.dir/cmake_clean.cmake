@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Frame.dir/src/Frame.cpp.o"
   "CMakeFiles/Frame.dir/src/KeyFrame.cpp.o"
+  "CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.o"
   "CMakeFiles/Frame.dir/src/MapPoint.cpp.o"
   "CMakeFiles/Frame.dir/src/Map.cpp.o"
   "CMakeFiles/Frame.dir/src/ORBmatcher.cpp.o"

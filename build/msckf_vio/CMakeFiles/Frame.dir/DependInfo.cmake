@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Frame.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/Frame.dir/src/Frame.cpp.o"
   "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/KeyFrame.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/Frame.dir/src/KeyFrame.cpp.o"
+  "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/KeyFrameDatabase.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/Frame.dir/src/KeyFrameDatabase.cpp.o"
   "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/LocalMapping.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/Frame.dir/src/LocalMapping.cpp.o"
   "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/LoopClosing.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/Frame.dir/src/LoopClosing.cpp.o"
   "/home/vtkc/tlab/msckf_loopClosure/src/msckf_vio/src/Map.cpp" "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/Frame.dir/src/Map.cpp.o"
@@ -51,6 +52,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/loop_closure.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

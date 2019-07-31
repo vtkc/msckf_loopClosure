@@ -4,6 +4,8 @@
 #include <algorithm>
 #include <set>
 #include <Eigen/Dense>
+#include <tf_conversions/tf_eigen.h>
+#include <eigen_conversions/eigen_msg.h>
 #include <msckf_vio/loop_closure.h>
 #include <msckf_vio/utils.h>
 #include <vector>
@@ -19,6 +21,8 @@
 #include <image_transport/image_transport.h>
 #include <opencv2/video.hpp>
 
+
+
 // #include <msckf_vio/MapPoint.h>
 #include <msckf_vio/image_processor.h>
 
@@ -29,7 +33,7 @@
 
 using namespace std;
 using namespace cv;
-
+ 
 
 
 namespace msckf_vio{
@@ -53,7 +57,8 @@ namespace msckf_vio{
 	}
 	void loop_closure::ProcessorCallback(const sensor_msgs::ImageConstPtr& cam0_img,
     								const sensor_msgs::ImageConstPtr& cam1_img,
-    								const nav_msgs::Odometry::ConstPtr& odom_msg){
+    								const nav_msgs::Odometry::ConstPtr& odom_msg)
+	{
 
 			// Get the current image.
 		cam0_curr_img_ptr = cv_bridge::toCvShare(cam0_img,
@@ -64,11 +69,51 @@ namespace msckf_vio{
 		cam0_img_input = cam0_curr_img_ptr->image;
 		cam1_img_input = cam1_curr_img_ptr->image;
 		timestamp = cam0_img->header.stamp.toSec();
+		updateImg(cam0_img_input,cam1_img_input,timestamp);
+		
+		//获得Msckf算出的位姿，设定Frame Pose
+		//msg.pose.pose.orientation---->quaternion---->Rotation Matrix
+		//msg.pose.pose.translation.x/y/z ---->Translation Matrix
+		Eigen::Isometry3d T_b_w;
+		Eigen::Quaterniond q (	odom_msg->pose.pose.orientation.w,
+								odom_msg->pose.pose.orientation.x,
+								odom_msg->pose.pose.orientation.y,
+								odom_msg->pose.pose.orientation.z);
+		Eigen::Translation3d t(	odom_msg->pose.pose.position.x,
+							 	odom_msg->pose.pose.position.y,
+								odom_msg->pose.pose.position.z);
+
+		Eigen::Matrix3d R = q.toRotationMatrix(); 
+		Eigen::Matrix4d T;
+		cv::Mat T_c_w(4,4,CV_32F);
+		T   << 	R(0,0),R(0,1),R(0,2),odom_msg->pose.pose.position.x,
+				R(1,0),R(1,1),R(1,2),odom_msg->pose.pose.position.y,
+				R(2,0),R(2,1),R(2,2),odom_msg->pose.pose.position.z,
+				0,     0,     0,     1;
+		T_c_w = converter.toCvMat(T);
+
+		tf::poseMsgToEigen(odom_msg->pose.pose,T_b_w); //得到Msckf 算出的位姿　用于构造KF　odom_msg.pose.pose－> T_b_w;
+
+		// T_c_w = converter.toCvMat(T_b_w);
+		createFrame(*imgQueue.end());
+
+		frameQueue.back().SetPose(T_c_w);
+
+		if (!mpKeyFrameDatabase->getKFDB().size())
+		{
+			KFInitialization();
+		}
+		else
+		{
+			creatKF();
+		}
 		cout << "cam timestamp=" << timestamp << endl;
 		cout << "pose timestamp=" <<  odom_msg->header.stamp.toSec() << endl;
   		cout << "Position-> x: " << odom_msg->pose.pose.position.x << "y: " << odom_msg->pose.pose.position.y << "z: " << odom_msg->pose.pose.position.z << endl;
   		cout << "Orientation-> x: " << odom_msg->pose.pose.orientation.x << "y: " << odom_msg->pose.pose.orientation.y 
 		  << "z: " << odom_msg->pose.pose.orientation.z << "w: " << odom_msg->pose.pose.orientation.w << endl;
+		
+		
 		return;
 	}
 
@@ -85,11 +130,6 @@ namespace msckf_vio{
 
 
 	bool loop_closure::initialize() {
-
-		ROS_INFO("===========================================");
-		ROS_INFO("Starting Loop_Closure Node");
-		ROS_INFO("===========================================");
-
 		string strSettingPath = "/home/vtkc/tlab/orb-slam_ws/src/ORB_SLAM2/Examples/Stereo/KITTI04-12.yaml";
         string strVocFile = "/home/vtkc/tlab/orb-slam_ws/src/ORB_SLAM2/Vocabulary/ORBvoc.txt";
 
@@ -249,9 +289,7 @@ namespace msckf_vio{
 
 		//////////////////////////////////////////////////////////
 		if (!createRosIO()) return false;
-		ROS_INFO("===========================================");
- 		ROS_INFO("Finish Initializing Loop_Closure");
-		 ROS_INFO("===========================================");
+ 		ROS_INFO("Finish creating ROS IO...");
 		//////////////////////////////////////////////////////////
 		return true;
 	}
@@ -273,6 +311,7 @@ namespace msckf_vio{
         newFrame = Frame(imgData.first.first, imgData.first.second, imgData.second, 
 			mpORBextractorLeft, mpORBextractorRight,mpVocabulary,mK,mDistCoef,mbf,mThDepth); 
 		frameQueue.push_back(newFrame);
+		
     }
 
     void loop_closure::KFInitialization()
@@ -379,7 +418,7 @@ namespace msckf_vio{
     // 这段代码和UpdateLastFrame中的那一部分代码功能相同
 // 步骤3：对于双目或rgbd摄像头，为当前帧生成新的MapPoints
 	    // if(mSensor != System::MONOCULAR)
-	    {
+	    
 	      // 根据Tcw计算mRcw、mtcw和mRwc、mOw
 		frameQueue.back().UpdatePoseMatrices();
 
@@ -446,7 +485,7 @@ namespace msckf_vio{
 			    break;
 		    }
 		}
-	    }
+	    
 
 	    mpLocalMapper->InsertKeyFrame(pKF);
 
