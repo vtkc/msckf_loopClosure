@@ -15,6 +15,8 @@
 #include <nav_msgs/Odometry.h>
 #include <message_filters/subscriber.h>
 #include <message_filters/time_synchronizer.h>
+#include <message_filters/synchronizer.h> 
+#include <message_filters/sync_policies/approximate_time.h>  
 #include <msckf_vio/ORBextractor.h>
 #include <msckf_vio/ORBVocabulary.h>
 #include <msckf_vio/Frame.h>
@@ -131,14 +133,18 @@ namespace msckf_vio{
                 sensor_msgs::Image> cam1_img_sub;
             message_filters::Subscriber<
                 nav_msgs::Odometry> odom_sub;
-            message_filters::TimeSynchronizer<
-                sensor_msgs::Image, sensor_msgs::Image,nav_msgs::Odometry> process_sub;
+            // message_filters::TimeSynchronizer<
+            //     sensor_msgs::Image, sensor_msgs::Image,nav_msgs::Odometry> process_sub;
             
+            typedef message_filters::sync_policies::ApproximateTime<sensor_msgs::Image,sensor_msgs::Image,nav_msgs::Odometry> SyncPolicy;  
+            message_filters::Synchronizer<SyncPolicy>* sync_;  
             ros::Publisher pose_pub;
 
             ////////////////////////////////////////////////////
             Mat cam0_img_input;
             Mat cam1_img_input;
+
+           
             
     };
 

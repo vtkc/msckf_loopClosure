@@ -2378,6 +2378,7 @@ msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o: /opt/ros/kinetic/i
 msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o: /opt/ros/kinetic/include/message_filters/signal9.h
 msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o: /opt/ros/kinetic/include/message_filters/simple_filter.h
 msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o: /opt/ros/kinetic/include/message_filters/subscriber.h
+msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o: /opt/ros/kinetic/include/message_filters/sync_policies/approximate_time.h
 msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o: /opt/ros/kinetic/include/message_filters/sync_policies/exact_time.h
 msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o: /opt/ros/kinetic/include/message_filters/synchronizer.h
 msckf_vio/CMakeFiles/loop_closure.dir/src/ORBextractor.cpp.o: /opt/ros/kinetic/include/message_filters/time_synchronizer.h
@@ -3682,6 +3683,7 @@ msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o: /opt/ros/kinetic/i
 msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o: /opt/ros/kinetic/include/message_filters/signal9.h
 msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o: /opt/ros/kinetic/include/message_filters/simple_filter.h
 msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o: /opt/ros/kinetic/include/message_filters/subscriber.h
+msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o: /opt/ros/kinetic/include/message_filters/sync_policies/approximate_time.h
 msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o: /opt/ros/kinetic/include/message_filters/sync_policies/exact_time.h
 msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o: /opt/ros/kinetic/include/message_filters/synchronizer.h
 msckf_vio/CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o: /opt/ros/kinetic/include/message_filters/time_synchronizer.h

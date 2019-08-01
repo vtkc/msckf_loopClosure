@@ -48,10 +48,13 @@ namespace msckf_vio{
 		pose_pub = nh.advertise<nav_msgs::Odometry>(
 			"correct_pose", 3);
 		
-		cam0_img_sub.subscribe(nh, "cam0_image", 10);
-		cam1_img_sub.subscribe(nh, "cam1_image", 10);
-		process_sub.connectInput(cam0_img_sub, cam1_img_sub,odom_sub);
-		process_sub.registerCallback(&loop_closure::ProcessorCallback, this);
+		cam0_img_sub.subscribe(nh, "/cam0/image_raw", 100);
+		cam1_img_sub.subscribe(nh, "/cam1/image_raw", 100);
+		odom_sub.subscribe(nh, "/firefly_sbx/vio/odom",100);
+		// process_sub.connectInput(cam0_img_sub, cam1_img_sub,odom_sub);
+		// process_sub.registerCallback(&loop_closure::ProcessorCallback, this);
+		sync_ = new  message_filters::Synchronizer<SyncPolicy>(SyncPolicy(40), cam0_img_sub, cam1_img_sub, odom_sub);  
+		sync_->registerCallback(boost::bind(&loop_closure::ProcessorCallback, this, _1, _2,_3)); 
 
 		return true;
 	}
@@ -65,11 +68,12 @@ namespace msckf_vio{
 			sensor_msgs::image_encodings::MONO8);
 		cam1_curr_img_ptr = cv_bridge::toCvShare(cam1_img,
 			sensor_msgs::image_encodings::MONO8);
-
+				
 		cam0_img_input = cam0_curr_img_ptr->image;
 		cam1_img_input = cam1_curr_img_ptr->image;
 		timestamp = cam0_img->header.stamp.toSec();
 		updateImg(cam0_img_input,cam1_img_input,timestamp);
+
 		
 		//获得Msckf算出的位姿，设定Frame Pose
 		//msg.pose.pose.orientation---->quaternion---->Rotation Matrix
@@ -95,7 +99,7 @@ namespace msckf_vio{
 		tf::poseMsgToEigen(odom_msg->pose.pose,T_b_w); //得到Msckf 算出的位姿　用于构造KF　odom_msg.pose.pose－> T_b_w;
 
 		// T_c_w = converter.toCvMat(T_b_w);
-		createFrame(*imgQueue.end());
+		createFrame(*imgQueue.begin());
 
 		frameQueue.back().SetPose(T_c_w);
 
@@ -117,7 +121,7 @@ namespace msckf_vio{
 		return;
 	}
 
-	loop_closure::loop_closure(ros::NodeHandle& n):nh(n),process_sub(10)
+	loop_closure::loop_closure(ros::NodeHandle& n):nh(n)
 	{
 		return;
 	}
@@ -289,12 +293,14 @@ namespace msckf_vio{
 
 		//////////////////////////////////////////////////////////
 		if (!createRosIO()) return false;
- 		ROS_INFO("Finish creating ROS IO...");
+ 		ROS_INFO("===========================================");
+ 		ROS_INFO("Finish Initializing Loop_Closure");
+		ROS_INFO("===========================================");
 		//////////////////////////////////////////////////////////
 		return true;
 	}
 
-    loop_closure::loop_closure() : process_sub(10)
+    loop_closure::loop_closure()
     {
         return;
     }
@@ -308,9 +314,13 @@ namespace msckf_vio{
 
     void loop_closure::createFrame(ImgData imgData)
     {
+		
         newFrame = Frame(imgData.first.first, imgData.first.second, imgData.second, 
 			mpORBextractorLeft, mpORBextractorRight,mpVocabulary,mK,mDistCoef,mbf,mThDepth); 
 		frameQueue.push_back(newFrame);
+		ROS_INFO("===========================================");
+ 		ROS_INFO("Im at CreateFrame!!!!!!!!!!!!!!!!!!!!!!!!!!");
+		ROS_INFO("===========================================");
 		
     }
 

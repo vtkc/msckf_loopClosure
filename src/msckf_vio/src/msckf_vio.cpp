@@ -406,15 +406,33 @@ void MsckfVio::featureCallback(
   double prune_cam_states_time = (
       ros::Time::now()-start_time).toSec();
 
-  // ****************************************************************************************
-  // Extract StateServer Pose here
-  // ****************************************************************************************
-
   // Publish the odometry.
   start_time = ros::Time::now();
   publish(msg->header.stamp);
   double publish_time = (
       ros::Time::now()-start_time).toSec();
+
+
+
+  // ****************************************************************************************
+  
+  // while (!loopClosureCheck)
+  // {
+  //   for (int i=0; i < poseData.size(); i++)
+  //   {
+  //     if (poseData.at(i).first == currentTimestamp){
+  //       if (poseData.at(i).second.first == true){
+  //         // Do Loop fusing stuff using poseData.at(i).second.second
+  //       }
+  //       loopClosureCheck = true;
+  //       break;
+  //     }
+  //   }
+  // }
+
+  // ****************************************************************************************
+
+
 
   // Reset the system if necessary.
   onlineReset();
@@ -439,6 +457,8 @@ void MsckfVio::featureCallback(
     //printf("Publish time: %f/%f\n",
     //    publish_time, publish_time/processing_time);
   }
+
+  loopClosureCheck = false;
 
   return;
 }

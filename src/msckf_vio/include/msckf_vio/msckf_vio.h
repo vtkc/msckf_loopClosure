@@ -234,6 +234,16 @@ class MsckfVio {
     ros::Publisher mocap_odom_pub;
     geometry_msgs::TransformStamped raw_mocap_odom_msg;
     Eigen::Isometry3d mocap_initial_frame;
+
+    ////////////////////////////////////////////////////
+
+    bool loopClosureCheck = false;
+    Mat fusedPose;
+
+    vector<pair<double, pair<bool, Mat>>> poseData;
+
+    ////////////////////////////////////////////////////
+    double currentTimestamp;
 };
 
 typedef MsckfVio::Ptr MsckfVioPtr;

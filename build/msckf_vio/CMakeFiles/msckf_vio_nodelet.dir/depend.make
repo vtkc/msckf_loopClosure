@@ -91,6 +91,7 @@ msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/src/msckf_vio_nodelet.cpp.o: /opt/ros
 msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/src/msckf_vio_nodelet.cpp.o: /opt/ros/kinetic/include/message_filters/signal9.h
 msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/src/msckf_vio_nodelet.cpp.o: /opt/ros/kinetic/include/message_filters/simple_filter.h
 msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/src/msckf_vio_nodelet.cpp.o: /opt/ros/kinetic/include/message_filters/subscriber.h
+msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/src/msckf_vio_nodelet.cpp.o: /opt/ros/kinetic/include/message_filters/sync_policies/approximate_time.h
 msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/src/msckf_vio_nodelet.cpp.o: /opt/ros/kinetic/include/message_filters/sync_policies/exact_time.h
 msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/src/msckf_vio_nodelet.cpp.o: /opt/ros/kinetic/include/message_filters/synchronizer.h
 msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/src/msckf_vio_nodelet.cpp.o: /opt/ros/kinetic/include/message_filters/time_synchronizer.h
