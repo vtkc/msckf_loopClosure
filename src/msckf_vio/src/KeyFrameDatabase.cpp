@@ -55,6 +55,11 @@ namespace msckf_vio{
         return mvInvertedFile;
     }
 
+    void KeyFrameDatabase::clearKFDB()
+    {
+        mvInvertedFile.clear();
+    }
+
 
     vector<KeyFrame*> KeyFrameDatabase::DetectLoopCandidates(KeyFrame* pKF, float minScore)
     {

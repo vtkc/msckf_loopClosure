@@ -34,7 +34,7 @@
 using namespace std;
 using namespace cv;
  
-
+mutex loopLock;
 
 namespace msckf_vio{
 
@@ -74,7 +74,7 @@ namespace msckf_vio{
 		timestamp = cam0_img->header.stamp.toSec();
 		updateImg(cam0_img_input,cam1_img_input,timestamp);
 
-		
+		ROS_INFO("=====================MileStone 1======================");
 		//获得Msckf算出的位姿，设定Frame Pose
 		//msg.pose.pose.orientation---->quaternion---->Rotation Matrix
 		//msg.pose.pose.translation.x/y/z ---->Translation Matrix
@@ -96,19 +96,29 @@ namespace msckf_vio{
 				0,     0,     0,     1;
 		T_c_w = converter.toCvMat(T);
 
+		ROS_INFO("=====================MileStone 2======================");
+
 		tf::poseMsgToEigen(odom_msg->pose.pose,T_b_w); //得到Msckf 算出的位姿　用于构造KF　odom_msg.pose.pose－> T_b_w;
+		ROS_INFO("=====================MileStone 3======================");
 
 		// T_c_w = converter.toCvMat(T_b_w);
-		createFrame(*imgQueue.begin());
+	
+		createFrame(imgQueue.back());
+
+		ROS_INFO("=====================MileStone 4======================");
 
 		frameQueue.back().SetPose(T_c_w);
 
+		ROS_INFO("=====================MileStone 5======================");
+
 		if (!mpKeyFrameDatabase->getKFDB().size())
 		{
+			ROS_INFO("=====================Checkpoint 1======================");
 			KFInitialization();
 		}
 		else
 		{
+			ROS_INFO("=====================MileStone 2======================");
 			creatKF();
 		}
 		cout << "cam timestamp=" << timestamp << endl;
@@ -144,7 +154,7 @@ namespace msckf_vio{
 			cerr << "打不开设置文件 :  " << strSettingPath << endl;
 			exit(-1);
 		}
-
+		imgQueue.clear();
 		cv::FileStorage fSettings(strSettingPath, cv::FileStorage::READ);//读取配置文件
 		//【1】------------------ 相机内参数矩阵 K------------------------
 	    //     |fx  0   cx|
@@ -269,6 +279,7 @@ namespace msckf_vio{
 
 		// 2. 使用特征字典mpVocabulary 创建关键帧数据库 KeyFrameDatabase===================
 	    mpKeyFrameDatabase = new KeyFrameDatabase(*mpVocabulary);
+		mpKeyFrameDatabase->clearKFDB();
 		
 		// 3. 创建地图对象   Map=============================================
 	    mpMap = new Map();
@@ -308,13 +319,17 @@ namespace msckf_vio{
     void loop_closure::updateImg(Mat img0, Mat img1, double timestamp){
 
 		imgQueue.push_back(make_pair(make_pair(img0, img1), timestamp));
+		ROS_INFO("===========================================");
+ 		ROS_INFO("Im at updateImg!!!!!!!!!!!!!!!!!!!!!!!!!!");
+		ROS_INFO("===========================================");
         
 		return;
     }
 
-    void loop_closure::createFrame(ImgData imgData)
+    void loop_closure::createFrame(pair<pair<Mat, Mat>, double> imgData)
     {
-		
+		// unique_lock<mutex> lock(globalLock);
+		// unique_lock<mutex> lock2(loopLock);
         newFrame = Frame(imgData.first.first, imgData.first.second, imgData.second, 
 			mpORBextractorLeft, mpORBextractorRight,mpVocabulary,mK,mDistCoef,mbf,mThDepth); 
 		frameQueue.push_back(newFrame);

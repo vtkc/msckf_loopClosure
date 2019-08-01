@@ -29,6 +29,8 @@ namespace msckf_vio{
 
             std::vector<list<KeyFrame*>> getKFDB();
 
+            void clearKFDB();
+
             // Loop Detection
             std::vector<KeyFrame *> DetectLoopCandidates(KeyFrame* pKF, float minScore);
 

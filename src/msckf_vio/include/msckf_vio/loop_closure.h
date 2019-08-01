@@ -24,14 +24,17 @@
 #include <msckf_vio/LoopClosing.h>
 #include <msckf_vio/Map.h>
 #include <msckf_vio/Converter.h>
+#include <mutex>
 // #include <msckf_vio/FrameDrawer.h>
 // #include <msckf_vio/MapDrawer.h>
 // #include <msckf_vio/Viewer.h>
 using namespace std;
 using namespace cv;
 
-namespace msckf_vio{
 
+
+namespace msckf_vio{
+    
     class KeyFrameDatabase;
     class Map;
     class Frame;
@@ -39,6 +42,7 @@ namespace msckf_vio{
     class LoopClosing;
 
     class loop_closure{
+        mutex globalLock;
         public:
             enum eSensor{
                 MONOCULAR=0,
@@ -72,7 +76,7 @@ namespace msckf_vio{
             void updateImg(Mat img0, Mat img1, double timestamp);
             bool createRosIO();
         private:
-            
+
             ////////////////////////////////
             ORBVocabulary* mpVocabulary;
             cv::Mat mK;
@@ -85,10 +89,10 @@ namespace msckf_vio{
             ORBextractor* mpORBextractorLeft;
             ORBextractor* mpORBextractorRight;
 
-            Frame newFrame;
+            
 
             vector<Frame> frameQueue;
-            vector<ImgData> imgQueue;
+            vector<pair<pair<Mat, Mat>, double>> imgQueue;
             vector<pair<Mat, double>> fPose;
 
             //New KeyFrame rules (according to fps)
@@ -144,7 +148,10 @@ namespace msckf_vio{
             Mat cam0_img_input;
             Mat cam1_img_input;
 
-           
+            ////////////////////////////////////////////////////
+
+            
+            Frame newFrame;
             
     };
 
