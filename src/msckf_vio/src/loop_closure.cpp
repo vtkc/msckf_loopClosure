@@ -144,8 +144,8 @@ namespace msckf_vio{
 
 
 	bool loop_closure::initialize() {
-		string strSettingPath = "/home/vtkc/tlab/orb-slam_ws/src/ORB_SLAM2/Examples/Stereo/KITTI04-12.yaml";
-        string strVocFile = "/home/vtkc/tlab/orb-slam_ws/src/ORB_SLAM2/Vocabulary/ORBvoc.txt";
+		string strSettingPath = "/home/vtkc/Desktop/tlab/orb_slam2_vanilla/ORB_SLAM2/Examples/Stereo/KITTI04-12.yaml";
+        string strVocFile = "/home/vtkc/Desktop/tlab/orb_slam2_vanilla/ORB_SLAM2/Vocabulary/ORBvoc.txt";
 
         //Check settings file opencv 读取 配置 文件
 	    cv::FileStorage fsSettings(strSettingPath.c_str(), cv::FileStorage::READ);

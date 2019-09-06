@@ -1,12 +1,12 @@
 
 "use strict";
 
-let CameraMeasurement = require('./CameraMeasurement.js');
-let TrackingInfo = require('./TrackingInfo.js');
 let FeatureMeasurement = require('./FeatureMeasurement.js');
+let TrackingInfo = require('./TrackingInfo.js');
+let CameraMeasurement = require('./CameraMeasurement.js');
 
 module.exports = {
-  CameraMeasurement: CameraMeasurement,
-  TrackingInfo: TrackingInfo,
   FeatureMeasurement: FeatureMeasurement,
+  TrackingInfo: TrackingInfo,
+  CameraMeasurement: CameraMeasurement,
 };

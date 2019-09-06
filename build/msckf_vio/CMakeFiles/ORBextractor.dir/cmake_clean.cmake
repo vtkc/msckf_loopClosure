@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ORBextractor.dir/src/ORBextractor.cpp.o"
-  "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libORBextractor.pdb"
-  "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libORBextractor.so"
+  "/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/lib/libORBextractor.pdb"
+  "/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/lib/libORBextractor.so"
 )
 
 # Per-language clean rules from dependency scanning.

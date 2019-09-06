@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/image_processor_nodelet.dir/src/image_processor_nodelet.cpp.o"
-  "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor_nodelet.pdb"
-  "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor_nodelet.so"
+  "/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/lib/libimage_processor_nodelet.pdb"
+  "/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/lib/libimage_processor_nodelet.so"
 )
 
 # Per-language clean rules from dependency scanning.

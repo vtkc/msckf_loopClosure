@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/image_processor.dir/src/image_processor.cpp.o"
   "CMakeFiles/image_processor.dir/src/utils.cpp.o"
-  "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.pdb"
-  "/home/vtkc/tlab/msckf_loopClosure/devel/lib/libimage_processor.so"
+  "/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/lib/libimage_processor.pdb"
+  "/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/lib/libimage_processor.so"
 )
 
 # Per-language clean rules from dependency scanning.

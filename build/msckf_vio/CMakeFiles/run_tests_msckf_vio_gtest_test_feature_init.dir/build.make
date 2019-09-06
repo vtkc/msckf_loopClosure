@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vtkc/tlab/msckf_loopClosure/src
+CMAKE_SOURCE_DIR = /home/vtkc/Desktop/tlab/msckf_loopClosure/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vtkc/tlab/msckf_loopClosure/build
+CMAKE_BINARY_DIR = /home/vtkc/Desktop/tlab/msckf_loopClosure/build
 
 # Utility rule file for run_tests_msckf_vio_gtest_test_feature_init.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/vtkc/tlab/msckf_loopClosure/build
 include msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init.dir/progress.make
 
 msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init:
-	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/run_tests.py /home/vtkc/tlab/msckf_loopClosure/build/test_results/msckf_vio/gtest-test_feature_init.xml "/home/vtkc/tlab/msckf_loopClosure/devel/lib/msckf_vio/test_feature_init --gtest_output=xml:/home/vtkc/tlab/msckf_loopClosure/build/test_results/msckf_vio/gtest-test_feature_init.xml"
+	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/run_tests.py /home/vtkc/Desktop/tlab/msckf_loopClosure/build/test_results/msckf_vio/gtest-test_feature_init.xml "/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/lib/msckf_vio/test_feature_init --gtest_output=xml:/home/vtkc/Desktop/tlab/msckf_loopClosure/build/test_results/msckf_vio/gtest-test_feature_init.xml"
 
 run_tests_msckf_vio_gtest_test_feature_init: msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init
 run_tests_msckf_vio_gtest_test_feature_init: msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init.dir/build.make
@@ -67,10 +67,10 @@ msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init.dir/build: run_
 .PHONY : msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init.dir/build
 
 msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init.dir/clean:
-	cd /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init.dir/cmake_clean.cmake
+	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init.dir/cmake_clean.cmake
 .PHONY : msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init.dir/clean
 
 msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init.dir/depend:
-	cd /home/vtkc/tlab/msckf_loopClosure/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vtkc/tlab/msckf_loopClosure/src /home/vtkc/tlab/msckf_loopClosure/src/msckf_vio /home/vtkc/tlab/msckf_loopClosure/build /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio /home/vtkc/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vtkc/Desktop/tlab/msckf_loopClosure/src /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio /home/vtkc/Desktop/tlab/msckf_loopClosure/build /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init.dir/depend
 
