@@ -48,12 +48,12 @@ namespace msckf_vio{
 		pose_pub = nh.advertise<nav_msgs::Odometry>(
 			"correct_pose", 3);
 		
-		cam0_img_sub.subscribe(nh, "/cam0/image_raw", 100);
-		cam1_img_sub.subscribe(nh, "/cam1/image_raw", 100);
+		cam0_img_sub.subscribe(nh, "/firefly_sbx/image_processor/cam0_img_pub", 100);
+		cam1_img_sub.subscribe(nh, "/firefly_sbx/image_processor/cam1_img_pub", 100);
 		odom_sub.subscribe(nh, "/firefly_sbx/vio/odom",100);
 		// process_sub.connectInput(cam0_img_sub, cam1_img_sub,odom_sub);
 		// process_sub.registerCallback(&loop_closure::ProcessorCallback, this);
-		sync_ = new  message_filters::Synchronizer<SyncPolicy>(SyncPolicy(40), cam0_img_sub, cam1_img_sub, odom_sub);  
+		sync_ = new  message_filters::Synchronizer<SyncPolicy>(SyncPolicy(60), cam0_img_sub, cam1_img_sub, odom_sub);  
 		sync_->registerCallback(boost::bind(&loop_closure::ProcessorCallback, this, _1, _2,_3)); 
 
 		return true;
@@ -74,7 +74,7 @@ namespace msckf_vio{
 		timestamp = cam0_img->header.stamp.toSec();
 		updateImg(cam0_img_input,cam1_img_input,timestamp);
 
-		ROS_INFO("=====================MileStone 1======================");
+		// ROS_INFO("=====================MileStone 1======================");
 		//获得Msckf算出的位姿，设定Frame Pose
 		//msg.pose.pose.orientation---->quaternion---->Rotation Matrix
 		//msg.pose.pose.translation.x/y/z ---->Translation Matrix
@@ -96,36 +96,36 @@ namespace msckf_vio{
 				0,     0,     0,     1;
 		T_c_w = converter.toCvMat(T);
 
-		ROS_INFO("=====================MileStone 2======================");
+		// ROS_INFO("=====================MileStone 2======================");
 
 		tf::poseMsgToEigen(odom_msg->pose.pose,T_b_w); //得到Msckf 算出的位姿　用于构造KF　odom_msg.pose.pose－> T_b_w;
-		ROS_INFO("=====================MileStone 3======================");
+		// ROS_INFO("=====================MileStone 3======================");
 
 		// T_c_w = converter.toCvMat(T_b_w);
 	
 		createFrame(imgQueue.back());
 
-		ROS_INFO("=====================MileStone 4======================");
+		// ROS_INFO("=====================MileStone 4======================");
 
 		frameQueue.back().SetPose(T_c_w);
 
-		ROS_INFO("=====================MileStone 5======================");
+		// ROS_INFO("=====================MileStone 5======================");
 
 		if (!mpKeyFrameDatabase->getKFDB().size())
 		{
-			ROS_INFO("=====================Checkpoint 1======================");
+			// ROS_INFO("=====================Checkpoint 1======================");
 			KFInitialization();
 		}
 		else
 		{
-			ROS_INFO("=====================MileStone 2======================");
+			// ROS_INFO("=====================Checkpoint 2======================");
 			creatKF();
 		}
-		cout << "cam timestamp=" << timestamp << endl;
-		cout << "pose timestamp=" <<  odom_msg->header.stamp.toSec() << endl;
-  		cout << "Position-> x: " << odom_msg->pose.pose.position.x << "y: " << odom_msg->pose.pose.position.y << "z: " << odom_msg->pose.pose.position.z << endl;
-  		cout << "Orientation-> x: " << odom_msg->pose.pose.orientation.x << "y: " << odom_msg->pose.pose.orientation.y 
-		  << "z: " << odom_msg->pose.pose.orientation.z << "w: " << odom_msg->pose.pose.orientation.w << endl;
+		// cout << "cam timestamp=" << timestamp << endl;
+		// cout << "pose timestamp=" <<  odom_msg->header.stamp.toSec() << endl;
+  		// cout << "Position-> x: " << odom_msg->pose.pose.position.x << "y: " << odom_msg->pose.pose.position.y << "z: " << odom_msg->pose.pose.position.z << endl;
+  		// cout << "Orientation-> x: " << odom_msg->pose.pose.orientation.x << "y: " << odom_msg->pose.pose.orientation.y 
+		//   << "z: " << odom_msg->pose.pose.orientation.z << "w: " << odom_msg->pose.pose.orientation.w << endl;
 		
 		
 		return;
@@ -296,7 +296,7 @@ namespace msckf_vio{
 		mptLocalMapping = new thread(&msckf_vio::LocalMapping::Run,mpLocalMapper);
 
 		//Initialize the Loop Closing thread and launch
-		mpLoopCloser = new LoopClosing(mpMap, mpKeyFrameDatabase, mpVocabulary, mSensor!=MONOCULAR);
+		mpLoopCloser = new LoopClosing(nh, mpMap, mpKeyFrameDatabase, mpVocabulary, mSensor!=MONOCULAR);
 		mptLoopClosing = new thread(&msckf_vio::LoopClosing::Run, mpLoopCloser);
 
 		mpLocalMapper->SetLoopCloser(mpLoopCloser);
@@ -319,9 +319,9 @@ namespace msckf_vio{
     void loop_closure::updateImg(Mat img0, Mat img1, double timestamp){
 
 		imgQueue.push_back(make_pair(make_pair(img0, img1), timestamp));
-		ROS_INFO("===========================================");
- 		ROS_INFO("Im at updateImg!!!!!!!!!!!!!!!!!!!!!!!!!!");
-		ROS_INFO("===========================================");
+		// ROS_INFO("===========================================");
+ 		// ROS_INFO("Im at updateImg!!!!!!!!!!!!!!!!!!!!!!!!!!");
+		// ROS_INFO("===========================================");
         
 		return;
     }
@@ -333,9 +333,9 @@ namespace msckf_vio{
         newFrame = Frame(imgData.first.first, imgData.first.second, imgData.second, 
 			mpORBextractorLeft, mpORBextractorRight,mpVocabulary,mK,mDistCoef,mbf,mThDepth); 
 		frameQueue.push_back(newFrame);
-		ROS_INFO("===========================================");
- 		ROS_INFO("Im at CreateFrame!!!!!!!!!!!!!!!!!!!!!!!!!!");
-		ROS_INFO("===========================================");
+		// ROS_INFO("===========================================");
+ 		// ROS_INFO("Im at CreateFrame!!!!!!!!!!!!!!!!!!!!!!!!!!");
+		// ROS_INFO("===========================================");
 		
     }
 
@@ -399,7 +399,10 @@ namespace msckf_vio{
 			frameQueue.back().mvpMapPoints[i]=pNewMP;//当前帧 添加地图点
 		    }
 		}
-		cout << "新地图创建成功 new map ,具有 地图点数 : " << mpMap->MapPointsInMap() << "  地图点 points" << endl;
+		// cout << "新地图创建成功 new map ,具有 地图点数 : " << mpMap->MapPointsInMap() << "  地图点 points" << endl;
+
+
+
  		// 步骤5：在局部地图中添加该初始关键帧
 		// 【4】局部建图添加关键帧  局部关键帧添加关键帧     局部地图点添加所有地图点
 		mpLocalMapper->InsertKeyFrame(pKFini);

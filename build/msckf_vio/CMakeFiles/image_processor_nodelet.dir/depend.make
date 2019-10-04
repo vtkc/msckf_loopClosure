@@ -3,6 +3,7 @@
 
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/src/image_processor_nodelet.cpp.o: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/CameraMeasurement.h
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/src/image_processor_nodelet.cpp.o: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/FeatureMeasurement.h
+msckf_vio/CMakeFiles/image_processor_nodelet.dir/src/image_processor_nodelet.cpp.o: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/Pose.h
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/src/image_processor_nodelet.cpp.o: /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/BowVector.h
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/src/image_processor_nodelet.cpp.o: /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FClass.h
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/src/image_processor_nodelet.cpp.o: /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/DBoW2/FORB.h

@@ -3,15 +3,15 @@
 
 # compile C with /usr/bin/cc
 # compile CXX with /usr/bin/c++
-C_FLAGS =   -Wall -W -O3 -DNDEBUG -O3 -march=native -fPIC  
+C_FLAGS =   -Wall -W -O3 -DNDEBUG -O3  -fPIC  
 
 C_DEFINES = -DUNIX -Dg2o_EXPORTS
 
-C_INCLUDES = -I/home/tlab/Desktop/ORB_SLAM2/src/ORB_SLAM2/Thirdparty/g2o/core -I/home/tlab/Desktop/ORB_SLAM2/src/ORB_SLAM2/Thirdparty/g2o/types -I/home/tlab/Desktop/ORB_SLAM2/src/ORB_SLAM2/Thirdparty/g2o/stuff -I/usr/include/eigen3 
+C_INCLUDES = -I/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/core -I/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/types -I/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/stuff -I/usr/include/eigen3 
 
-CXX_FLAGS =   -Wall -W -O3 -DNDEBUG -O3 -march=native -fPIC  
+CXX_FLAGS =   -Wall -W -O3 -DNDEBUG -O3  -fPIC  
 
 CXX_DEFINES = -DUNIX -Dg2o_EXPORTS
 
-CXX_INCLUDES = -I/home/tlab/Desktop/ORB_SLAM2/src/ORB_SLAM2/Thirdparty/g2o/core -I/home/tlab/Desktop/ORB_SLAM2/src/ORB_SLAM2/Thirdparty/g2o/types -I/home/tlab/Desktop/ORB_SLAM2/src/ORB_SLAM2/Thirdparty/g2o/stuff -I/usr/include/eigen3 
+CXX_INCLUDES = -I/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/core -I/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/types -I/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/stuff -I/usr/include/eigen3 
 

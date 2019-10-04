@@ -391,6 +391,8 @@ private:
   message_filters::TimeSynchronizer<
     sensor_msgs::Image, sensor_msgs::Image> stereo_sub;
   ros::Subscriber imu_sub;
+  ros::Publisher cam0_img_pub;
+  ros::Publisher cam1_img_pub;
   ros::Publisher feature_pub;
   ros::Publisher tracking_info_pub;
   image_transport::Publisher debug_stereo_pub;
@@ -399,6 +401,8 @@ private:
   std::map<FeatureIDType, int> feature_lifetime;
   void updateFeatureLifetime();
   void featureLifetimeStatistics();
+
+  int cam_pub_counter = 0;
 };
 
 typedef ImageProcessor::Ptr ImageProcessorPtr;

@@ -1,4 +1,4 @@
-# Install script for directory: /home/tlab/Desktop/ORB_SLAM2/src/ORB_SLAM2/Thirdparty/DBoW2
+# Install script for directory: /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tlab/Desktop/ORB_SLAM2/src/ORB_SLAM2/Thirdparty/DBoW2/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/DBoW2/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

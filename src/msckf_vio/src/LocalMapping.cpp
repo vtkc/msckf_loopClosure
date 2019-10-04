@@ -5,6 +5,8 @@
 
 #include<mutex>
 
+using namespace std;
+
 namespace msckf_vio{
     LocalMapping::LocalMapping(Map *pMap, const float bMonocular):
         mbMonocular(bMonocular), mbResetRequested(false), mbFinishRequested(false), mbFinished(true), mpMap(pMap),
@@ -52,11 +54,17 @@ namespace msckf_vio{
 
                 mbAbortBA = false;
 
+                // cout << "At Point 1---------------------" << endl;
+
                 if(!CheckNewKeyFrames() && !stopRequested())
                 {
+                    // cout << "At Point 2---------------------" << endl;
                     // Local BA
-                    if(mpMap->KeyFramesInMap()>2)
+                    if(mpMap->KeyFramesInMap()>2){
+                        // cout << "At Point 3---------------------" << endl;
                         Optimizer::LocalBundleAdjustment(mpCurrentKeyFrame,&mbAbortBA, mpMap);
+                        // cout << "At Point 4---------------------" << endl;
+                    }
 
                     // Check redundant local Keyframes
                     KeyFrameCulling();

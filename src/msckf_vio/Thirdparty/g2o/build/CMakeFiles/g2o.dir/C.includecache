@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/tlab/Desktop/ORB_SLAM2/src/ORB_SLAM2/Thirdparty/g2o/g2o/stuff/os_specific.c
+/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/os_specific.c
 os_specific.h
-/home/tlab/Desktop/ORB_SLAM2/src/ORB_SLAM2/Thirdparty/g2o/g2o/stuff/os_specific.h
+/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/os_specific.h
 
-/home/tlab/Desktop/ORB_SLAM2/src/ORB_SLAM2/Thirdparty/g2o/g2o/stuff/os_specific.h
+/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/Thirdparty/g2o/g2o/stuff/os_specific.h
 stdio.h
 -
 stdlib.h

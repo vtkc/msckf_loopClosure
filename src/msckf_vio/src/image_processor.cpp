@@ -180,6 +180,10 @@ bool ImageProcessor::createRosIO() {
       "features", 3);
   tracking_info_pub = nh.advertise<TrackingInfo>(
       "tracking_info", 1);
+  cam0_img_pub = nh.advertise<sensor_msgs::Image>(
+			"cam0_img_pub", 50);
+  cam1_img_pub = nh.advertise<sensor_msgs::Image>(
+			"cam1_img_pub", 50);
   image_transport::ImageTransport it(nh);
   debug_stereo_pub = it.advertise("debug_stereo_image", 1);
 
@@ -210,6 +214,16 @@ bool ImageProcessor::initialize() {
 void ImageProcessor::stereoCallback(
     const sensor_msgs::ImageConstPtr& cam0_img,
     const sensor_msgs::ImageConstPtr& cam1_img) {
+    
+    // if (cam_pub_counter == 0)
+    // {
+      cam0_img_pub.publish(cam0_img);
+      cam1_img_pub.publish(cam1_img);
+    //   cam_pub_counter = 0;
+
+    // } else {
+    //   cam_pub_counter++;
+    // }
 
   //cout << "==================================" << endl;
 

@@ -59,6 +59,7 @@
     
     <node pkg="nodelet" type="nodelet" name="loop_closure"
       args="standalone msckf_vio/LoopClosureNodelet"
+      
       output="screen">
   </node>
   </group>

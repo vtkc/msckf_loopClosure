@@ -1,5 +1,6 @@
 #ifndef LOOPCLOSING_H
 #define LOOPCLOSING_H
+#include <ros/ros.h>
 
 #include <msckf_vio/KeyFrame.h>
 #include <msckf_vio/LocalMapping.h>
@@ -11,6 +12,12 @@
 #include <thread>
 #include <mutex>
 #include <../Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h>
+
+#include <sensor_msgs/Imu.h>
+#include <nav_msgs/Odometry.h>
+#include <tf/transform_broadcaster.h>
+#include <std_srvs/Trigger.h>
+#include <msckf_vio/Pose.h>
 
 namespace msckf_vio{
     class LocalMapping;
@@ -27,7 +34,7 @@ namespace msckf_vio{
 
     public:
 
-        LoopClosing(Map* pMap, KeyFrameDatabase* pDB, ORBVocabulary* pVoc,const bool bFixScale);
+        LoopClosing(ros::NodeHandle nh, Map* pMap, KeyFrameDatabase* pDB, ORBVocabulary* pVoc,const bool bFixScale);
 
         // void SetTracker(Tracking* pTracker);
 
@@ -57,6 +64,8 @@ namespace msckf_vio{
         bool isFinished();
 
         EIGEN_MAKE_ALIGNED_OPERATOR_NEW
+
+        void publishPose(const cv::Mat &Tcw);
 
     protected:
 
@@ -120,6 +129,9 @@ namespace msckf_vio{
 
 
         bool mnFullBAIdx;
+        //回传正确的pose
+        ros::NodeHandle nh;
+        ros::Publisher corrected_pose_pub;
     };
 }
 

@@ -12,18 +12,42 @@
 #include <thread>
 
 namespace msckf_vio{
-    LoopClosing::LoopClosing(Map *pMap, KeyFrameDatabase *pDB, ORBVocabulary *pVoc, const bool bFixScale):
+    LoopClosing::LoopClosing(ros::NodeHandle nh, Map *pMap, KeyFrameDatabase *pDB, ORBVocabulary *pVoc, const bool bFixScale):
         mbResetRequested(false), mbFinishRequested(false), mbFinished(true), mpMap(pMap),
         mpKeyFrameDB(pDB), mpORBVocabulary(pVoc), mpMatchedKF(NULL), mLastLoopKFid(0), mbRunningGBA(false), mbFinishedGBA(true),
         mbStopGBA(false), mpThreadGBA(NULL), mbFixScale(bFixScale), mnFullBAIdx(0)
     {
         mnCovisibilityConsistencyTh = 3;
+        corrected_pose_pub = nh.advertise<msckf_vio::Pose>(
+			"corrected_pose", 3);
     }
 
     // void LoopClosing::SetTracker(Tracking *pTracker)
     // {
     //     mpTracker=pTracker;
     // }
+
+    void LoopClosing::publishPose(const cv::Mat &Tcw)
+    {
+        // Tcw----->R,t //R----->四元数q
+        cv::Mat Rwc = Tcw.rowRange(0,3).colRange(0,3).t(); // Rotation 
+        cv::Mat twc = -Rwc*Tcw.rowRange(0,3).col(3); // translation 
+        vector<float> q = msckf_vio::Converter::toQuaternion(Rwc);
+
+        msckf_vio::Pose pose_msg;
+
+        tf::Transform new_transform;
+        new_transform.setOrigin(tf::Vector3(twc.at<float>(0, 0), twc.at<float>(0, 1), twc.at<float>(0, 2)));
+
+        tf::Quaternion quaternion(q[0], q[1], q[2], q[3]);  
+        new_transform.setRotation(quaternion);
+
+        tf::poseTFToMsg(new_transform, pose_msg.pose.pose);
+        corrected_pose_pub.publish(pose_msg);
+        // ROS_INFO("publishe corrected pose");
+        
+        
+    }
 
     void LoopClosing::SetLocalMapper(LocalMapping *pLocalMapper)
     {
@@ -37,6 +61,19 @@ namespace msckf_vio{
 
         while(1)
         {
+
+            // //---------TESTING ONLY NEED TO DELETE LATER----------//
+            // //////////////////////////////////////
+            // //////////测试回传pose通信--////////////
+            // // cv::Mat T_c_w(4,4,CV_32F);
+            // cv::Mat A;
+            // A = cv::Mat::ones(4,4, CV_32F);
+            // publishPose(A);
+            
+            // //////////////////////////////////////
+            // //////////////////////////////////////
+
+
             // Check if there are keyframes in the queue
             if(CheckNewKeyFrames())
             {
@@ -134,8 +171,8 @@ namespace msckf_vio{
         // If there are no loop candidates, just add new keyframe and return false
         if(vpCandidateKFs.empty())
         {
-            cout << "No loop candidate. vpCandidateKFs.empty() == True" << endl;
-            cout << "Adding mpCurrentKF into KF Database and END of DetectLoop().\n\n" << endl;
+            // cout << "No loop candidate. vpCandidateKFs.empty() == True" << endl;
+            // cout << "Adding mpCurrentKF into KF Database and END of DetectLoop().\n\n" << endl;
             mpKeyFrameDB->add(mpCurrentKF);
             mvConsistentGroups.clear();
             mpCurrentKF->SetErase();
@@ -621,7 +658,9 @@ namespace msckf_vio{
         // Loop closed. Release Local Mapping.
         mpLocalMapper->Release();    
 
-        mLastLoopKFid = mpCurrentKF->mnId;   
+        mLastLoopKFid = mpCurrentKF->mnId;  
+
+        publishPose(mpCurrentKF->GetPose()); 
     }
 
     void LoopClosing::SearchAndFuse(const KeyFrameAndPose &CorrectedPosesMap)

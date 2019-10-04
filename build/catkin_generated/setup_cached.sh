@@ -7,7 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/vtkc/Desktop/tlab/msckf_loopClosure/devel:$CMAKE_PREFIX_PATH"
 export PWD="/home/vtkc/Desktop/tlab/msckf_loopClosure/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/vtkc/Desktop/tlab/msckf_loopClosure/src:$ROS_PACKAGE_PATH"

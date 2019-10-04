@@ -78,6 +78,7 @@ class MsckfVio {
       Eigen::Matrix<double, 12, 12> continuous_noise_cov;
     };
 
+    void correctPoseCallback(const msckf_vio::Pose::ConstPtr& pose_msg);
 
     /*
      * @brief loadParameters
@@ -229,6 +230,8 @@ class MsckfVio {
     // Debugging variables and functions
     void mocapOdomCallback(
         const nav_msgs::OdometryConstPtr& msg);
+
+    ros::Subscriber corrected_pose_sub;
 
     ros::Subscriber mocap_odom_sub;
     ros::Publisher mocap_odom_pub;

@@ -42,6 +42,26 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/Pose.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+std_msgs/Header.h
+-
+geometry_msgs/PoseWithCovariance.h
+-
+
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/TrackingInfo.h
 string
 -
@@ -435,6 +455,8 @@ mutex
 -
 
 /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/include/msckf_vio/LoopClosing.h
+ros/ros.h
+-
 msckf_vio/KeyFrame.h
 -
 msckf_vio/LocalMapping.h
@@ -450,6 +472,16 @@ thread
 mutex
 -
 ../Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h
+-
+sensor_msgs/Imu.h
+-
+nav_msgs/Odometry.h
+-
+tf/transform_broadcaster.h
+-
+std_srvs/Trigger.h
+-
+msckf_vio/Pose.h
 -
 
 /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/include/msckf_vio/Map.h

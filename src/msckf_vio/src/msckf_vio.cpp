@@ -193,6 +193,9 @@ bool MsckfVio::createRosIO() {
       &MsckfVio::mocapOdomCallback, this);
   mocap_odom_pub = nh.advertise<nav_msgs::Odometry>("gt_odom", 1);
 
+  corrected_pose_sub = nh.subscribe("/firefly_sbx/loop_closure/corrected_pose", 10, 
+      &MsckfVio::correctPoseCallback, this);
+
   return true;
 }
 
@@ -355,6 +358,29 @@ bool MsckfVio::resetCallback(
   res.success = true;
   ROS_WARN("Resetting msckf vio completed...");
   return true;
+}
+
+void MsckfVio::correctPoseCallback(
+  const msckf_vio::Pose::ConstPtr& pose_msg)
+{
+  // ROS_INFO("receive corrected pose!----------------------------------------");
+  
+  Eigen::Isometry3d T_b_w;
+  tf::poseMsgToEigen(pose_msg->pose.pose, T_b_w);
+  double curr_timestamp = pose_msg->header.stamp.toSec();
+ ///////////////////////////////////////////////////////////
+  //
+  // orientation:
+  //              pose_msg->pose.pose.orientation.w,
+	// 							pose_msg->pose.pose.orientation.x,
+	// 							pose_msg->pose.pose.orientation.y,
+	// 							pose_msg->pose.pose.orientation.z;
+  // translation:
+	//             	pose_msg->pose.pose.position.x,
+	// 						 	pose_msg->pose.pose.position.y,
+	// 							pose_msg->pose.pose.position.z;
+ ///////////////////////////////////////////////////////////
+
 }
 
 void MsckfVio::featureCallback(
