@@ -55,6 +55,7 @@ include msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/progress.make
 
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/TrackingInfo.l
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/FeatureMeasurement.l
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/Pose.l
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/CameraMeasurement.l
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/manifest.l
 
@@ -63,27 +64,38 @@ msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus: /home/vtkc/Desktop/tlab/ms
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/TrackingInfo.l: /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/TrackingInfo.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from msckf_vio/TrackingInfo.msg"
-	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg
+	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg
 
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/FeatureMeasurement.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/FeatureMeasurement.l: /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from msckf_vio/FeatureMeasurement.msg"
-	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg
+	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg
+
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/Pose.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/Pose.l: /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/Pose.l: /opt/ros/kinetic/share/geometry_msgs/msg/PoseWithCovariance.msg
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/Pose.l: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/Pose.l: /opt/ros/kinetic/share/geometry_msgs/msg/Quaternion.msg
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/Pose.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/Pose.l: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from msckf_vio/Pose.msg"
+	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg
 
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/CameraMeasurement.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/CameraMeasurement.l: /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/CameraMeasurement.l: /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/CameraMeasurement.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from msckf_vio/CameraMeasurement.msg"
-	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from msckf_vio/CameraMeasurement.msg"
+	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg
 
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp manifest code for msckf_vio"
-	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio msckf_vio std_msgs
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp manifest code for msckf_vio"
+	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio msckf_vio std_msgs geometry_msgs
 
 msckf_vio_generate_messages_eus: msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus
 msckf_vio_generate_messages_eus: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/TrackingInfo.l
 msckf_vio_generate_messages_eus: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/FeatureMeasurement.l
+msckf_vio_generate_messages_eus: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/Pose.l
 msckf_vio_generate_messages_eus: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/msg/CameraMeasurement.l
 msckf_vio_generate_messages_eus: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/roseus/ros/msckf_vio/manifest.l
 msckf_vio_generate_messages_eus: msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/build.make

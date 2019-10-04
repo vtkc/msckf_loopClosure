@@ -55,6 +55,7 @@ include msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/progress.mak
 
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/TrackingInfo.js
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/FeatureMeasurement.js
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/Pose.js
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/CameraMeasurement.js
 
 
@@ -62,23 +63,34 @@ msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs: /home/vtkc/Desktop/tlab
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/TrackingInfo.js: /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/TrackingInfo.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from msckf_vio/TrackingInfo.msg"
-	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg
+	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg
 
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/FeatureMeasurement.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/FeatureMeasurement.js: /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from msckf_vio/FeatureMeasurement.msg"
-	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg
+	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg
+
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/Pose.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/Pose.js: /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/Pose.js: /opt/ros/kinetic/share/geometry_msgs/msg/PoseWithCovariance.msg
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/Pose.js: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/Pose.js: /opt/ros/kinetic/share/geometry_msgs/msg/Quaternion.msg
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/Pose.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/Pose.js: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from msckf_vio/Pose.msg"
+	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg
 
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/CameraMeasurement.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/CameraMeasurement.js: /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/CameraMeasurement.js: /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/CameraMeasurement.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from msckf_vio/CameraMeasurement.msg"
-	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from msckf_vio/CameraMeasurement.msg"
+	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg
 
 msckf_vio_generate_messages_nodejs: msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs
 msckf_vio_generate_messages_nodejs: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/TrackingInfo.js
 msckf_vio_generate_messages_nodejs: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/FeatureMeasurement.js
+msckf_vio_generate_messages_nodejs: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/Pose.js
 msckf_vio_generate_messages_nodejs: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/share/gennodejs/ros/msckf_vio/msg/CameraMeasurement.js
 msckf_vio_generate_messages_nodejs: msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/build.make
 

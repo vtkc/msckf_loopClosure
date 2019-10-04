@@ -1,10 +1,8 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(FATAL_ERROR "Could not find messages which '/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg' depends on. Did you forget to specify generate_messages(DEPENDENCIES ...)?
-Cannot locate message [PoseWithCovariance]: unknown package [geometry_msgs] on search path [{'msckf_vio': ['/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg']}]")
 message(STATUS "msckf_vio: 4 messages, 0 services")
 
-set(MSG_I_FLAGS "-Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -29,6 +27,11 @@ add_custom_target(_msckf_vio_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msckf_vio" "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" ""
 )
 
+get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg" NAME_WE)
+add_custom_target(_msckf_vio_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msckf_vio" "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg" "geometry_msgs/PoseWithCovariance:geometry_msgs/Pose:geometry_msgs/Quaternion:std_msgs/Header:geometry_msgs/Point"
+)
+
 get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" NAME_WE)
 add_custom_target(_msckf_vio_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "msckf_vio" "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" "msckf_vio/FeatureMeasurement:std_msgs/Header"
@@ -50,6 +53,12 @@ _generate_msg_cpp(msckf_vio
   "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msckf_vio
+)
+_generate_msg_cpp(msckf_vio
+  "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/msckf_vio
 )
 _generate_msg_cpp(msckf_vio
@@ -77,6 +86,8 @@ get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/
 add_dependencies(msckf_vio_generate_messages_cpp _msckf_vio_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_cpp _msckf_vio_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg" NAME_WE)
+add_dependencies(msckf_vio_generate_messages_cpp _msckf_vio_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_cpp _msckf_vio_generate_messages_check_deps_${_filename})
 
@@ -99,6 +110,12 @@ _generate_msg_eus(msckf_vio
   "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msckf_vio
+)
+_generate_msg_eus(msckf_vio
+  "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msckf_vio
 )
 _generate_msg_eus(msckf_vio
@@ -126,6 +143,8 @@ get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/
 add_dependencies(msckf_vio_generate_messages_eus _msckf_vio_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_eus _msckf_vio_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg" NAME_WE)
+add_dependencies(msckf_vio_generate_messages_eus _msckf_vio_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_eus _msckf_vio_generate_messages_check_deps_${_filename})
 
@@ -148,6 +167,12 @@ _generate_msg_lisp(msckf_vio
   "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msckf_vio
+)
+_generate_msg_lisp(msckf_vio
+  "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msckf_vio
 )
 _generate_msg_lisp(msckf_vio
@@ -175,6 +200,8 @@ get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/
 add_dependencies(msckf_vio_generate_messages_lisp _msckf_vio_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_lisp _msckf_vio_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg" NAME_WE)
+add_dependencies(msckf_vio_generate_messages_lisp _msckf_vio_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_lisp _msckf_vio_generate_messages_check_deps_${_filename})
 
@@ -197,6 +224,12 @@ _generate_msg_nodejs(msckf_vio
   "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msckf_vio
+)
+_generate_msg_nodejs(msckf_vio
+  "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msckf_vio
 )
 _generate_msg_nodejs(msckf_vio
@@ -224,6 +257,8 @@ get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/
 add_dependencies(msckf_vio_generate_messages_nodejs _msckf_vio_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_nodejs _msckf_vio_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg" NAME_WE)
+add_dependencies(msckf_vio_generate_messages_nodejs _msckf_vio_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_nodejs _msckf_vio_generate_messages_check_deps_${_filename})
 
@@ -246,6 +281,12 @@ _generate_msg_py(msckf_vio
   "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msckf_vio
+)
+_generate_msg_py(msckf_vio
+  "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/PoseWithCovariance.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Pose.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msckf_vio
 )
 _generate_msg_py(msckf_vio
@@ -273,6 +314,8 @@ get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/
 add_dependencies(msckf_vio_generate_messages_py _msckf_vio_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_py _msckf_vio_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg" NAME_WE)
+add_dependencies(msckf_vio_generate_messages_py _msckf_vio_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg" NAME_WE)
 add_dependencies(msckf_vio_generate_messages_py _msckf_vio_generate_messages_check_deps_${_filename})
 
@@ -295,6 +338,9 @@ endif()
 if(TARGET std_msgs_generate_messages_cpp)
   add_dependencies(msckf_vio_generate_messages_cpp std_msgs_generate_messages_cpp)
 endif()
+if(TARGET geometry_msgs_generate_messages_cpp)
+  add_dependencies(msckf_vio_generate_messages_cpp geometry_msgs_generate_messages_cpp)
+endif()
 
 if(geneus_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/msckf_vio)
   # install generated code
@@ -305,6 +351,9 @@ if(geneus_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/ms
 endif()
 if(TARGET std_msgs_generate_messages_eus)
   add_dependencies(msckf_vio_generate_messages_eus std_msgs_generate_messages_eus)
+endif()
+if(TARGET geometry_msgs_generate_messages_eus)
+  add_dependencies(msckf_vio_generate_messages_eus geometry_msgs_generate_messages_eus)
 endif()
 
 if(genlisp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/msckf_vio)
@@ -317,6 +366,9 @@ endif()
 if(TARGET std_msgs_generate_messages_lisp)
   add_dependencies(msckf_vio_generate_messages_lisp std_msgs_generate_messages_lisp)
 endif()
+if(TARGET geometry_msgs_generate_messages_lisp)
+  add_dependencies(msckf_vio_generate_messages_lisp geometry_msgs_generate_messages_lisp)
+endif()
 
 if(gennodejs_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/msckf_vio)
   # install generated code
@@ -327,6 +379,9 @@ if(gennodejs_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_D
 endif()
 if(TARGET std_msgs_generate_messages_nodejs)
   add_dependencies(msckf_vio_generate_messages_nodejs std_msgs_generate_messages_nodejs)
+endif()
+if(TARGET geometry_msgs_generate_messages_nodejs)
+  add_dependencies(msckf_vio_generate_messages_nodejs geometry_msgs_generate_messages_nodejs)
 endif()
 
 if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msckf_vio)
@@ -339,4 +394,7 @@ if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/msck
 endif()
 if(TARGET std_msgs_generate_messages_py)
   add_dependencies(msckf_vio_generate_messages_py std_msgs_generate_messages_py)
+endif()
+if(TARGET geometry_msgs_generate_messages_py)
+  add_dependencies(msckf_vio_generate_messages_py geometry_msgs_generate_messages_py)
 endif()

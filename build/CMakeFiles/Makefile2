@@ -103,7 +103,7 @@ CMakeFiles/run_tests.dir/all: msckf_vio/CMakeFiles/_run_tests_msckf_vio.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 28
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests.dir/rule
@@ -168,7 +168,7 @@ CMakeFiles/tests.dir/all: msckf_vio/CMakeFiles/test_feature_init.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 28
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule
@@ -416,6 +416,8 @@ msckf_vio/clean: msckf_vio/CMakeFiles/Converter.dir/clean
 msckf_vio/clean: msckf_vio/CMakeFiles/loop_closure_nodelet.dir/clean
 msckf_vio/clean: msckf_vio/CMakeFiles/image_processor.dir/clean
 msckf_vio/clean: msckf_vio/CMakeFiles/msckf_vio_genpy.dir/clean
+msckf_vio/clean: msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/clean
+msckf_vio/clean: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/clean
 msckf_vio/clean: msckf_vio/CMakeFiles/tf2_msgs_generate_messages_py.dir/clean
 msckf_vio/clean: msckf_vio/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
 msckf_vio/clean: msckf_vio/CMakeFiles/topic_tools_generate_messages_py.dir/clean
@@ -492,9 +494,8 @@ msckf_vio/clean: msckf_vio/CMakeFiles/topic_tools_generate_messages_eus.dir/clea
 msckf_vio/clean: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean
 msckf_vio/clean: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/clean
 msckf_vio/clean: msckf_vio/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
-msckf_vio/clean: msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/clean
-msckf_vio/clean: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/clean
 msckf_vio/clean: msckf_vio/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
+msckf_vio/clean: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/clean
 msckf_vio/clean: msckf_vio/CMakeFiles/bond_generate_messages_nodejs.dir/clean
 msckf_vio/clean: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean
 msckf_vio/clean: msckf_vio/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/clean
@@ -537,7 +538,7 @@ msckf_vio/preinstall:
 msckf_vio/CMakeFiles/test_math_utils.dir/all: gtest/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f msckf_vio/CMakeFiles/test_math_utils.dir/build.make msckf_vio/CMakeFiles/test_math_utils.dir/depend
 	$(MAKE) -f msckf_vio/CMakeFiles/test_math_utils.dir/build.make msckf_vio/CMakeFiles/test_math_utils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=73,74 "Built target test_math_utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=78,79 "Built target test_math_utils"
 .PHONY : msckf_vio/CMakeFiles/test_math_utils.dir/all
 
 # Build rule for subdir invocation for target.
@@ -608,7 +609,7 @@ msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_feature_init.dir/all: msckf
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_feature_init.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 28
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_feature_init.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_feature_init.dir/rule
@@ -640,7 +641,7 @@ msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init.dir/all: msckf_
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 26
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest_test_feature_init.dir/rule
@@ -672,7 +673,7 @@ msckf_vio/CMakeFiles/run_tests_msckf_vio.dir/all: msckf_vio/CMakeFiles/run_tests
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/run_tests_msckf_vio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 28
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/run_tests_msckf_vio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/run_tests_msckf_vio.dir/rule
@@ -697,6 +698,7 @@ clean: msckf_vio/CMakeFiles/run_tests_msckf_vio.dir/clean
 
 # All Build rule for target.
 msckf_vio/CMakeFiles/test_feature_init.dir/all: gtest/gtest/CMakeFiles/gtest.dir/all
+msckf_vio/CMakeFiles/test_feature_init.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/test_feature_init.dir/all: msckf_vio/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/test_feature_init.dir/all: msckf_vio/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/test_feature_init.dir/all: msckf_vio/CMakeFiles/topic_tools_generate_messages_py.dir/all
@@ -765,7 +767,6 @@ msckf_vio/CMakeFiles/test_feature_init.dir/all: msckf_vio/CMakeFiles/topic_tools
 msckf_vio/CMakeFiles/test_feature_init.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
 msckf_vio/CMakeFiles/test_feature_init.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/test_feature_init.dir/all: msckf_vio/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
-msckf_vio/CMakeFiles/test_feature_init.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/test_feature_init.dir/all: msckf_vio/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 msckf_vio/CMakeFiles/test_feature_init.dir/all: msckf_vio/CMakeFiles/bond_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/test_feature_init.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
@@ -787,12 +788,12 @@ msckf_vio/CMakeFiles/test_feature_init.dir/all: msckf_vio/CMakeFiles/geometry_ms
 msckf_vio/CMakeFiles/test_feature_init.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/all
 	$(MAKE) -f msckf_vio/CMakeFiles/test_feature_init.dir/build.make msckf_vio/CMakeFiles/test_feature_init.dir/depend
 	$(MAKE) -f msckf_vio/CMakeFiles/test_feature_init.dir/build.make msckf_vio/CMakeFiles/test_feature_init.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=71,72 "Built target test_feature_init"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=76,77 "Built target test_feature_init"
 .PHONY : msckf_vio/CMakeFiles/test_feature_init.dir/all
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/test_feature_init.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 26
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/test_feature_init.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/test_feature_init.dir/rule
@@ -816,6 +817,7 @@ clean: msckf_vio/CMakeFiles/test_feature_init.dir/clean
 # Target rules for target msckf_vio/CMakeFiles/Frame.dir
 
 # All Build rule for target.
+msckf_vio/CMakeFiles/Frame.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/Frame.dir/all: msckf_vio/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/Frame.dir/all: msckf_vio/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/Frame.dir/all: msckf_vio/CMakeFiles/topic_tools_generate_messages_py.dir/all
@@ -884,7 +886,6 @@ msckf_vio/CMakeFiles/Frame.dir/all: msckf_vio/CMakeFiles/topic_tools_generate_me
 msckf_vio/CMakeFiles/Frame.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
 msckf_vio/CMakeFiles/Frame.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/Frame.dir/all: msckf_vio/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
-msckf_vio/CMakeFiles/Frame.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/Frame.dir/all: msckf_vio/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 msckf_vio/CMakeFiles/Frame.dir/all: msckf_vio/CMakeFiles/bond_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/Frame.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
@@ -917,7 +918,7 @@ all: msckf_vio/CMakeFiles/Frame.dir/all
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/Frame.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 43
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 48
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/Frame.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/Frame.dir/rule
@@ -941,6 +942,7 @@ clean: msckf_vio/CMakeFiles/Frame.dir/clean
 # Target rules for target msckf_vio/CMakeFiles/Converter.dir
 
 # All Build rule for target.
+msckf_vio/CMakeFiles/Converter.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/Converter.dir/all: msckf_vio/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/Converter.dir/all: msckf_vio/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/Converter.dir/all: msckf_vio/CMakeFiles/topic_tools_generate_messages_py.dir/all
@@ -1009,7 +1011,6 @@ msckf_vio/CMakeFiles/Converter.dir/all: msckf_vio/CMakeFiles/topic_tools_generat
 msckf_vio/CMakeFiles/Converter.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
 msckf_vio/CMakeFiles/Converter.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/Converter.dir/all: msckf_vio/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
-msckf_vio/CMakeFiles/Converter.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/Converter.dir/all: msckf_vio/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 msckf_vio/CMakeFiles/Converter.dir/all: msckf_vio/CMakeFiles/bond_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/Converter.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
@@ -1042,7 +1043,7 @@ all: msckf_vio/CMakeFiles/Converter.dir/all
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/Converter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 38
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/Converter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/Converter.dir/rule
@@ -1066,6 +1067,7 @@ clean: msckf_vio/CMakeFiles/Converter.dir/clean
 # Target rules for target msckf_vio/CMakeFiles/loop_closure_nodelet.dir
 
 # All Build rule for target.
+msckf_vio/CMakeFiles/loop_closure_nodelet.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/loop_closure_nodelet.dir/all: msckf_vio/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/loop_closure_nodelet.dir/all: msckf_vio/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/loop_closure_nodelet.dir/all: msckf_vio/CMakeFiles/topic_tools_generate_messages_py.dir/all
@@ -1134,7 +1136,6 @@ msckf_vio/CMakeFiles/loop_closure_nodelet.dir/all: msckf_vio/CMakeFiles/topic_to
 msckf_vio/CMakeFiles/loop_closure_nodelet.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
 msckf_vio/CMakeFiles/loop_closure_nodelet.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/loop_closure_nodelet.dir/all: msckf_vio/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
-msckf_vio/CMakeFiles/loop_closure_nodelet.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/loop_closure_nodelet.dir/all: msckf_vio/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 msckf_vio/CMakeFiles/loop_closure_nodelet.dir/all: msckf_vio/CMakeFiles/bond_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/loop_closure_nodelet.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
@@ -1167,7 +1168,7 @@ all: msckf_vio/CMakeFiles/loop_closure_nodelet.dir/all
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/loop_closure_nodelet.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 38
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/loop_closure_nodelet.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/loop_closure_nodelet.dir/rule
@@ -1191,6 +1192,7 @@ clean: msckf_vio/CMakeFiles/loop_closure_nodelet.dir/clean
 # Target rules for target msckf_vio/CMakeFiles/image_processor.dir
 
 # All Build rule for target.
+msckf_vio/CMakeFiles/image_processor.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/image_processor.dir/all: msckf_vio/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/image_processor.dir/all: msckf_vio/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/image_processor.dir/all: msckf_vio/CMakeFiles/topic_tools_generate_messages_py.dir/all
@@ -1259,7 +1261,6 @@ msckf_vio/CMakeFiles/image_processor.dir/all: msckf_vio/CMakeFiles/topic_tools_g
 msckf_vio/CMakeFiles/image_processor.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
 msckf_vio/CMakeFiles/image_processor.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/image_processor.dir/all: msckf_vio/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
-msckf_vio/CMakeFiles/image_processor.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/image_processor.dir/all: msckf_vio/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 msckf_vio/CMakeFiles/image_processor.dir/all: msckf_vio/CMakeFiles/bond_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/image_processor.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
@@ -1291,7 +1292,7 @@ all: msckf_vio/CMakeFiles/image_processor.dir/all
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/image_processor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 25
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/image_processor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/image_processor.dir/rule
@@ -1323,7 +1324,7 @@ msckf_vio/CMakeFiles/msckf_vio_genpy.dir/all: msckf_vio/CMakeFiles/msckf_vio_gen
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/msckf_vio_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/msckf_vio_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_genpy.dir/rule
@@ -1340,6 +1341,77 @@ msckf_vio/CMakeFiles/msckf_vio_genpy.dir/clean:
 
 # clean rule for target.
 clean: msckf_vio/CMakeFiles/msckf_vio_genpy.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir
+
+# All Build rule for target.
+msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/all: CMakeFiles/tests.dir/all
+msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/all: msckf_vio/CMakeFiles/test_math_utils.dir/all
+msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/all: msckf_vio/CMakeFiles/clean_test_results_msckf_vio.dir/all
+	$(MAKE) -f msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/build.make msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/depend
+	$(MAKE) -f msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/build.make msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num= "Built target _run_tests_msckf_vio_gtest_test_math_utils"
+.PHONY : msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/all
+
+# Build rule for subdir invocation for target.
+msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 28
+	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
+.PHONY : msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/rule
+
+# Convenience name for target.
+_run_tests_msckf_vio_gtest_test_math_utils: msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/rule
+
+.PHONY : _run_tests_msckf_vio_gtest_test_math_utils
+
+# clean rule for target.
+msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/clean:
+	$(MAKE) -f msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/build.make msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/clean
+.PHONY : msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/clean
+
+# clean rule for target.
+clean: msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir
+
+# All Build rule for target.
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all: msckf_vio/CMakeFiles/std_msgs_generate_messages_py.dir/all
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_TrackingInfo.dir/all
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_FeatureMeasurement.dir/all
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/all
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all: msckf_vio/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_CameraMeasurement.dir/all
+	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/depend
+	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=69,70,71,72,73 "Built target msckf_vio_generate_messages_py"
+.PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
+.PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/rule
+
+# Convenience name for target.
+msckf_vio_generate_messages_py: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/rule
+
+.PHONY : msckf_vio_generate_messages_py
+
+# clean rule for target.
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/clean:
+	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/clean
+.PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/clean
 
 .PHONY : clean
 
@@ -1707,7 +1779,7 @@ msckf_vio/CMakeFiles/msckf_vio_genlisp.dir/all: msckf_vio/CMakeFiles/msckf_vio_g
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/msckf_vio_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/msckf_vio_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_genlisp.dir/rule
@@ -1740,7 +1812,7 @@ msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest.dir/all: msckf_vio/CMakeFiles/_r
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 28
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest.dir/rule
@@ -2829,7 +2901,7 @@ msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest.dir/all: msckf_vio/CMakeFiles/run
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 28
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/run_tests_msckf_vio_gtest.dir/rule
@@ -2861,7 +2933,7 @@ msckf_vio/CMakeFiles/_run_tests_msckf_vio.dir/all: msckf_vio/CMakeFiles/_run_tes
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/_run_tests_msckf_vio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 28
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/_run_tests_msckf_vio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/_run_tests_msckf_vio.dir/rule
@@ -2893,7 +2965,7 @@ msckf_vio/CMakeFiles/msckf_vio_gennodejs.dir/all: msckf_vio/CMakeFiles/msckf_vio
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/msckf_vio_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/msckf_vio_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_gennodejs.dir/rule
@@ -3110,17 +3182,19 @@ clean: msckf_vio/CMakeFiles/bond_generate_messages_eus.dir/clean
 
 # All Build rule for target.
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/all: msckf_vio/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/all: msckf_vio/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_TrackingInfo.dir/all
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_FeatureMeasurement.dir/all
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/all
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_CameraMeasurement.dir/all
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/depend
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=62,63,64 "Built target msckf_vio_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=65,66,67,68 "Built target msckf_vio_generate_messages_nodejs"
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/rule
@@ -3467,15 +3541,17 @@ clean: msckf_vio/CMakeFiles/tf_generate_messages_py.dir/clean
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_TrackingInfo.dir/all
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_FeatureMeasurement.dir/all
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/all: msckf_vio/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/all
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/all: msckf_vio/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_CameraMeasurement.dir/all
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/depend
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=59,60,61 "Built target msckf_vio_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=61,62,63,64 "Built target msckf_vio_generate_messages_lisp"
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/rule
@@ -3784,75 +3860,6 @@ clean: msckf_vio/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir
-
-# All Build rule for target.
-msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/all: CMakeFiles/tests.dir/all
-msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/all: msckf_vio/CMakeFiles/test_math_utils.dir/all
-msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/all: msckf_vio/CMakeFiles/clean_test_results_msckf_vio.dir/all
-	$(MAKE) -f msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/build.make msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/depend
-	$(MAKE) -f msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/build.make msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num= "Built target _run_tests_msckf_vio_gtest_test_math_utils"
-.PHONY : msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/all
-
-# Build rule for subdir invocation for target.
-msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 23
-	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
-.PHONY : msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/rule
-
-# Convenience name for target.
-_run_tests_msckf_vio_gtest_test_math_utils: msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/rule
-
-.PHONY : _run_tests_msckf_vio_gtest_test_math_utils
-
-# clean rule for target.
-msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/clean:
-	$(MAKE) -f msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/build.make msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/clean
-.PHONY : msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/clean
-
-# clean rule for target.
-clean: msckf_vio/CMakeFiles/_run_tests_msckf_vio_gtest_test_math_utils.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir
-
-# All Build rule for target.
-msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all: msckf_vio/CMakeFiles/std_msgs_generate_messages_py.dir/all
-msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_TrackingInfo.dir/all
-msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_FeatureMeasurement.dir/all
-msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_CameraMeasurement.dir/all
-	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/depend
-	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=65,66,67,68 "Built target msckf_vio_generate_messages_py"
-.PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
-.PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/rule
-
-# Convenience name for target.
-msckf_vio_generate_messages_py: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/rule
-
-.PHONY : msckf_vio_generate_messages_py
-
-# clean rule for target.
-msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/clean:
-	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/clean
-.PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target msckf_vio/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir
 
 # All Build rule for target.
@@ -3881,6 +3888,38 @@ msckf_vio/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean:
 
 # clean rule for target.
 clean: msckf_vio/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir
+
+# All Build rule for target.
+msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/all:
+	$(MAKE) -f msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/build.make msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/depend
+	$(MAKE) -f msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/build.make msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num= "Built target _msckf_vio_generate_messages_check_deps_Pose"
+.PHONY : msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/all
+
+# Build rule for subdir invocation for target.
+msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
+.PHONY : msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/rule
+
+# Convenience name for target.
+_msckf_vio_generate_messages_check_deps_Pose: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/rule
+
+.PHONY : _msckf_vio_generate_messages_check_deps_Pose
+
+# clean rule for target.
+msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/clean:
+	$(MAKE) -f msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/build.make msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/clean
+.PHONY : msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/clean
+
+# clean rule for target.
+clean: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/clean
 
 .PHONY : clean
 
@@ -4016,18 +4055,20 @@ clean: msckf_vio/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/clean
 # Target rules for target msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir
 
 # All Build rule for target.
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/all: msckf_vio/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_TrackingInfo.dir/all
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_FeatureMeasurement.dir/all
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/all: msckf_vio/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/all
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_CameraMeasurement.dir/all
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/depend
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=55,56,57,58 "Built target msckf_vio_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=56,57,58,59,60 "Built target msckf_vio_generate_messages_eus"
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/rule
@@ -4147,6 +4188,7 @@ clean: msckf_vio/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/clean
 # Target rules for target msckf_vio/CMakeFiles/loop_closure.dir
 
 # All Build rule for target.
+msckf_vio/CMakeFiles/loop_closure.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/loop_closure.dir/all: msckf_vio/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/loop_closure.dir/all: msckf_vio/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/loop_closure.dir/all: msckf_vio/CMakeFiles/topic_tools_generate_messages_py.dir/all
@@ -4215,7 +4257,6 @@ msckf_vio/CMakeFiles/loop_closure.dir/all: msckf_vio/CMakeFiles/topic_tools_gene
 msckf_vio/CMakeFiles/loop_closure.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
 msckf_vio/CMakeFiles/loop_closure.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/loop_closure.dir/all: msckf_vio/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
-msckf_vio/CMakeFiles/loop_closure.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/loop_closure.dir/all: msckf_vio/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 msckf_vio/CMakeFiles/loop_closure.dir/all: msckf_vio/CMakeFiles/bond_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/loop_closure.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
@@ -4247,7 +4288,7 @@ all: msckf_vio/CMakeFiles/loop_closure.dir/all
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/loop_closure.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 36
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/loop_closure.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/loop_closure.dir/rule
@@ -4271,6 +4312,7 @@ clean: msckf_vio/CMakeFiles/loop_closure.dir/clean
 # Target rules for target msckf_vio/CMakeFiles/msckf_vio_nodelet.dir
 
 # All Build rule for target.
+msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all: msckf_vio/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all: msckf_vio/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all: msckf_vio/CMakeFiles/topic_tools_generate_messages_py.dir/all
@@ -4339,7 +4381,6 @@ msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all: msckf_vio/CMakeFiles/topic_tools
 msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
 msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all: msckf_vio/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
-msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all: msckf_vio/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all: msckf_vio/CMakeFiles/bond_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
@@ -4362,7 +4403,7 @@ msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all: msckf_vio/CMakeFiles/geometry_ms
 msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/all
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/build.make msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/depend
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/build.make msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=69,70 "Built target msckf_vio_nodelet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=74,75 "Built target msckf_vio_nodelet"
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all
 
 # Include target in all.
@@ -4372,7 +4413,7 @@ all: msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_nodelet.dir/rule
@@ -4428,6 +4469,7 @@ clean: msckf_vio/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
 # Target rules for target msckf_vio/CMakeFiles/ORBextractor.dir
 
 # All Build rule for target.
+msckf_vio/CMakeFiles/ORBextractor.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/ORBextractor.dir/all: msckf_vio/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/ORBextractor.dir/all: msckf_vio/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/ORBextractor.dir/all: msckf_vio/CMakeFiles/topic_tools_generate_messages_py.dir/all
@@ -4496,7 +4538,6 @@ msckf_vio/CMakeFiles/ORBextractor.dir/all: msckf_vio/CMakeFiles/topic_tools_gene
 msckf_vio/CMakeFiles/ORBextractor.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
 msckf_vio/CMakeFiles/ORBextractor.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/ORBextractor.dir/all: msckf_vio/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
-msckf_vio/CMakeFiles/ORBextractor.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/ORBextractor.dir/all: msckf_vio/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 msckf_vio/CMakeFiles/ORBextractor.dir/all: msckf_vio/CMakeFiles/bond_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/ORBextractor.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
@@ -4529,7 +4570,7 @@ all: msckf_vio/CMakeFiles/ORBextractor.dir/all
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/ORBextractor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 38
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/ORBextractor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/ORBextractor.dir/rule
@@ -4650,6 +4691,7 @@ clean: msckf_vio/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
 
 # All Build rule for target.
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/all: msckf_vio/CMakeFiles/image_processor.dir/all
+msckf_vio/CMakeFiles/image_processor_nodelet.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/all: msckf_vio/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/all: msckf_vio/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/all: msckf_vio/CMakeFiles/topic_tools_generate_messages_py.dir/all
@@ -4718,7 +4760,6 @@ msckf_vio/CMakeFiles/image_processor_nodelet.dir/all: msckf_vio/CMakeFiles/topic
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/all: msckf_vio/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
-msckf_vio/CMakeFiles/image_processor_nodelet.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/all: msckf_vio/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/all: msckf_vio/CMakeFiles/bond_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
@@ -4750,7 +4791,7 @@ all: msckf_vio/CMakeFiles/image_processor_nodelet.dir/all
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/image_processor_nodelet.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/image_processor_nodelet.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/image_processor_nodelet.dir/rule
@@ -4806,6 +4847,7 @@ clean: msckf_vio/CMakeFiles/topic_tools_generate_messages_lisp.dir/clean
 # Target rules for target msckf_vio/CMakeFiles/msckf_vio.dir
 
 # All Build rule for target.
+msckf_vio/CMakeFiles/msckf_vio.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/msckf_vio.dir/all: msckf_vio/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/msckf_vio.dir/all: msckf_vio/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/msckf_vio.dir/all: msckf_vio/CMakeFiles/topic_tools_generate_messages_py.dir/all
@@ -4874,7 +4916,6 @@ msckf_vio/CMakeFiles/msckf_vio.dir/all: msckf_vio/CMakeFiles/topic_tools_generat
 msckf_vio/CMakeFiles/msckf_vio.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
 msckf_vio/CMakeFiles/msckf_vio.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/msckf_vio.dir/all: msckf_vio/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
-msckf_vio/CMakeFiles/msckf_vio.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/msckf_vio.dir/all: msckf_vio/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
 msckf_vio/CMakeFiles/msckf_vio.dir/all: msckf_vio/CMakeFiles/bond_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/msckf_vio.dir/all: msckf_vio/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
@@ -4906,7 +4947,7 @@ all: msckf_vio/CMakeFiles/msckf_vio.dir/all
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/msckf_vio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 25
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/msckf_vio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/msckf_vio.dir/rule
@@ -5058,9 +5099,9 @@ clean: msckf_vio/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 # Target rules for target msckf_vio/CMakeFiles/msckf_vio_generate_messages.dir
 
 # All Build rule for target.
+msckf_vio/CMakeFiles/msckf_vio_generate_messages.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/msckf_vio_generate_messages.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_nodejs.dir/all
 msckf_vio/CMakeFiles/msckf_vio_generate_messages.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_lisp.dir/all
-msckf_vio/CMakeFiles/msckf_vio_generate_messages.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_py.dir/all
 msckf_vio/CMakeFiles/msckf_vio_generate_messages.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_eus.dir/all
 msckf_vio/CMakeFiles/msckf_vio_generate_messages.dir/all: msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/all
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages.dir/depend
@@ -5075,7 +5116,7 @@ all: msckf_vio/CMakeFiles/msckf_vio_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/msckf_vio_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 22
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/msckf_vio_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages.dir/rule
@@ -5133,16 +5174,18 @@ clean: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_CameraMeasur
 # All Build rule for target.
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_TrackingInfo.dir/all
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/all: msckf_vio/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/all: msckf_vio/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_FeatureMeasurement.dir/all
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_Pose.dir/all
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/all: msckf_vio/CMakeFiles/_msckf_vio_generate_messages_check_deps_CameraMeasurement.dir/all
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/depend
 	$(MAKE) -f msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/build.make msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=52,53,54 "Built target msckf_vio_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=52,53,54,55 "Built target msckf_vio_generate_messages_cpp"
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/rule
@@ -5174,7 +5217,7 @@ msckf_vio/CMakeFiles/msckf_vio_gencpp.dir/all: msckf_vio/CMakeFiles/msckf_vio_ge
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/msckf_vio_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/msckf_vio_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_gencpp.dir/rule
@@ -5206,7 +5249,7 @@ msckf_vio/CMakeFiles/msckf_vio_geneus.dir/all: msckf_vio/CMakeFiles/msckf_vio_ge
 
 # Build rule for subdir invocation for target.
 msckf_vio/CMakeFiles/msckf_vio_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 msckf_vio/CMakeFiles/msckf_vio_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles 0
 .PHONY : msckf_vio/CMakeFiles/msckf_vio_geneus.dir/rule

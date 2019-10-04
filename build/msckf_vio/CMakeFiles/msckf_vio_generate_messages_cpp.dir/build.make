@@ -55,6 +55,7 @@ include msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/progress.make
 
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/TrackingInfo.h
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/FeatureMeasurement.h
+msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/Pose.h
 msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/CameraMeasurement.h
 
 
@@ -63,25 +64,37 @@ msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp: /home/vtkc/Desktop/tlab/ms
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/TrackingInfo.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/TrackingInfo.h: /opt/ros/kinetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from msckf_vio/TrackingInfo.msg"
-	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio && /home/vtkc/Desktop/tlab/msckf_loopClosure/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio -e /opt/ros/kinetic/share/gencpp/cmake/..
+	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio && /home/vtkc/Desktop/tlab/msckf_loopClosure/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/FeatureMeasurement.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/FeatureMeasurement.h: /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/FeatureMeasurement.h: /opt/ros/kinetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from msckf_vio/FeatureMeasurement.msg"
-	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio && /home/vtkc/Desktop/tlab/msckf_loopClosure/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio -e /opt/ros/kinetic/share/gencpp/cmake/..
+	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio && /home/vtkc/Desktop/tlab/msckf_loopClosure/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/Pose.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/Pose.h: /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/Pose.h: /opt/ros/kinetic/share/geometry_msgs/msg/PoseWithCovariance.msg
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/Pose.h: /opt/ros/kinetic/share/geometry_msgs/msg/Pose.msg
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/Pose.h: /opt/ros/kinetic/share/geometry_msgs/msg/Quaternion.msg
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/Pose.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/Pose.h: /opt/ros/kinetic/share/geometry_msgs/msg/Point.msg
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/Pose.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from msckf_vio/Pose.msg"
+	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio && /home/vtkc/Desktop/tlab/msckf_loopClosure/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/CameraMeasurement.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/CameraMeasurement.h: /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/CameraMeasurement.h: /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/CameraMeasurement.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/CameraMeasurement.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from msckf_vio/CameraMeasurement.msg"
-	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio && /home/vtkc/Desktop/tlab/msckf_loopClosure/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio -e /opt/ros/kinetic/share/gencpp/cmake/..
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vtkc/Desktop/tlab/msckf_loopClosure/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from msckf_vio/CameraMeasurement.msg"
+	cd /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio && /home/vtkc/Desktop/tlab/msckf_loopClosure/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg -Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p msckf_vio -o /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 msckf_vio_generate_messages_cpp: msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp
 msckf_vio_generate_messages_cpp: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/TrackingInfo.h
 msckf_vio_generate_messages_cpp: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/FeatureMeasurement.h
+msckf_vio_generate_messages_cpp: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/Pose.h
 msckf_vio_generate_messages_cpp: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/CameraMeasurement.h
 msckf_vio_generate_messages_cpp: msckf_vio/CMakeFiles/msckf_vio_generate_messages_cpp.dir/build.make
 
