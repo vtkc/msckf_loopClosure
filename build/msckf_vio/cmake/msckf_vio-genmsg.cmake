@@ -1,6 +1,8 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "msckf_vio: 3 messages, 0 services")
+message(FATAL_ERROR "Could not find messages which '/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg' depends on. Did you forget to specify generate_messages(DEPENDENCIES ...)?
+Cannot locate message [PoseWithCovariance]: unknown package [geometry_msgs] on search path [{'msckf_vio': ['/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg'], 'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg']}]")
+message(STATUS "msckf_vio: 4 messages, 0 services")
 
 set(MSG_I_FLAGS "-Imsckf_vio:/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 

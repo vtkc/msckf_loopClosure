@@ -1,2 +1,2 @@
 msckf_vio
--DCMAKE_BUILD_TYPE=Release -DCATKIN_DEVEL_PREFIX=/home/vtkc/Desktop/tlab/msckf_loopClosure/devel -DCMAKE_INSTALL_PREFIX=/home/vtkc/Desktop/tlab/msckf_loopClosure/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/vtkc/Desktop/tlab/msckf_loopClosure/devel -DCMAKE_INSTALL_PREFIX=/home/vtkc/Desktop/tlab/msckf_loopClosure/install -G Unix Makefiles

@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg;/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg;/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg"
+messages_str = "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/Pose.msg;/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/FeatureMeasurement.msg;/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/CameraMeasurement.msg;/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/msg/TrackingInfo.msg"
 services_str = ""
 pkg_name = "msckf_vio"
 dependencies_str = "std_msgs"
