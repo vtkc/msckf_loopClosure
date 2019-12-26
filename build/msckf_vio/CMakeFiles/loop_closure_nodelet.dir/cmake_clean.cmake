@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/loop_closure_nodelet.dir/src/loop_closure_nodelet.cpp.o"
-  "/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/lib/libloop_closure_nodelet.pdb"
-  "/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/lib/libloop_closure_nodelet.so"
+  "/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/.private/msckf_vio/lib/libloop_closure_nodelet.pdb"
+  "/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/.private/msckf_vio/lib/libloop_closure_nodelet.so"
 )
 
 # Per-language clean rules from dependency scanning.

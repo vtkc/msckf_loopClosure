@@ -1,13 +1,1 @@
-(cl:defpackage msckf_vio-msg
-  (:use )
-  (:export
-   "<CAMERAMEASUREMENT>"
-   "CAMERAMEASUREMENT"
-   "<FEATUREMEASUREMENT>"
-   "FEATUREMEASUREMENT"
-   "<POSE>"
-   "POSE"
-   "<TRACKINGINFO>"
-   "TRACKINGINFO"
-  ))
-
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/.private/msckf_vio/share/common-lisp/ros/msckf_vio/msg/_package.lisp

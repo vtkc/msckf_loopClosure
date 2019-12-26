@@ -17,10 +17,11 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include"
+  "/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/.private/msckf_vio/include"
   "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
+  "/opt/ros/kinetic/share/orocos_kdl/../../include"
   "/opt/ros/kinetic/include/opencv-3.3.1-dev"
   "/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv"
   "/usr/include/eigen3"
@@ -31,12 +32,12 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/lib/openmpi/include/openmpi/opal/mca/event/libevent2021/libevent/include"
   "/usr/lib/openmpi/include"
   "/usr/lib/openmpi/include/openmpi"
-  "/usr/include/x86_64-linux-gnu"
+  "/usr/include/jsoncpp"
   "/usr/include/freetype2"
   "/usr/include/python2.7"
-  "/usr/include/jsoncpp"
-  "/usr/include/libxml2"
+  "/usr/include/x86_64-linux-gnu"
   "/usr/include/tcl"
+  "/usr/include/libxml2"
   "/usr/include/suitesparse"
   )
 

@@ -1,6 +1,1 @@
-
-"use strict";
-
-module.exports = {
-  msg: require('./msg/_index.js'),
-};
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/.private/msckf_vio/share/gennodejs/ros/msckf_vio/_index.js

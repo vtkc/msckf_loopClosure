@@ -61,7 +61,7 @@
       args="standalone msckf_vio/LoopClosureNodelet"
       
       output="screen">
-  </node>
+    </node>
   </group>
 
   

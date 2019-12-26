@@ -28,8 +28,10 @@
 #include <msckf_vio/CameraMeasurement.h>
 #include <msckf_vio/image_processor.h>
 
+
 namespace msckf_vio {
     class ImageProcessor;
+
 /*
  * @brief MsckfVio Implements the algorithm in
  *    Anatasios I. Mourikis, and Stergios I. Roumeliotis,
@@ -64,6 +66,11 @@ class MsckfVio {
     typedef boost::shared_ptr<const MsckfVio> ConstPtr;
 
   private:
+
+    static cv::Mat toCvMat(const Eigen::Matrix<double,4,4> &m);
+    static Eigen::Matrix<double,3,3> toMatrix3d(const cv::Mat &cvMat3);
+    static std::vector<float> toQuaternion(const cv::Mat &M);
+    
     /*
      * @brief StateServer Store one IMU states and several
      *    camera states for constructing measurement
@@ -214,6 +221,8 @@ class MsckfVio {
     ros::Publisher feature_pub;
     tf::TransformBroadcaster tf_pub;
     ros::ServiceServer reset_srv;
+    ros::Subscriber corrected_pose_sub;
+    ros::Publisher final_odom_pub;
 
     // Frame id
     std::string fixed_frame_id;
@@ -231,8 +240,6 @@ class MsckfVio {
     void mocapOdomCallback(
         const nav_msgs::OdometryConstPtr& msg);
 
-    ros::Subscriber corrected_pose_sub;
-
     ros::Subscriber mocap_odom_sub;
     ros::Publisher mocap_odom_pub;
     geometry_msgs::TransformStamped raw_mocap_odom_msg;
@@ -242,6 +249,9 @@ class MsckfVio {
 
     bool loopClosureCheck = false;
     Mat fusedPose;
+
+    vector<nav_msgs::Odometry> finalOdomMsgBuffer;
+    
 
     vector<pair<double, pair<bool, Mat>>> poseData;
 

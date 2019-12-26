@@ -50,6 +50,8 @@ Feature::OptimizationConfig Feature::optimization_config;
 
 map<int, double> MsckfVio::chi_squared_test_table;
 
+cv::Mat T_o_c(4,4,CV_32F);
+
 MsckfVio::MsckfVio(ros::NodeHandle& pnh):
   is_gravity_set(false),
   is_first_img(true),
@@ -196,6 +198,8 @@ bool MsckfVio::createRosIO() {
   corrected_pose_sub = nh.subscribe("/firefly_sbx/loop_closure/corrected_pose", 10, 
       &MsckfVio::correctPoseCallback, this);
 
+  final_odom_pub = nh.advertise<nav_msgs::Odometry>("final_odom", 10);
+
   return true;
 }
 
@@ -225,6 +229,16 @@ bool MsckfVio::initialize() {
 
   if (!createRosIO()) return false;
   ROS_INFO("Finish creating ROS IO...");
+
+  // Initialize the transformation matrix between the current 
+  // frame and loop-closed frame
+  Eigen::Matrix4d IdentityT;
+	IdentityT   << 	1,    0,    0,    0,
+	   	            0,    1,    0,    0,
+	         	      0,    0,    1,    0,
+	        	      0,    0,    0,    1;
+	T_o_c = toCvMat(IdentityT);
+  ROS_INFO("Finish Initializing Transformation Matrix...");
 
   return true;
 }
@@ -363,23 +377,77 @@ bool MsckfVio::resetCallback(
 void MsckfVio::correctPoseCallback(
   const msckf_vio::Pose::ConstPtr& pose_msg)
 {
-  // ROS_INFO("receive corrected pose!----------------------------------------");
+  ROS_INFO("Received corrected pose!----------------------------------------");
   
   Eigen::Isometry3d T_b_w;
   tf::poseMsgToEigen(pose_msg->pose.pose, T_b_w);
-  double curr_timestamp = pose_msg->header.stamp.toSec();
- ///////////////////////////////////////////////////////////
+  double corrected_frame_timestamp = pose_msg->header.stamp.toSec();
+
+  Eigen::Quaterniond q (	pose_msg->pose.pose.orientation.w,
+							          	pose_msg->pose.pose.orientation.x,
+						          		pose_msg->pose.pose.orientation.y,
+								pose_msg->pose.pose.orientation.z);
+	Eigen::Translation3d t(	pose_msg->pose.pose.position.x,
+						          	 	pose_msg->pose.pose.position.y,
+						          		pose_msg->pose.pose.position.z);
+
+	Eigen::Matrix3d R = q.toRotationMatrix(); 
+	Eigen::Matrix4d T;
+	cv::Mat T_c_w(4,4,CV_32F);
+	T   << 	R(0,0),R(0,1),R(0,2),pose_msg->pose.pose.position.x,
+		    	R(1,0),R(1,1),R(1,2),pose_msg->pose.pose.position.y,
+	    		R(2,0),R(2,1),R(2,2),pose_msg->pose.pose.position.z,
+		    	0,     0,     0,     1;
+	T_c_w = toCvMat(T);
+
+
+  //////////////////////////////////////////////////////////
   //
-  // orientation:
-  //              pose_msg->pose.pose.orientation.w,
-	// 							pose_msg->pose.pose.orientation.x,
-	// 							pose_msg->pose.pose.orientation.y,
-	// 							pose_msg->pose.pose.orientation.z;
-  // translation:
-	//             	pose_msg->pose.pose.position.x,
-	// 						 	pose_msg->pose.pose.position.y,
-	// 							pose_msg->pose.pose.position.z;
- ///////////////////////////////////////////////////////////
+  // Find the frame with the same timestamp as  
+  // corrected_frame_timestamp from finalOdomMsgBuffer
+  //
+  // Form the offset transformation matrix between the 
+  // two frames
+  //
+  // Store the offset transformation matrix
+  //
+  //////////////////////////////////////////////////////////
+
+
+  nav_msgs::Odometry old_odom_msg;
+  int odom_loop_flag = 0;
+
+  for (int i = 0; i < finalOdomMsgBuffer.size(); i++) {
+    if (finalOdomMsgBuffer.at(i).header.stamp.toSec() == corrected_frame_timestamp) {
+      old_odom_msg = finalOdomMsgBuffer.at(i);
+    } else {
+      odom_loop_flag++;
+    }
+  }
+
+  if (odom_loop_flag == finalOdomMsgBuffer.size()) {
+    ROS_INFO("NO COMMON FRAME IN BUFFER!!!----------------------------------");
+  } else {
+    Eigen::Quaterniond q1 (	old_odom_msg.pose.pose.orientation.w,
+	  							          old_odom_msg.pose.pose.orientation.x,
+		  						          old_odom_msg.pose.pose.orientation.y,
+			  			          		old_odom_msg.pose.pose.orientation.z);
+	  Eigen::Translation3d t1(	old_odom_msg.pose.pose.position.x,
+		  				            	 	old_odom_msg.pose.pose.position.y,
+			  			            		old_odom_msg.pose.pose.position.z);
+
+	  Eigen::Matrix3d R1 = q1.toRotationMatrix(); 
+	  Eigen::Matrix4d T1;
+	  cv::Mat T_c_w1(4,4,CV_32F);
+	  T1   << 	R1(0,0),R1(0,1),R1(0,2),old_odom_msg.pose.pose.position.x,
+		  	      R1(1,0),R1(1,1),R1(1,2),old_odom_msg.pose.pose.position.y,
+		        	R1(2,0),R1(2,1),R1(2,2),old_odom_msg.pose.pose.position.z,
+		        	0,     0,     0,     1;
+	  T_c_w1 = toCvMat(T1);
+
+    T_o_c = T_c_w1.inv(DECOMP_SVD)*T_c_w;
+    ROS_INFO("Successfully stored Transformation Matrix!!!------------------");
+  }
 
 }
 
@@ -666,6 +734,15 @@ void MsckfVio::processModel(const double& time,
   MatrixXd state_cov_fixed = (state_server.state_cov +
       state_server.state_cov.transpose()) / 2.0;
   state_server.state_cov = state_cov_fixed;
+
+  // cout << "Process Model IMU State:" << endl;
+  // cout << time << endl;
+  // cout << "Orientation:" << endl;
+  // cout << imu_state.orientation << endl;
+  // cout << "Position:" << endl;
+  // cout << imu_state.position << endl;
+  // cout << "Velocity:" << endl;
+  // cout << imu_state.velocity << endl;
 
   // Update the state correspondes to null space.
   imu_state.orientation_null = imu_state.orientation;
@@ -1470,6 +1547,63 @@ void MsckfVio::publish(const ros::Time& time) {
     for (int j = 0; j < 3; ++j)
       odom_msg.twist.covariance[i*6+j] = P_body_vel(i, j);
 
+/////////////////////////////////////////////////////////////////////////////
+
+
+  finalOdomMsgBuffer.push_back(odom_msg);  // Add current odom msg into buffer
+
+  if (finalOdomMsgBuffer.size() >= 10)
+    finalOdomMsgBuffer.erase(finalOdomMsgBuffer.begin());
+
+  //////////////////////////////////////////////////////////////
+  //
+  // Transform odom_msg.pose.pose with the new transformation
+  // matrix from above
+  //
+  // publish new odom_msg with final_odom_pub
+  //
+  //////////////////////////////////////////////////////////////
+
+  // Convert odom_msg to OpenCV Mat
+  Eigen::Quaterniond q (	odom_msg.pose.pose.orientation.w,
+							          	odom_msg.pose.pose.orientation.x,
+								          odom_msg.pose.pose.orientation.y,
+							          	odom_msg.pose.pose.orientation.z);
+	Eigen::Translation3d t(	odom_msg.pose.pose.position.x,
+							 	          odom_msg.pose.pose.position.y,
+							          	odom_msg.pose.pose.position.z);
+
+	Eigen::Matrix3d R = q.toRotationMatrix(); 
+	Eigen::Matrix4d T;
+	cv::Mat T_c_w(4,4,CV_32F);
+	T   << 	R(0,0),R(0,1),R(0,2),odom_msg.pose.pose.position.x,
+		    	R(1,0),R(1,1),R(1,2),odom_msg.pose.pose.position.y,
+	    		R(2,0),R(2,1),R(2,2),odom_msg.pose.pose.position.z,
+		    	0,     0,     0,     1;
+	T_c_w = toCvMat(T);
+
+  // Transforming the frame
+
+  cv::Mat new_T_c_w(4,4,CV_32F);
+  new_T_c_w = T_o_c * T_c_w;
+
+  // Convert back to pose_msg
+
+  // Tcw----->R,t //R----->四元数q
+  cv::Mat Rwc = new_T_c_w.rowRange(0,3).colRange(0,3).t(); // Rotation 
+  cv::Mat twc = -Rwc*new_T_c_w.rowRange(0,3).col(3); // translation 
+  vector<float> q1 = toQuaternion(Rwc);
+  
+  tf::Transform new_transform;
+  new_transform.setOrigin(tf::Vector3(twc.at<float>(0, 0), twc.at<float>(0, 1), twc.at<float>(0, 2)));
+
+  tf::Quaternion quaternion(q1[0], q1[1], q1[2], q1[3]);  
+  new_transform.setRotation(quaternion);
+
+  tf::poseTFToMsg(new_transform, odom_msg.pose.pose);
+
+  ////////////////////////////////////////////////////////////////////////////////
+
   odom_pub.publish(odom_msg);
 
   // Publish the 3D positions of the features that
@@ -1492,6 +1626,36 @@ void MsckfVio::publish(const ros::Time& time) {
   feature_pub.publish(feature_msg_ptr);
 
   return;
+}
+
+cv::Mat MsckfVio::toCvMat(const Eigen::Matrix<double,4,4> &m)
+{
+  cv::Mat cvMat(4,4,CV_32F);
+  for(int i=0;i<4;i++)
+      for(int j=0; j<4; j++)
+         cvMat.at<float>(i,j)=m(i,j);
+  return cvMat.clone();
+}
+
+Eigen::Matrix<double,3,3> MsckfVio::toMatrix3d(const cv::Mat &cvMat3)
+{
+  Eigen::Matrix<double,3,3> M;
+  M << cvMat3.at<float>(0,0), cvMat3.at<float>(0,1), cvMat3.at<float>(0,2),
+       cvMat3.at<float>(1,0), cvMat3.at<float>(1,1), cvMat3.at<float>(1,2),
+       cvMat3.at<float>(2,0), cvMat3.at<float>(2,1), cvMat3.at<float>(2,2);
+  return M;
+}
+
+std::vector<float> MsckfVio::toQuaternion(const cv::Mat &M)
+{
+  Eigen::Matrix<double,3,3> eigMat = toMatrix3d(M);
+  Eigen::Quaterniond q(eigMat);
+  std::vector<float> v(4);
+  v[0] = q.x();
+  v[1] = q.y();
+  v[2] = q.z();
+  v[3] = q.w();
+  return v;
 }
 
 } // namespace msckf_vio

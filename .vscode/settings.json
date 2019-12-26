@@ -49,11 +49,19 @@
         "core": "cpp",
         "csignal": "cpp",
         "cstdarg": "cpp",
-        "mutex": "cpp"
+        "mutex": "cpp",
+        "bitset": "cpp",
+        "hash_map": "cpp",
+        "hash_set": "cpp",
+        "unordered_set": "cpp",
+        "algorithm": "cpp",
+        "iomanip": "cpp",
+        "cfenv": "cpp"
     },
     "python.autoComplete.extraPaths": [
         "/home/zcy/msckf_loopClosure/devel/lib/python2.7/dist-packages",
         "/opt/ros/kinetic/lib/python2.7/dist-packages"
     ],
-    "ros.distro": "kinetic"
+    "ros.distro": "kinetic",
+    "cmake.configureOnOpen": true
 }

@@ -1,14 +1,1 @@
-
-"use strict";
-
-let FeatureMeasurement = require('./FeatureMeasurement.js');
-let TrackingInfo = require('./TrackingInfo.js');
-let Pose = require('./Pose.js');
-let CameraMeasurement = require('./CameraMeasurement.js');
-
-module.exports = {
-  FeatureMeasurement: FeatureMeasurement,
-  TrackingInfo: TrackingInfo,
-  Pose: Pose,
-  CameraMeasurement: CameraMeasurement,
-};
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/.private/msckf_vio/share/gennodejs/ros/msckf_vio/msg/_index.js

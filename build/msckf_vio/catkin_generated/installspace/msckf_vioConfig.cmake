@@ -68,7 +68,7 @@ set(msckf_vio_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(msckf_vio_SOURCE_PREFIX /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio)
-  set(msckf_vio_DEVEL_PREFIX /home/vtkc/Desktop/tlab/msckf_loopClosure/devel)
+  set(msckf_vio_DEVEL_PREFIX /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/.private/msckf_vio)
   set(msckf_vio_INSTALL_PREFIX "")
   set(msckf_vio_PREFIX ${msckf_vio_DEVEL_PREFIX})
 else()
@@ -131,7 +131,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/vtkc/Desktop/tlab/msckf_loopClosure/install/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/vtkc/Desktop/tlab/msckf_loopClosure/install/lib;/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

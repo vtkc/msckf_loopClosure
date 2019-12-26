@@ -1,0 +1,6 @@
+devel_space: /home/vtkc/Desktop/tlab/msckf_loopClosure/devel
+install: false
+install_space: /home/vtkc/Desktop/tlab/msckf_loopClosure/install
+profile: default
+source_space: /home/vtkc/Desktop/tlab/msckf_loopClosure/src
+workspace: /home/vtkc/Desktop/tlab/msckf_loopClosure

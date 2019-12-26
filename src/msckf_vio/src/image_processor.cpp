@@ -228,10 +228,8 @@ void ImageProcessor::stereoCallback(
   //cout << "==================================" << endl;
 
   // Get the current image.
-  cam0_curr_img_ptr = cv_bridge::toCvShare(cam0_img,
-      sensor_msgs::image_encodings::MONO8);
-  cam1_curr_img_ptr = cv_bridge::toCvShare(cam1_img,
-      sensor_msgs::image_encodings::MONO8);
+  cam0_curr_img_ptr = cv_bridge::toCvShare(cam0_img);
+  cam1_curr_img_ptr = cv_bridge::toCvShare(cam1_img);
 
   // Build the image pyramids once since they're used at multiple places
   createImagePyramids();

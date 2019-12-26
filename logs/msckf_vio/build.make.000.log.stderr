@@ -1,0 +1,11 @@
+[01m[K/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/src/image_processor.cpp:[m[K In member function ‘[01m[Kvoid msckf_vio::ImageProcessor::stereoCallback(const ImageConstPtr&, const ImageConstPtr&)[m[K’:
+[01m[K/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/src/image_processor.cpp:232:37:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before numeric constant
+       sensor_msgs::image_encodings::8UC1);
+[01;32m[K                                     ^[m[K
+[01m[K/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/src/image_processor.cpp:234:37:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before numeric constant
+       sensor_msgs::image_encodings::8UC1);
+[01;32m[K                                     ^[m[K
+make[2]: *** [CMakeFiles/image_processor.dir/src/image_processor.cpp.o] Error 1
+make[1]: *** [CMakeFiles/image_processor.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [all] Error 2

@@ -48,8 +48,8 @@ namespace msckf_vio{
 		pose_pub = nh.advertise<nav_msgs::Odometry>(
 			"correct_pose", 3);
 		
-		cam0_img_sub.subscribe(nh, "/firefly_sbx/image_processor/cam0_img_pub", 100);
-		cam1_img_sub.subscribe(nh, "/firefly_sbx/image_processor/cam1_img_pub", 100);
+		cam0_img_sub.subscribe(nh, "/rs2_ros/stereo/left/image_rect_raw", 100);
+		cam1_img_sub.subscribe(nh, "/rs2_ros/stereo/right/image_rect_raw", 100);
 		odom_sub.subscribe(nh, "/firefly_sbx/vio/odom",100);
 		// process_sub.connectInput(cam0_img_sub, cam1_img_sub,odom_sub);
 		// process_sub.registerCallback(&loop_closure::ProcessorCallback, this);
