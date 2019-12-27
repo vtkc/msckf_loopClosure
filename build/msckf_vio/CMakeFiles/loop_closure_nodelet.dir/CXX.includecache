@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/.private/msckf_vio/include/msckf_vio/Pose.h
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/Pose.h
 string
 -
 vector

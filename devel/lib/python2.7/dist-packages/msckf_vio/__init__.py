@@ -1,1 +1,0 @@
-/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/.private/msckf_vio/lib/python2.7/dist-packages/msckf_vio/__init__.py

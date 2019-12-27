@@ -64,10 +64,8 @@ namespace msckf_vio{
 	{
 
 			// Get the current image.
-		cam0_curr_img_ptr = cv_bridge::toCvShare(cam0_img,
-			sensor_msgs::image_encodings::MONO8);
-		cam1_curr_img_ptr = cv_bridge::toCvShare(cam1_img,
-			sensor_msgs::image_encodings::MONO8);
+		cam0_curr_img_ptr = cv_bridge::toCvShare(cam0_img);
+		cam1_curr_img_ptr = cv_bridge::toCvShare(cam1_img);
 				
 		cam0_img_input = cam0_curr_img_ptr->image;
 		cam1_img_input = cam1_curr_img_ptr->image;

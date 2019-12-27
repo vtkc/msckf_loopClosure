@@ -1,0 +1,27 @@
+[01m[K/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/src/msckf_vio.cpp:454:31:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[KfeatureCallback[m[K’ declared void
+ void MsckfVio::featureCallback(
+[01;32m[K                               ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/tf/transform_datatypes.h:44:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/tf_conversions/tf_eigen.h:35[m[K,
+                 from [01m[K/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/src/msckf_vio.cpp:21[m[K:
+[01m[K/opt/ros/kinetic/include/ros/console.h:373:3:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdo[m[K’
+   do \
+[01;32m[K   ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/console.h:561:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+ #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+[01;32m[K                                   ^[m[K
+[01m[K/opt/ros/kinetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+ #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+[01;32m[K                       ^[m[K
+[01m[K/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/src/msckf_vio.cpp:455:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+   ROS_INFO("Triggered featureCallback!!!------------------");
+[01;32m[K   ^[m[K
+[01m[K/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/src/msckf_vio.cpp:456:41:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K)[m[K’ token
+     const CameraMeasurementConstPtr& msg) {
+[01;32m[K                                         ^[m[K
+[01m[K/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/src/msckf_vio.cpp:1663:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+ } // namespace msckf_vio
+[01;32m[K ^[m[K
+make[2]: *** [CMakeFiles/msckf_vio.dir/src/msckf_vio.cpp.o] Error 1
+make[1]: *** [CMakeFiles/msckf_vio.dir/all] Error 2
+make: *** [all] Error 2

@@ -68,7 +68,7 @@ set(msckf_vio_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(msckf_vio_SOURCE_PREFIX /home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio)
-  set(msckf_vio_DEVEL_PREFIX /home/vtkc/Desktop/tlab/msckf_loopClosure/devel/.private/msckf_vio)
+  set(msckf_vio_DEVEL_PREFIX /home/vtkc/Desktop/tlab/msckf_loopClosure/devel)
   set(msckf_vio_INSTALL_PREFIX "")
   set(msckf_vio_PREFIX ${msckf_vio_DEVEL_PREFIX})
 else()

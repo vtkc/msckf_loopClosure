@@ -1,1 +1,12 @@
-/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/.private/msckf_vio/share/common-lisp/ros/msckf_vio/msg/_package_TrackingInfo.lisp
+(cl:in-package msckf_vio-msg)
+(cl:export '(HEADER-VAL
+          HEADER
+          BEFORE_TRACKING-VAL
+          BEFORE_TRACKING
+          AFTER_TRACKING-VAL
+          AFTER_TRACKING
+          AFTER_MATCHING-VAL
+          AFTER_MATCHING
+          AFTER_RANSAC-VAL
+          AFTER_RANSAC
+))

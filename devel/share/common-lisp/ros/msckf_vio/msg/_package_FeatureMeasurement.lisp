@@ -1,1 +1,12 @@
-/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/.private/msckf_vio/share/common-lisp/ros/msckf_vio/msg/_package_FeatureMeasurement.lisp
+(cl:in-package msckf_vio-msg)
+(cl:export '(ID-VAL
+          ID
+          U0-VAL
+          U0
+          V0-VAL
+          V0
+          U1-VAL
+          U1
+          V1-VAL
+          V1
+))

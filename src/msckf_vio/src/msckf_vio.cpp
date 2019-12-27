@@ -453,10 +453,11 @@ void MsckfVio::correctPoseCallback(
 
 void MsckfVio::featureCallback(
     const CameraMeasurementConstPtr& msg) {
-
+    
+  // ROS_INFO("Triggered featureCallback!!!------------------");
   // Return if the gravity vector has not been set.
   if (!is_gravity_set) return;
-
+  // ROS_INFO("Gravity has been set!!!------------------");
   // Start the system if the first image is received.
   // The frame where the first image is received will be
   // the origin.
@@ -469,6 +470,7 @@ void MsckfVio::featureCallback(
   static int critical_time_cntr = 0;
   double processing_start_time = ros::Time::now().toSec();
 
+  // ROS_INFO("Propagaing IMU!!!------------------");
   // Propogate the IMU state.
   // that are received before the image msg.
   ros::Time start_time = ros::Time::now();
@@ -476,12 +478,14 @@ void MsckfVio::featureCallback(
   double imu_processing_time = (
       ros::Time::now()-start_time).toSec();
 
+  // ROS_INFO("Augmenting State!!!------------------");
   // Augment the state vector.
   start_time = ros::Time::now();
   stateAugmentation(msg->header.stamp.toSec());
   double state_augmentation_time = (
       ros::Time::now()-start_time).toSec();
 
+  // ROS_INFO("Adding new observations!!!------------------");
   // Add new observations for existing features or new
   // features in the map server.
   start_time = ros::Time::now();
@@ -489,6 +493,7 @@ void MsckfVio::featureCallback(
   double add_observations_time = (
       ros::Time::now()-start_time).toSec();
 
+  // ROS_INFO("Performing measurement update!!!------------------");
   // Perform measurement update if necessary.
   start_time = ros::Time::now();
   removeLostFeatures();
@@ -500,12 +505,13 @@ void MsckfVio::featureCallback(
   double prune_cam_states_time = (
       ros::Time::now()-start_time).toSec();
 
+  // ROS_INFO("Going to publish the odom------------------");
   // Publish the odometry.
   start_time = ros::Time::now();
   publish(msg->header.stamp);
   double publish_time = (
       ros::Time::now()-start_time).toSec();
-
+  // ROS_INFO("PUBLISHED THE ODOM!!!------------------");
 
 
   // ****************************************************************************************
@@ -1513,13 +1519,20 @@ void MsckfVio::publish(const ros::Time& time) {
   }
 
   // Publish the odometry
-  nav_msgs::Odometry odom_msg;
+  nav_msgs::Odometry odom_msg, final_odom_msg;
   odom_msg.header.stamp = time;
   odom_msg.header.frame_id = fixed_frame_id;
   odom_msg.child_frame_id = child_frame_id;
 
   tf::poseEigenToMsg(T_b_w, odom_msg.pose.pose);
   tf::vectorEigenToMsg(body_velocity, odom_msg.twist.twist.linear);
+
+  final_odom_msg.header.stamp = time;
+  final_odom_msg.header.frame_id = fixed_frame_id;
+  final_odom_msg.child_frame_id = child_frame_id;
+
+  tf::poseEigenToMsg(T_b_w, final_odom_msg.pose.pose);
+  tf::vectorEigenToMsg(body_velocity, final_odom_msg.twist.twist.linear);
 
   // Convert the covariance.
   Matrix3d P_oo = state_server.state_cov.block<3, 3>(0, 0);
@@ -1536,16 +1549,20 @@ void MsckfVio::publish(const ros::Time& time) {
     P_imu_pose * H_pose.transpose();
 
   for (int i = 0; i < 6; ++i)
-    for (int j = 0; j < 6; ++j)
+    for (int j = 0; j < 6; ++j){
       odom_msg.pose.covariance[6*i+j] = P_body_pose(i, j);
+      final_odom_msg.pose.covariance[6*i+j] = P_body_pose(i, j);
+    }
 
   // Construct the covariance for the velocity.
   Matrix3d P_imu_vel = state_server.state_cov.block<3, 3>(6, 6);
   Matrix3d H_vel = IMUState::T_imu_body.linear();
   Matrix3d P_body_vel = H_vel * P_imu_vel * H_vel.transpose();
   for (int i = 0; i < 3; ++i)
-    for (int j = 0; j < 3; ++j)
+    for (int j = 0; j < 3; ++j){
       odom_msg.twist.covariance[i*6+j] = P_body_vel(i, j);
+      final_odom_msg.twist.covariance[i*6+j] = P_body_vel(i, j);
+    }
 
 /////////////////////////////////////////////////////////////////////////////
 
@@ -1582,20 +1599,38 @@ void MsckfVio::publish(const ros::Time& time) {
 		    	0,     0,     0,     1;
 	T_c_w = toCvMat(T);
 
+  // Eigen::Matrix4d IdentityT = Eigen::Matrix4d::Identity();
+	// T_o_c = toCvMat(IdentityT);
+
   // Transforming the frame
 
   cv::Mat new_T_c_w(4,4,CV_32F);
   new_T_c_w = T_o_c * T_c_w;
 
   // Convert back to pose_msg
+  // Eigen::Map<Matrix4d> eigenT( new_T_c_w.data() );
+  // Eigen::Matrix3d Rb;
+  // Rb  <<  eigenT(0,0), eigenT(0,1), eigenT(0,2),
+  //         eigenT(1,0), eigenT(1,1), eigenT(1,2),
+  //         eigenT(2,0), eigenT(2,1), eigenT(2,2);
 
-  // Tcw----->R,t //R----->四元数q
-  cv::Mat Rwc = new_T_c_w.rowRange(0,3).colRange(0,3).t(); // Rotation 
-  cv::Mat twc = -Rwc*new_T_c_w.rowRange(0,3).col(3); // translation 
+  // Eigen::Quaterniond Qb(Rb);
+  // vector<float> q1 = toQuaternion(Qb);
+
+  // Eigen::Translation3d Td(new_T_c_w(0,3), new_T_c_w(1,3), new_T_c_w(2,3));
+
+  // final_odom_msg.pose.pose.orientation = Qb;
+  // final_odom_msg.pose.pose.position = Td;
+  double Qb[4];
+  getQuaternion(new_T_c_w, Qb);
+
+  // // Tcw----->R,t //R----->四元数q
+  cv::Mat Rwc = new_T_c_w.rowRange(0,2).colRange(0,2); // Rotation 
+  // cv::Mat twc = -Rwc*new_T_c_w.rowRange(0,3).col(3); // translation 
   vector<float> q1 = toQuaternion(Rwc);
   
   tf::Transform new_transform;
-  new_transform.setOrigin(tf::Vector3(twc.at<float>(0, 0), twc.at<float>(0, 1), twc.at<float>(0, 2)));
+  new_transform.setOrigin(tf::Vector3(new_T_c_w.at<float>(0, 3), new_T_c_w.at<float>(1, 3), new_T_c_w.at<float>(2, 3)));
 
   tf::Quaternion quaternion(q1[0], q1[1], q1[2], q1[3]);  
   new_transform.setRotation(quaternion);
@@ -1603,7 +1638,7 @@ void MsckfVio::publish(const ros::Time& time) {
   tf::poseTFToMsg(new_transform, odom_msg.pose.pose);
 
   ////////////////////////////////////////////////////////////////////////////////
-
+  // final_odom_pub.publish (final_odom_msg);
   odom_pub.publish(odom_msg);
 
   // Publish the 3D positions of the features that
@@ -1656,6 +1691,36 @@ std::vector<float> MsckfVio::toQuaternion(const cv::Mat &M)
   v[2] = q.z();
   v[3] = q.w();
   return v;
+}
+
+void MsckfVio::getQuaternion(Mat R, double Q[])
+{
+    double trace = R.at<double>(0,0) + R.at<double>(1,1) + R.at<double>(2,2);
+ 
+    if (trace > 0.0) 
+    {
+        double s = sqrt(trace + 1.0);
+        Q[3] = (s * 0.5);
+        s = 0.5 / s;
+        Q[0] = ((R.at<double>(2,1) - R.at<double>(1,2)) * s);
+        Q[1] = ((R.at<double>(0,2) - R.at<double>(2,0)) * s);
+        Q[2] = ((R.at<double>(1,0) - R.at<double>(0,1)) * s);
+    } 
+    
+    else 
+    {
+        int i = R.at<double>(0,0) < R.at<double>(1,1) ? (R.at<double>(1,1) < R.at<double>(2,2) ? 2 : 1) : (R.at<double>(0,0) < R.at<double>(2,2) ? 2 : 0); 
+        int j = (i + 1) % 3;  
+        int k = (i + 2) % 3;
+
+        double s = sqrt(R.at<double>(i, i) - R.at<double>(j,j) - R.at<double>(k,k) + 1.0);
+        Q[i] = s * 0.5;
+        s = 0.5 / s;
+
+        Q[3] = (R.at<double>(k,j) - R.at<double>(j,k)) * s;
+        Q[j] = (R.at<double>(j,i) + R.at<double>(i,j)) * s;
+        Q[k] = (R.at<double>(k,i) + R.at<double>(i,k)) * s;
+    }
 }
 
 } // namespace msckf_vio

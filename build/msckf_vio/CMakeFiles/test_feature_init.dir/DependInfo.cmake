@@ -17,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/.private/msckf_vio/include"
+  "/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include"
   "/home/vtkc/Desktop/tlab/msckf_loopClosure/src/msckf_vio/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
@@ -43,7 +43,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/vtkc/Desktop/tlab/msckf_loopClosure/build/msckf_vio/gtest/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/home/vtkc/Desktop/tlab/msckf_loopClosure/build/gtest/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

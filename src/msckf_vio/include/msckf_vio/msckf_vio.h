@@ -70,6 +70,7 @@ class MsckfVio {
     static cv::Mat toCvMat(const Eigen::Matrix<double,4,4> &m);
     static Eigen::Matrix<double,3,3> toMatrix3d(const cv::Mat &cvMat3);
     static std::vector<float> toQuaternion(const cv::Mat &M);
+    void getQuaternion(Mat R, double Q[]);
     
     /*
      * @brief StateServer Store one IMU states and several

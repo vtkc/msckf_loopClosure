@@ -1,1 +1,6 @@
-/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/.private/msckf_vio/share/common-lisp/ros/msckf_vio/msg/_package_Pose.lisp
+(cl:in-package msckf_vio-msg)
+(cl:export '(HEADER-VAL
+          HEADER
+          POSE-VAL
+          POSE
+))

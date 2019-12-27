@@ -12,8 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/loop_closure.dir/src/Optimizer.cpp.o"
   "CMakeFiles/loop_closure.dir/src/Sim3Solver.cpp.o"
   "CMakeFiles/loop_closure.dir/src/LocalMapping.cpp.o"
-  "/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/.private/msckf_vio/lib/libloop_closure.pdb"
-  "/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/.private/msckf_vio/lib/libloop_closure.so"
+  "/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/lib/libloop_closure.pdb"
+  "/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/lib/libloop_closure.so"
 )
 
 # Per-language clean rules from dependency scanning.

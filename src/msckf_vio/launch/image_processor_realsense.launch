@@ -13,8 +13,8 @@
       <rosparam command="load" file="$(arg calibration_file)"/>
       <param name="grid_row" value="4"/>
       <param name="grid_col" value="5"/>
-      <param name="grid_min_feature_num" value="5"/>
-      <param name="grid_max_feature_num" value="8"/>
+      <param name="grid_min_feature_num" value="3"/>
+      <param name="grid_max_feature_num" value="4"/>
       <param name="pyramid_levels" value="3"/>
       <param name="patch_size" value="15"/>
       <param name="fast_threshold" value="10"/>

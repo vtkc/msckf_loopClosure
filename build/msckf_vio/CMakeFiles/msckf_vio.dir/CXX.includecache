@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/.private/msckf_vio/include/msckf_vio/CameraMeasurement.h
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/CameraMeasurement.h
 string
 -
 vector
@@ -26,7 +26,7 @@ std_msgs/Header.h
 msckf_vio/FeatureMeasurement.h
 -
 
-/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/.private/msckf_vio/include/msckf_vio/FeatureMeasurement.h
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/FeatureMeasurement.h
 string
 -
 vector
@@ -42,7 +42,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/.private/msckf_vio/include/msckf_vio/Pose.h
+/home/vtkc/Desktop/tlab/msckf_loopClosure/devel/include/msckf_vio/Pose.h
 string
 -
 vector
